@@ -126,12 +126,79 @@
        }
         /*--------------- E 동영상 ---------------*/
         
+        /*--------------- S fixedbtn ---------------*/
+                .btn_fixed_ticket,
+        .btn_fixed_top{
+            display: inline-block;
+            position: relative;
+        }
+        .btn_fixed_ticket{
+            width: 170px; height: 170px;
+        }
+        .btn_fixed_top{
+            width: 75px; height: 75px;
+        }
+
+        #btn_fixed h3{
+            /* display: inline-block; */
+            position: absolute;
+            text-decoration: none;
+            text-align: center;
+        }
+        .btn_fixed_ticket > h3{
+            left: 25%; top: 10%;
+        }
+        .btn_fixed_top > h3{
+            left: 30%; bottom: 25%;
+            margin: 0;
+        }
+        /*--------------- E fixedbtn ---------------*/
+        
+        
+        /* Ticketing */
+        .btn_ticketing {
+            color: red;
+            border: 1px solid red;
+            border-radius: 22.5px;
+            width: 150px;
+            line-height: 45px;
+            text-align: center;
+            display: inline-block;
+        }
+        .btn_ticketing:hover {
+            color: white;
+            background: red;
+        }
+
+        /* More */
+        .btn_more {
+            color: red;
+            border: 1px solid red;
+            border-radius: 22.5px;
+            width: 120px;
+            line-height: 36px;
+            text-align: center;
+            display: inline-block;
+        }
+        .btn_more:hover {
+            color: white;
+            background: red;
+        }
+
+        /* Ticketing Navigation */
+        .btn_nav_left {
+            display: inline-block;
+        }
+        .btn_nav_right {
+            
+        }
+        
     </style>
 </head>
 <body>
-    <h1>Main Title 28px Open Sans KR</h1>
-    <h2>Sub Title 24px Open Sans KR</h2>
-    <h3>Menu Text 24px Open Sans KR</h3>
+    <h2>Main Title 28px Open Sans KR</h2>
+    <h3>Sub Title 24px Open Sans KR</h3>
+    <h4>Menu Text 24px Open Sans KR</h4>
     <p>Content Text 18px Open Sans KR</p>
     <div class="color red">#E72B20</div>
     <div class="color yellow">#FFA443</div>
@@ -162,5 +229,28 @@
         <a href="#" class="btn_movie"><i class="fa-solid fa-play"></i></a>
         <a href="#" class="btn_movie"><i class="fa-solid fa-volume-high"></i></a>
     </div>
+    
+        <!--------------- S  --------------->
+    <div id="btn_fixed">
+        <a href="#" class="btn_fixed_ticket">
+            <img src="img/btn_fixed_ticket-01.png" alt="예매하기">
+            <h3>예매하기</h3>
+        </a>
+        <a href="#" class="btn_fixed_top">
+            <img src="img/btn_fixed_top-01.png" alt="top">
+            <h3><i class="fa-solid fa-arrow-up"></i></h3>
+        </a>
+    </div>
+    
+    <!-- Ticketing -->
+    <a class="btn_ticketing active"> 예매하기 </a>
+        
+    <!-- More --> 
+    <a class="btn_more"> 전체보기 + </a>
+
+    <!-- Ticketing Navigation  -->
+    <a class="btn_nav_left"> <i class="fa-sharp fa-solid fa-triangle"></i> </div> </a>
+ 
+    <a class="btn_nav_right"> <i class="fa-sharp fa-solid fa-triangle"></i> </a>
 </body>
 </html>
