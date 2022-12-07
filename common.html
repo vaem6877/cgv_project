@@ -104,10 +104,27 @@
 
         /*--------------- S 동영상 ---------------*/
         .ex_bg {
-        width: 250px;height: 50px;
+        width: 450px;height: 50px;
         background: #000;
         text-align: center;
        }
+       .btn_movie_ticket {
+           display: inline-block;
+            color:white;
+            border: 1px solid white;
+            border-radius: 22.5px;
+            width: 120px;
+            line-height: 45px;
+            font-size: 14px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .btn_movie_ticket:hover {
+            color: white;
+            background: red;
+            border: none;
+        }
+
         .btn_movie {
         display: inline-block;
         width: 50px; height: 50px;
@@ -224,6 +241,7 @@
     <!--------------- S 동영상 --------------->
 
     <div class="ex_bg">
+        <a class="btn_movie_ticket active"> 예매하기 </a>
         <a href="#" class="btn_movie"><i class="fa-solid fa-pause"></i></a>
         <a href="#" class="btn_movie"><i class="fa-solid fa-volume-xmark"></i></a>
         <a href="#" class="btn_movie"><i class="fa-solid fa-play"></i></a>
