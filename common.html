@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <!-- open sans 로더 -->
@@ -16,6 +15,8 @@
     <!-- fontawesome 로더 -->
     <title>common HTML</title>
     <style>
+        
+        /*--------------- S 폰트 ---------------*/
         * {
             font-family: 'Open Sans', sans-serif;
             color:#222222;
@@ -33,6 +34,10 @@
         p{
             font-size: 18px;
         }
+
+        /*--------------- E 폰트 ---------------*/
+        
+        /*--------------- S 컬러박스 ---------------*/
         .color{
             width:100px;
             line-height: 60px;
@@ -59,6 +64,19 @@
         background: linear-gradient(to right, #D74357, #F14F3A,#EF642F);
         font-size: 6px;
        }
+        /*--------------- E 컬러박스 ---------------*/
+        
+        /*--------------- S 아이콘 ---------------*/
+        .sns{
+            margin-top: 40px;
+        }
+        .sns > i{
+        color:#222;
+        font-size: 32px;
+       }
+       .sns > i:hover{
+        color:#E72B20 ;
+       }
 
        .movie_bg {
         width: 100%;
@@ -66,13 +84,31 @@
         background: linear-gradient(#EEE0E1,#FAF2F3)
        }
 
+        /*--------------- E 아이콘 ---------------*/
 
+        /*--------------- S 무비차트 ---------------*/
+        .movie_chart_form label i{
+            font-size: 28px;
+        }
+        .movie_chart_form input{
+            border-top: 0px;
+            border-left: 0px;
+            border-right: 0px;
+            color:#222;
 
+        }
+        .movie_chart_form input:hover{
+            color:#E72B20 ;
+        }
+        .movie_bg {
+        width: 100%;
+        height: 100px;
+        background: linear-gradient(#EEE0E1,#FAF2F3)
+       }
+        /*--------------- E 무비차트 ---------------*/
 
-
-
-
-       .ex_bg {
+        /*--------------- S 동영상 ---------------*/
+        .ex_bg {
         width: 250px;height: 50px;
         background: #000;
         text-align: center;
@@ -93,10 +129,8 @@
         top:50%; left: 50%;
         transform: translate(-50%,-50%);
        }
-       
-
-
-
+        /*--------------- E 동영상 ---------------*/
+        
     </style>
 </head>
 <body>
@@ -111,13 +145,21 @@
     <div class="color gray">#666666</div>
     <div class="color gradient">#D74357, #F14F3A, #EF642F</div>
     
-
-    <!--------------- 무비차트 --------------->
+ 
+    <div class="sns">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-square-facebook"></i>
+    </div>
+        <form action="" method="get" class="movie_chart_form">
+            <input type="text">
+            <label for=""><i class="fa-solid fa-magnifying-glass"></i></label>
+        </form>
+    </div>
+    <!--------------- S 무비차트 --------------->
     <div class="movie_bg"></div>
 
-
-
-    <!--------------- 동영상 --------------->
+    <!--------------- S 동영상 --------------->
 
     <div class="ex_bg">
         <a href="#" class="btn_movie"><i class="fa-solid fa-pause"></i></a>
@@ -125,6 +167,5 @@
         <a href="#" class="btn_movie"><i class="fa-solid fa-play"></i></a>
         <a href="#" class="btn_movie"><i class="fa-solid fa-volume-high"></i></a>
     </div>
-
 </body>
 </html>
