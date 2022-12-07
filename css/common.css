@@ -1,0 +1,10 @@
+:root {
+    --sg:#e72b20;
+    --ad:#FFA443;
+    --bg:#ffffff;
+    --main-text:#222222;
+    --sub-text:#666666;
+    --gradient:linear-gradient(#d74357,#f14f3a,#ef642f);
+    --padding-28: 28px 0;
+    --padding-56: 56px 0;
+  }
