@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- fonts.google -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!-- open sans 로더 -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> 
     <!-- 마테리얼 아이콘 로더 -->
@@ -153,7 +155,7 @@
         /*--------------- E fixedbtn ---------------*/
         
         
-        /* Ticketing */
+        /*--------------- Ticketing ---------------*/
         .btn_ticketing {
             color: red;
             border: 1px solid red;
@@ -162,13 +164,14 @@
             line-height: 45px;
             text-align: center;
             display: inline-block;
+            font-size: 18px;
         }
         .btn_ticketing:hover {
             color: white;
             background: red;
         }
 
-        /* More */
+        /*--------------- More ---------------*/
         .btn_more {
             color: red;
             border: 1px solid red;
@@ -177,19 +180,73 @@
             line-height: 36px;
             text-align: center;
             display: inline-block;
+            font-size: 18px;
         }
         .btn_more:hover {
             color: white;
             background: red;
         }
 
-        /* Ticketing Navigation */
-        .btn_nav_left {
+        /*--------------- Ticketing Navigation ---------------*/
+        a[class^="btn_nav"] {
             display: inline-block;
+            width: 55px;
+            border-radius: 50%;
+            line-height: 55px;
+            border: 1px solid #ffffff;
+            box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.25);
+            position: relative;
+            /* border: 1px solid black; */
         }
-        .btn_nav_right {
-            
+
+        div[class^=triagle] {
+            display: inline-block;
+            border-width: 19.5px;
+            border-style: solid;
+            box-sizing: border-box;
+            position: relative;
         }
+        
+        .btn_nav_left > .triagle_left {
+            border-color: transparent red transparent transparent;
+            border-left: 0;
+            left: 50%; top: 50%;
+            transform: translate(-75%, 25%);
+        }
+        .btn_nav_left:hover > .triagle_left {
+            border-color: transparent white transparent transparent;
+        }
+        .btn_nav_left:hover {
+            background: red;
+        }
+
+
+        .btn_nav_right > .triagle_right {
+            border-color: transparent transparent transparent red;
+            border-right: 0;
+            left: 50%; top: 50%;
+            transform: translate(-40%, 25%);
+        }      
+        .btn_nav_right:hover > .triagle_right {
+            border-color: transparent transparent transparent white;
+        }
+        .btn_nav_right:hover {
+            background: red;
+        }
+
+        /* fonts.google */
+        /* .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 1,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 48
+        } */
+        /* 
+        https://developer.mozilla.org/en-US/docs/Web/CSS/font-variation-settings
+        
+        'wdth 수치가 먹히지 않음'
+        */
         
     </style>
 </head>
@@ -248,8 +305,10 @@
     <a class="btn_more"> 전체보기 + </a>
 
     <!-- Ticketing Navigation  -->
-    <a class="btn_nav_left"> <i class="fa-sharp fa-solid fa-triangle"></i> </div> </a>
+    <a class="btn_nav_left"> <div class="triagle_left"> </div> </a>
+    <!-- <a class="btn_nav_left"> <span class="material-symbols-outlined"> change_history </span> </a> -->
  
-    <a class="btn_nav_right"> <i class="fa-sharp fa-solid fa-triangle"></i> </a>
+    <a class="btn_nav_right"> <div class="triagle_right"></div> </a>
+    <!-- <a class="btn_nav_right"> <span class="m aterial-symbols-outlined"> change_history </span> </a> -->
 </body>
 </html>
