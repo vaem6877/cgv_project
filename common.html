@@ -124,6 +124,34 @@
        }
         /*--------------- E 동영상 ---------------*/
         
+        /*--------------- S fixedbtn ---------------*/
+                .btn_fixed_ticket,
+        .btn_fixed_top{
+            display: inline-block;
+            position: relative;
+        }
+        .btn_fixed_ticket{
+            width: 170px; height: 170px;
+        }
+        .btn_fixed_top{
+            width: 75px; height: 75px;
+        }
+
+        #btn_fixed h3{
+            /* display: inline-block; */
+            position: absolute;
+            text-decoration: none;
+            text-align: center;
+        }
+        .btn_fixed_ticket > h3{
+            left: 25%; top: 10%;
+        }
+        .btn_fixed_top > h3{
+            left: 30%; bottom: 25%;
+            margin: 0;
+        }
+           /*--------------- E fixedbtn ---------------*/
+        
     </style>
 </head>
 <body>
@@ -160,6 +188,18 @@
         <a href="#" class="btn_movie"><i class="fa-solid fa-volume-xmark"></i></a>
         <a href="#" class="btn_movie"><i class="fa-solid fa-play"></i></a>
         <a href="#" class="btn_movie"><i class="fa-solid fa-volume-high"></i></a>
+    </div>
+    
+        <!--------------- S  --------------->
+    <div id="btn_fixed">
+        <a href="#" class="btn_fixed_ticket">
+            <img src="img/btn_fixed_ticket-01.png" alt="예매하기">
+            <h3>예매하기</h3>
+        </a>
+        <a href="#" class="btn_fixed_top">
+            <img src="img/btn_fixed_top-01.png" alt="top">
+            <h3><i class="fa-solid fa-arrow-up"></i></h3>
+        </a>
     </div>
 </body>
 </html>
