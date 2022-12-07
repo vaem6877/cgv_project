@@ -1,1 +1,124 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- open sans 로더 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> 
+    <!-- 마테리얼 아이콘 로더 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- fontawesome 로더 -->
+    <title>common HTML</title>
+    <style>
+        
+        
+        * {
+            font-family: 'Open Sans', sans-serif;
+            color:#222222;
+            font-weight: regular;
+        }
+        h2, .maintitle {
+            font-size: 28px;
+        }
+        h3{
+            font-size: 24px;
+        }
+        h4{
+            font-size: 24px;
+        }
+        p{
+            font-size: 18px;
+        }
+
+        /*---------------폰트---------------*/
+        .color{
+            width:200px;
+            line-height: 60px;
+            border: #000000 solid 1px;
+            text-align: center;
+        }
+       .red{
+        background:#E72B20 ;
+       } 
+       .yellow{
+        background: #FFA443;
+       }
+       .white{
+          background: #FFFFFF;  
+       }
+       .dark{
+        background: #222222;
+        color:#FFFFFF;
+       }
+       .gray{
+        background: #666666;
+       }
+       .gradient{
+        background: linear-gradient(to right, #D74357, #F14F3A,#EF642F);
+        font-size: 6px;
+       }
+        /*---------------컬러박스---------------*/
+        .sns{
+            margin-top: 40px;
+        }
+        .sns > i{
+        color:#222;
+        font-size: 28px;
+       }
+       .sns > i:hover{
+        color:#E72B20 ;
+       }
+
+
+        /*---------------아이콘---------------*/
+        /*---------------버튼---------------*/
+
+        #btn_fixed{
+            text-decoration: none;
+        }
+        .btn_fixed_ticket{
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Main Title 28px Open Sans KR</h1>
+    <h2>Sub Title 24px Open Sans KR</h2>
+    <h3>Menu Text 24px Open Sans KR</h3>
+    <p>Content Text 18px Open Sans KR</p>
+    <div class="color red">#E72B20</div>
+    <div class="color yellow">#FFA443</div>
+    <div class="color white">#FFFFFF</div>
+    <div class="color dark">#222222</div>
+    <div class="color gray">#666666</div>
+    <div class="color gradient">#D74357, #F14F3A, #EF642F</div>
+ 
+    <div class="sns">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-facebook"></i>
+    </div>
+
+    <div id="btn_fixed">
+        <figure>
+            <img src="img/btn_fixed_ticket-01.png" alt="예매하기">
+            <figcaption>
+                <a href="#">예매하기</a>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="img/btn_fixed_top-01.png" alt="top">
+            <figcaption>
+                <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+            </figcaption>
+        </figure>
+    </div>
+
+</body>
+</html>
