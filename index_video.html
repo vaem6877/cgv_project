@@ -24,6 +24,19 @@
         .video h2{
             color: white;
         }
+        .video_wrap.container{
+            position: relative;
+            height: 720px;
+        }
+        .video_wrap iframe{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        #video_controls{
+            display: inline-block;
+        }
 
 
         .personal{
@@ -90,8 +103,6 @@
         <!--------------- 박민지 파트 --------------->
         <div class="video">
             <div class="video_wrap container">
-                <!-- before로 비디오 위로 양옆 그라데이션 효과 넣기 -->
-                <video src="#"></video>
                 <div id="video_controls">
                     <h2>영화제목</h2>
                     <div>    
@@ -108,6 +119,9 @@
                     <a href="#" class="video_pager_link">3</a>
                     <a href="#" class="video_pager_link">4</a>
                 </div>
+                <!-- before로 비디오 위로 양옆 그라데이션 효과 넣기 -->
+                <!-- <iframe width="1470" height="920" src="https://www.youtube.com/embed/kihrFxwdMb4" title="[아바타: 물의 길] 메인 예고편" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                <iframe src="https://www.youtube.com/embed/kihrFxwdMb4" frameborder="0" title="[아바타: 물의 길] 메인 예고편" allowfullscreen></iframe>
             </div>
         </div>
         <div class="service container">
