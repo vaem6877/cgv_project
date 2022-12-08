@@ -1,3 +1,8 @@
+.container {
+    width: 1140px;
+}
+
+
 /*--------------- S 폰트 ---------------*/
 * {
     font-family: 'Open Sans', sans-serif;
@@ -92,12 +97,23 @@ font-size: 32px;
 
 
 /*--------------- S 동영상 ---------------*/
-.ex_bg {
-width: 250px;height: 50px;
-background: #000;
-text-align: center;
+.btn_movie_ticket {
+    display: inline-block;
+    color:white;
+    border: 1px solid white;
+    border-radius: 22.5px;
+    width: 120px;
+    line-height: 45px;
+    font-size: 14px;
+    text-align: center;
 }
-    .btn_movie {
+.btn_movie_ticket:hover {
+    color: white;
+    background: red;
+    border:1px solid red;
+}
+
+.btn_movie {
     display: inline-block;
     width: 50px; height: 50px;
     border-radius: 50%;
@@ -106,7 +122,7 @@ text-align: center;
     position: relative;
     box-sizing: border-box;
 }
-    .btn_movie > i {
+.btn_movie > i {
     font-size:28px;
     color: white;
     position: absolute;
