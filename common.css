@@ -49,6 +49,15 @@ p{
 /*--------------- E 컬러박스 ---------------*/
 
 /*--------------- S 아이콘 ---------------*/
+.logo{
+    background: url('img/logo.svg')  ;
+    display:inline-block;
+    width:186px;
+    height: 82px;
+    text-indent:-100%;
+    overflow: hidden;
+}
+
 .sns{
     margin-top: 40px;
 }
