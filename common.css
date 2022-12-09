@@ -1,7 +1,8 @@
+/*--------------- S 컨테이너 ---------------*/
 .container {
     width: 1140px;
 }
-
+/*--------------- E 컨테이너 ---------------*/
 
 /*--------------- S 폰트 ---------------*/
 * {
@@ -53,7 +54,7 @@ p{
 }
 /*--------------- E 컬러박스 ---------------*/
 
-/*--------------- S 아이콘 ---------------*/
+/*--------------- S 로고 ---------------*/
 .logo{
     background: url('img/logo.svg')  ;
     display:inline-block;
@@ -62,18 +63,7 @@ p{
     text-indent:-100%;
     overflow: hidden;
 }
-
-.sns{
-    margin-top: 40px;
-}
-.sns > i{
-color:#222;
-font-size: 32px;
-}
-.sns > i:hover{
-    color:#E72B20 ;
-}
-/*--------------- E 아이콘 ---------------*/
+/*--------------- E 로고 ---------------*/
 
 /*--------------- S fixedbtn ---------------*/
 .btn_fixed_ticket,
@@ -102,8 +92,6 @@ font-size: 32px;
     margin: 0;
 }
 /*--------------- E fixedbtn ---------------*/
-
-
 
 /*--------------- S 동영상 ---------------*/
 .btn_movie_ticket {
@@ -140,109 +128,109 @@ font-size: 32px;
 }
 /*--------------- E 동영상 ---------------*/
 
-            /*--------------- MOVIE CHART form ---------------*/
-            .movie_chart_form label i{
-                font-size: 28px;
-            }
-            .movie_chart_form input{
-                border-top: 0px;
-                border-left: 0px;
-                border-right: 0px;
-                color:#222;
+/*--------------- MOVIE CHART form ---------------*/
+.movie_chart_form label i{
+    font-size: 28px;
+}
+.movie_chart_form input{
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    color:#222;
 
-            }
-            .movie_chart_form input:hover{
-                color:#E72B20 ;
-            }
+}
+.movie_chart_form input:hover{
+    color:#E72B20 ;
+}
 
-            /*--------------- MOVIE CHART background ---------------*/
-            .movie_bg {
-            width: 100%;
-            height: 100px;
-            background: linear-gradient(#EEE0E1,#FAF2F3)
-            }
-            
-            /*--------------- BUTTON Ticketing ---------------*/
-            .btn_ticketing {
-                color: red;
-                border: 1px solid red;
-                border-radius: 22.5px;
-                width: 150px;
-                line-height: 45px;
-                text-align: center;
-                display: inline-block;
-                font-size: 18px;
-                transition: 0.3s ease-out;
-            }
-            .btn_ticketing:hover {
-                color: white;
-                background: red;
-            }
+/*--------------- MOVIE CHART background ---------------*/
+.movie_bg {
+width: 100%;
+height: 100px;
+background: linear-gradient(#EEE0E1,#FAF2F3)
+}
 
-            /*--------------- BUTTON More ---------------*/
-            .btn_more {
-                color: red;
-                border: 1px solid red;
-                border-radius: 22.5px;
-                width: 120px;
-                line-height: 36px;
-                text-align: center;
-                display: inline-block;
-                font-size: 18px;
-                transition: 0.3s ease-out;
-            }
-            .btn_more:hover {
-                color: white;
-                background: red;
-            }
+/*--------------- BUTTON Ticketing ---------------*/
+.btn_ticketing {
+    color: red;
+    border: 1px solid red;
+    border-radius: 22.5px;
+    width: 150px;
+    line-height: 45px;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    transition: 0.3s ease-out;
+}
+.btn_ticketing:hover {
+    color: white;
+    background: red;
+}
 
-            /*--------------- BUTTON Ticketing Navigation ---------------*/
-            /* BTN_NAV */
-            a[class^="btn_nav"] {
-                width: 55px;
-                border-radius: 50%;
-                height: 55px;
-                border: 1px solid #ffffff;
-                box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.25);
-                background: rgba(255, 255, 255, 0.5);
-                /* border: 1px solid black; */
-            }
-            a[class^="btn_nav"], svg, polygon {
-                transition: 0.3s ease-out;
-            }
-            /* BTN_NAV_LEFT*/
-            .btn_nav_left {
-                display: inline-block; 
-            }
-            .st_left {
-                fill: red;
-            }
-            .btn_nav_left:hover .st_left {
-                fill: white;
-            }
-            .btn_nav_left:hover {
-                background: red;
-            }
-            .svg_left {
-                width: 100%;
-                height: 100%;
-                transform: scale(0.6) translateX(-10%);
-            }
-            /* BTN_NAV_RIGHT */
-            .btn_nav_right {
-                display: inline-block; 
-            }
-            .st_right {
-                fill: red;
-            }
-            .btn_nav_right:hover .st_right {
-                fill: white;
-            }
-            .btn_nav_right:hover {
-                background: red;
-            }
-            .svg_right {
-                width: 100%;
-                height: 100%;
-                transform: scale(0.6) translateX(15%) rotate(180deg);
-            }
+/*--------------- BUTTON More ---------------*/
+.btn_more {
+    color: red;
+    border: 1px solid red;
+    border-radius: 22.5px;
+    width: 120px;
+    line-height: 36px;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    transition: 0.3s ease-out;
+}
+.btn_more:hover {
+    color: white;
+    background: red;
+}
+
+/*--------------- BUTTON Ticketing Navigation ---------------*/
+/* BTN_NAV */
+a[class^="btn_nav"] {
+    width: 55px;
+    border-radius: 50%;
+    height: 55px;
+    border: 1px solid #ffffff;
+    box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.25);
+    background: rgba(255, 255, 255, 0.5);
+    /* border: 1px solid black; */
+}
+a[class^="btn_nav"], svg, polygon {
+    transition: 0.3s ease-out;
+}
+/* BTN_NAV_LEFT*/
+.btn_nav_left {
+    display: inline-block; 
+}
+.st_left {
+    fill: red;
+}
+.btn_nav_left:hover .st_left {
+    fill: white;
+}
+.btn_nav_left:hover {
+    background: red;
+}
+.svg_left {
+    width: 100%;
+    height: 100%;
+    transform: scale(0.6) translateX(-10%);
+}
+/* BTN_NAV_RIGHT */
+.btn_nav_right {
+    display: inline-block; 
+}
+.st_right {
+    fill: red;
+}
+.btn_nav_right:hover .st_right {
+    fill: white;
+}
+.btn_nav_right:hover {
+    background: red;
+}
+.svg_right {
+    width: 100%;
+    height: 100%;
+    transform: scale(0.6) translateX(15%) rotate(180deg);
+}
