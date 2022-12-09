@@ -94,6 +94,13 @@ p{
 /*--------------- E fixedbtn ---------------*/
 
 /*--------------- S 동영상 ---------------*/
+.ex_bg {
+    width: 450px;
+    height: 50px;
+    background: #000;
+    text-align: center;
+}
+
 .btn_movie_ticket {
     display: inline-block;
     color:white;
@@ -103,6 +110,7 @@ p{
     line-height: 45px;
     font-size: 14px;
     text-align: center;
+    transition: 0.3s ease-out;
 }
 .btn_movie_ticket:hover {
     color: white;
