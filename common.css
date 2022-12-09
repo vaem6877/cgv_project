@@ -122,6 +122,7 @@ font-size: 32px;
     line-height: 45px;
     font-size: 14px;
     text-align: center;
+    transition: 0.3s ease-out;
 }
 .btn_movie_ticket:hover {
     color: white;
