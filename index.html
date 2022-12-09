@@ -4,38 +4,209 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="movie_chart.css">
+    <link rel="stylesheet" href="video.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- fonts.google -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- open sans 로더 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> 
+    <!-- 마테리얼 아이콘 로더 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- fontawesome 로더 -->
     <title>Home</title>
 </head>
 <body>
-    <div class="head_ad"></div>
-    <header class="container">
-        <div class="logo">
-            <h1></h1>
+    <!--------------- 손현진 파트 --------------->
+    <div class="head_ad">
+        <div class="head_ad_content">
+            <a href=""></a>
+            <a href="#" class="btn_ad_close"><i class="fa-solid fa-xmark"></i></a>
         </div>
-        <ul class="sns"></ul>
-        <ul class="membershipinfo"></ul>
+    </div>
+    <header>
+        <div class="header container">
+            <a href="/" class="logo">
+                <h1>cgv</h1>
+                <span>cultureplex</span>                
+            </a>
+            <ul class="sns cf">
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-youtube"></i></li>
+                <li><i class="fa-brands fa-square-facebook"></i></li>
+            </ul>
+            <ul class="memberinfo cf">
+                <li>
+                    <i class="fa-solid fa-globe"></i>
+                    <h5>eng</h5>
+                </li>
+                <li>
+                    <i class="fa-solid fa-user-lock"></i>
+                    <h5>log in</h5>
+                </li>
+                <li>
+                    <i class="fa-solid fa-user-plus"></i>
+                    <h5>sign up</h5>
+                </li>
+            </ul>
+        </div>
+            <nav>
+                <ul class="nav_menu container">
+                    <li class="">
+                        <h3>영화</h3>
+                        <dl>
+                            <dt>영화</dt>
+                            <dd>무비차트</dd>
+                            <dd>아트하우스</dd>
+                            <dd>icecon</dd>
+                        </dl>
+                    </li> 
+                    <li class="">
+                        <h3>극장</h3>
+                        <dl>
+                            <dt>극장</dt>
+                            <dd>cgv 극장</dd>
+                            <dd>특별관</dd>
+                        </dl>
+                    </li>
+                    <li class="">
+                        <h3>예매</h3>
+                        <dl>
+                            <dt>예매</dt>
+                            <dd>빠른 예매</dd>
+                            <dd>상영스케줄</dd>
+                        </dl>
+                    </li>
+                    <li class="">
+                        <h3>스토어</h3>
+                        <dl>
+                            <dt>스토어</dt>
+                            <dd>영화관람권</dd>
+                            <dd>기프트카드</dd>
+                            <dd>음료/스낵</dd>
+                            <dd>플레이존</dd>
+                            <dd><a href="">씨네샵></a></dd>
+                        </dl>
+                    </li>
+                    <li class="">
+                        <h3>즐거운 cgv</h3>
+                        <dl>
+                            <dt>즐거운cgv</dt>
+                            <dd>my cgv</dd>
+                            <dd>cgv 이벤트</dd>
+                            <dd>극장별 이벤트</dd>
+                            <dd>멤버십/club</dd>
+                            <dd>cgv 할인정보</dd>
+                            <dd>vip 라운지</dd>
+                        </dl>
+                    </li>
+                    <li class="">
+                        <h3>고객지원</h3>
+                        <dl>
+                            <dt>고객지원</dt>
+                            <dd>공지/뉴스</dd>
+                            <dd>자주찾는질문</dd>
+                            <dd>1:1문의</dd>
+                            <dd>단체/대관문의</dd>
+                        </dl>
+                    </li>
+                </ul>
+            </nav>
     </header>
-    <nav>
-        <ul class="nav_menu">
-            <li class="">영화</li> 
-            <li class="">극장</li>
-            <li class="">예매</li>
-            <li class="">스토어</li>
-            <li class="">즐거운 CGV</li>
-            <li class="">고객지원</li>
-        </ul>
-    </nav>
-    <div id="btn_fixed"></div>
+    <div id="btn_fixed">
+        <a href="#" class="btn_fixed_ticket">
+            <img src="img/btn_fixed_ticket-01.png" alt="예매하기">
+            <h3>예매하기</h3>
+        </a>
+        <a href="#" class="btn_fixed_top">
+            <img src="img/btn_fixed_top-01.png" alt="top">
+            <h3><i class="fa-solid fa-arrow-up"></i></h3>
+        </a>
+    </div>
+        <!--------------- 손현진 파트 --------------->
     <main>
+        <!--------------- 홍효헌 파트 --------------->
         <div class="movie_chart">
             <div class="movie_chart_wrap container">
-                <div class="chart_header"></div>
-                <div class="chart_section"></div>
-                <div class="chart_section show"></div>
+                <div class="chart_header">
+                    <h2 class="chart"> 무비차트 </h2>
+                    <h2 class="showing"> 상영예정작 </h2>
+                    <button class="btn_more"> 전체보기 </button>
+                    <form action="" method="get" class="movie_chart_form">
+                        <input type="text">
+                        <label for=""> <i class="fa-solid fa-magnifying-glass"> </i> </label>
+                    </form>
+                </div>
+
+                <di v class="chart_section">
+                    <ul class="movie_chart_poster">
+                        <!-- poster 총 19개 -->
+                        <li> 
+                            <img src="" alt="">
+                            <h3> 올빼미 </h3>
+                            <a class="btn_ticketing"> 예매하기 </a>
+                            <span> 예매율 25% </span>
+                        </li>
+
+                        <li> 
+                            <img src="" alt="">
+                            <h3> 압꾸정 </h3>
+                            <a class="btn_ticketing"> 예매하기 </a>
+                            <span> 예매율 25% </span>
+                        </li>
+
+                        <li> 
+                            <img src="" alt="">
+                            <h3> 엔시티 드림 더 무비 </h3>
+                            <a class="btn_ticketing"> 예매하기 </a>
+                            <span> 예매율 25% </span>
+                        </li>
+
+                        <li> 
+                            <img src="" alt="">
+                            <h3> 탄생 </h3>
+                            <a class="btn_ticketing"> 예매하기 </a>
+                            <span> 예매율 25% </span>
+                        </li>
+
+                        <li> 
+                            <img src="" alt="">
+                            <h3> 그래비티 </h3>
+                            <a class="btn_ticketing"> 예매하기 </a>
+                            <span> 예매율 25% </span>
+                        </li>
+
+                        <li> 
+                            <img src="" alt="">
+                            <h3> 매드맥스 </h3>
+                            <a class="btn_ticketing"> 예매하기 </a>
+                            <span> 예매율 25% </span>
+                        </li>
+                    </ul>
+
+                    <p class="chart_controls">
+                        <i></i>
+                        <i></i>
+                    </p>
+                </di>
+
+                <!-- 상영 예정작 클릭하면 무비 차트에서 상영 예정작으로 바뀌는는거(cgv 홈페이지 참고) -->
+                <div class="chart_section show">
+
+                </div>
+
+
+                <!-- 스크롤 화살표 -->
+                <i class="movie_chart_arrow"> </i>
             </div>
         </div>
+        <!--------------- 홍효헌 파트 --------------->
+        <!--------------- 박민지 파트 --------------->
         <div class="video">
-            <div class="video_bg"></div>
             <div class="video_wrap container"></div>
         </div>
         <div class="service container"></div>
@@ -43,18 +214,71 @@
             <div class="personal_bg"></div>
             <div class="personal_wrap container"></div>
         </div>
+        <!--------------- 박민지 파트 --------------->
+        <!--------------- 윤상혁 파트 --------------->
         <div class="theater_bg">
             <div class="theater container">
+                <div class="theater_header">
+                    <h2>특별관</h2>
+                    <a class="btn_more">전체보기 +</a>
+                </div>
                 <ul class="best">
-                    <li></li>
-                    <li></li>    
-                    <li></li>
-                    <li></li>
+                    <li>
+                        <div class="theater_suite">
+                            <h3>suite cinema</h3>
+                            <h4>호텔컨셉의 프리미엄관</h4>                        
+                        </div>
+                        <div class="theater_suite dim">
+                            <h3>The Moment of Exclusivity</h3>
+                            <h4>집보다 더 프라이빗하게
+                                호텔보다 더 프리미엄하게
+                                우리만의 Sweet Time, Suite Cinema</h4>                        
+                        </div>
+                    </li>
+                    <li>
+                        <div class="theater_living">
+                            <h3>cine & livingroom</h3>
+                            <h4>신개념 소셜 상영관</h4>
+                        </div>
+                        <div class="theater_living dim">
+                            <h3>cine & livingroom</h3>
+                            <p>내 집 같이 편안하고 세련된 거실의 무드와 감성을 담은 
+                                신개념 소셜 상영관입니다.</p>
+                        </div>
+                    </li>    
+                    <li>
+                        <div class="theater_4dx">
+                            <h3>4dx</h3>
+                            <h4>모션시트 | 오감체험</h4>
+                        </div>
+                        <div class="theater_4dx dim">
+                            <h3>Absolute Cinema Experience</h3>
+                            <p>움직이는 모션시트와 다양한 환경 효과를 
+                                느낄 수 있는 오감 체험 특별 상영관입니다.</p>
+                        </div> 
+                    </li>
+                    <li>
+                        <div class="theater_chef">
+                            <h3>CINE de CHEF</h3>
+                            <h4>쉐프가 있는 영화관</h4>
+                        </div>
+                        <div class="theater_chef dim">
+                            <h3>For Your Very Special Moment</h3>
+                            <p>최고의 쉐프들이 준비하는 만찬과 함께 
+                                영화의 즐거움을 나누세요.</p>
+                        </div>
+                    </li>
                 </ul>
                 <ul class="theme">
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>
+                        <p>#technology</p>
+                    </li>
+                    <li>
+                        <p>#prestige</p>
+                    </li>
+                    <li>
+                        <p>#concept</p>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -63,23 +287,60 @@
         <div class="foot_ad"></div>
         <div class="polish container">
             <ul class="polish_menu">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>회사소개</li>
+                <li>IR</li>
+                <li>채용정보 </li>
+                <li>광고/제휴/출점문의</li>
+                <li>이용약관</li>
+                <li>편성기준</li>
+                <li>개인정보처리방침</li>
+                <li>법적고지</li>
+                <li>이메일주소무단수집거부</li>
+                <li>윤리경영</li>
+                <li>사이버감사실</li>
             </ul>
         </div>
         <div class="info container">
             <div class="logo"></div>
-            <div class="info_content"></div>
-            <div class="form_branch"></div>
+            <ul class="info_content">
+                <li>(04377)서울특별시 용산구 한강대로 23길 55, 아이파크몰 6층(한강로동)</li>
+                <li>대표이사 : 허민회</li>
+                <li>사업자등록번호:104-81-45690</li>
+                <li>통신판매업신고번호 : 2017-서울용산-0662 사업자정보확인</li>
+                <li>호스팅사업자 : CJ올리브네트웍스</li>
+                <li>개인정보보호 책임자 : 심준범</li>
+                <li>대표이메일 : cjcgvmaster@cj.net</li>
+                <li>© CJ CGV. All Rights Reserved</li>
+                
+            </ul>
+            <div class="form_branch">
+                <form action="">
+                    
+                    <select id="">
+                        <option value="">계열사 바로가기</option>
+                        <optgroup>CJ그룹</optgroup>
+                            <option value="">CJ주식회사</option>
+                        <optgroup>식품 & 식품서비스</optgroup>
+                            <option value="">CJ제일제당</option>
+                            <option value="">CJ푸드빌</option>
+                            <option value="">CJ프레시웨이</option>
+                        <optgroup>생명공학</optgroup>
+                            <option value="">제일제당 BIO사업부문</option>
+                            <option value="">CJ Feed&Card</option>
+                        <optgroup>물류 신유통</optgroup>
+                            <option value="">CJ대한통운</option>
+                            <option value="">CJ대한통운 건설부문</option>
+                            <option value="">CJ올리브영</option>
+                            <option value="">CJ올리브네트웍스</option>
+                            <option value="">CJ ENM 커머스부문</option>
+                        <optgroup>엔터테인먼트 & 미디어</optgroup>
+                            <option value="">CJ ENM 엔터테인먼트 부문</option>
+                            <option value="">CJ CGV</option>
+                    </select> 
+                    <label for=""></label>
+                    <input type="submit" value="GO">
+                </form>
+            </div>
         </div>
     </footer>
 
