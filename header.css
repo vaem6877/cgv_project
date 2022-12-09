@@ -1,11 +1,87 @@
-.sns{
+.sns,
+.memberinfo{
     margin-top: 40px;
 }
-.sns > i{
+.sns li > i,
+.memberinfo li > i{
 color:#222;
 font-size: 32px;
 }
-.sns > i:hover{
+.sns li > i:hover,
+.memberinfo li > i:hover{
     color:#E72B20 ;
 }
-/*--------------- E 아이콘 ---------------*/
+
+/*--------------- menu ---------------*/
+nav{
+    width: 100%;
+    height: 72px;
+    background: blue;
+
+}
+.nav_menu{
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav_menu li{
+    line-height: 72px;
+}
+.nav_menu dl{
+    line-height: 34px;
+}
+.nav_menu dt{
+    display: none;
+}
+nav:after{
+    content: '';
+    display: block;
+}
+
+/*--------------- menu ---------------*/
+header{
+    width: 100%;
+    height: 112px;
+    margin: 28px 0;
+}
+.header{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+header .logo{
+    order: 2;
+}
+
+.cf:after{content:''; clear:both; display:block; }
+
+.sns{
+    order: 1;
+}
+.sns li{
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.memberinfo{
+    order: 3;
+    text-align: center;
+}
+.memberinfo li{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+/*--------------- header ---------------*/
+.head_ad{
+    width: 100%;
+    height: 84px;
+    background: #ccc;
+}
+.head_ad_content{
+    width: 1140px;
+    position: relative;
+}
+.head_ad_content .btn_ad_close{
+    position: absolute;
+    top: 10px; right: 10px;
+}
