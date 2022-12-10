@@ -49,5 +49,6 @@ img{
     vertical-align: top;
 }
 .cf{
+	content: '';
     clear: both;
 }

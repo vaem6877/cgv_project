@@ -21,6 +21,8 @@
     display: inline-block;
 }
 
+/* --------------- 이벤트, 할인정보 --------------- */
+
 .service {
     height: 560px;
     box-sizing: border-box;
@@ -42,31 +44,42 @@
 .service_contents > div:first-child {
     position: relative;
 }
-.service_contents > div:first-child>a{
+.service_contents > div:first-child > a{
     position: absolute;
     top: 0;
     right: 0;
-    
 }
 .service_contents img{
     width: 260px;
     height: 260px;
-    margin-bottom: 32px;
+    margin-bottom: 20px;
 }
 .service_contents > ul li:first-child{
     margin-right: 24px;
 }
 ul[class^="svc"]{
-    height: 336px;
+    height: 346px;
 }
 .service_event, .service_discount{
     width: 260px;
 }
 ul[class^="svc"] li{
     float: left;
+    text-align: center;
+}
+ul[class^="svc"] li::before{
+    content: '';
+    clear: both;
+}
+.svc_txt_wrap{
+    height: 56px;
+}
+.service_contents li[class^="service"] p:last-child{
+    font-size: 14px;
+    margin-top: 12px;
 }
 
-
+/* --------------- 개인서비스 --------------- */
 
 .personal{
     width: 100%;
