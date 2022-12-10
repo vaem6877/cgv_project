@@ -1,274 +1,67 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <!-- open sans 로더 -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> 
-    <!-- 마테리얼 아이콘 로더 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/all.min.css">
-    <!-- fontawesome 로더 -->
-    <title>common HTML</title>
-    <style>
-        
-        /*--------------- S 폰트 ---------------*/
-        * {
-            font-family: 'Open Sans', sans-serif;
-            color:#222222;
-            font-weight: regular;
-        }
-        h2, .maintitle {
-            font-size: 28px;
-        }
-        h3{
-            font-size: 24px;
-        }
-        h4{
-            font-size: 24px;
-        }
-        p{
-            font-size: 18px;
-        }
-
-        /*--------------- E 폰트 ---------------*/
-        
-        /*--------------- S 컬러박스 ---------------*/
-        .color{
-            width:100px;
-            line-height: 60px;
-            border: #000000 solid 1px;
-            text-align: center;
-        }
-       .red{
-        background:#E72B20 ;
-       } 
-       .yellow{
-        background: #FFA443;
-       }
-       .white{
-          background: #FFFFFF;  
-       }
-       .dark{
-        background: #222222;
-        color:#FFFFFF;
-       }
-       .gray{
-        background: #666666;
-       }
-       .gradient{
-        background: linear-gradient(to right, #D74357, #F14F3A,#EF642F);
-        font-size: 6px;
-       }
-        /*--------------- E 컬러박스 ---------------*/
-        
-        /*--------------- S 아이콘 ---------------*/
-        .sns{
-            margin-top: 40px;
-        }
-        .sns > i{
-        color:#222;
-        font-size: 32px;
-       }
-       .sns > i:hover{
-        color:#E72B20 ;
-       }
-
-
-        /*--------------- E 아이콘 ---------------*/
-
-        /*--------------- S 무비차트 ---------------*/
-        .movie_chart_form label i{
-            font-size: 28px;
-        }
-        .movie_chart_form input{
-            border-top: 0px;
-            border-left: 0px;
-            border-right: 0px;
-            color:#222;
-
-        }
-        .movie_chart_form input:hover{
-            color:#E72B20 ;
-        }
-        .movie_bg {
-        width: 100%;
-        height: 100px;
-        background: linear-gradient(#EEE0E1,#FAF2F3)
-       }
-        /*--------------- E 무비차트 ---------------*/
-
-        /*--------------- S 동영상 ---------------*/
-        .ex_bg {
-        width: 450px;height: 50px;
-        background: #000;
-        text-align: center;
-       }
-       .btn_movie_ticket {
-           display: inline-block;
-            color:white;
-            border: 1px solid white;
-            border-radius: 22.5px;
-            width: 120px;
-            line-height: 45px;
-            font-size: 14px;
-            text-align: center;
-            box-sizing: border-box;
-        }
-        .btn_movie_ticket:hover {
-            color: white;
-            background: red;
-            border: none;
-        }
-
-        .btn_movie {
-        display: inline-block;
-        width: 50px; height: 50px;
-        border-radius: 50%;
-        background: transparent;
-        border: 2px solid white;
-        position: relative;
-        box-sizing: border-box;
-    }
-        .btn_movie > i {
-        font-size:28px;
-        color: white;
-        position: absolute;
-        top:50%; left: 50%;
-        transform: translate(-50%,-50%);
-       }
-        /*--------------- E 동영상 ---------------*/
-        
-        /*--------------- S fixedbtn ---------------*/
-                .btn_fixed_ticket,
-        .btn_fixed_top{
-            display: inline-block;
-            position: relative;
-        }
-        .btn_fixed_ticket{
-            width: 170px; height: 170px;
-        }
-        .btn_fixed_top{
-            width: 75px; height: 75px;
-        }
-
-        #btn_fixed h3{
-            /* display: inline-block; */
-            position: absolute;
-            text-decoration: none;
-            text-align: center;
-        }
-        .btn_fixed_ticket > h3{
-            left: 25%; top: 10%;
-        }
-        .btn_fixed_top > h3{
-            left: 30%; bottom: 25%;
-            margin: 0;
-        }
-        /*--------------- E fixedbtn ---------------*/
-        
-        
-        /* Ticketing */
-        .btn_ticketing {
-            color: red;
-            border: 1px solid red;
-            border-radius: 22.5px;
-            width: 150px;
-            line-height: 45px;
-            text-align: center;
-            display: inline-block;
-        }
-        .btn_ticketing:hover {
-            color: white;
-            background: red;
-        }
-
-        /* More */
-        .btn_more {
-            color: red;
-            border: 1px solid red;
-            border-radius: 22.5px;
-            width: 120px;
-            line-height: 36px;
-            text-align: center;
-            display: inline-block;
-        }
-        .btn_more:hover {
-            color: white;
-            background: red;
-        }
-
-        /* Ticketing Navigation */
-        .btn_nav_left {
-            display: inline-block;
-        }
-        .btn_nav_right {
-            
-        }
-        
-    </style>
-</head>
-<body>
-    <h2>Main Title 28px Open Sans KR</h2>
-    <h3>Sub Title 24px Open Sans KR</h3>
-    <h4>Menu Text 24px Open Sans KR</h4>
-    <p>Content Text 18px Open Sans KR</p>
-    <div class="color red">#E72B20</div>
-    <div class="color yellow">#FFA443</div>
-    <div class="color white">#FFFFFF</div>
-    <div class="color dark">#222222</div>
-    <div class="color gray">#666666</div>
-    <div class="color gradient">#D74357, #F14F3A, #EF642F</div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="common.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <!-- fonts.google -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <!-- open sans 로더 -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> 
+        <!-- 마테리얼 아이콘 로더 -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <!-- fontawesome 로더 -->
+        <title>common HTML</title>
+    </head>
+    <body>
+        <h1 class="logo">cgv</h1>
+        <h2>Main Title 28px Open Sans KR</h2>
+        <h3>Sub Title 24px Open Sans KR</h3>
+        <h4>Menu Text 24px Open Sans KR</h4>
+        <p>Content Text 18px Open Sans KR</p>
+        <div class="color red">#E72B20</div>
+        <div class="color yellow">#FFA443</div>
+        <div class="color white">#FFFFFF</div>
+        <div class="color dark">#222222</div>
+        <div class="color gray">#666666</div>
+        <div class="color gradient">#D74357, #F14F3A, #EF642F</div>
     
- 
-    <div class="sns">
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-youtube"></i>
-        <i class="fa-brands fa-square-facebook"></i>
-    </div>
-        <form action="" method="get" class="movie_chart_form">
-            <input type="text">
-            <label for=""><i class="fa-solid fa-magnifying-glass"></i></label>
-        </form>
-    </div>
-    <!--------------- S 무비차트 --------------->
-    <div class="movie_bg"></div>
+        <div class="sns">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-square-facebook"></i>
+        </body>
 
-    <!--------------- S 동영상 --------------->
+        <!--------------- S 동영상 --------------->
 
-    <div class="ex_bg">
-        <a class="btn_movie_ticket active"> 예매하기 </a>
-        <a href="#" class="btn_movie"><i class="fa-solid fa-pause"></i></a>
-        <a href="#" class="btn_movie"><i class="fa-solid fa-volume-xmark"></i></a>
-        <a href="#" class="btn_movie"><i class="fa-solid fa-play"></i></a>
-        <a href="#" class="btn_movie"><i class="fa-solid fa-volume-high"></i></a>
-    </div>
-    
-        <!--------------- S  --------------->
-    <div id="btn_fixed">
-        <a href="#" class="btn_fixed_ticket">
-            <img src="img/btn_fixed_ticket-01.png" alt="예매하기">
-            <h3>예매하기</h3>
-        </a>
-        <a href="#" class="btn_fixed_top">
-            <img src="img/btn_fixed_top-01.png" alt="top">
-            <h3><i class="fa-solid fa-arrow-up"></i></h3>
-        </a>
-    </div>
-    
-    <!-- Ticketing -->
-    <a class="btn_ticketing active"> 예매하기 </a>
+        <div class="ex_bg">
+            <a class="btn_movie_ticket active"> 예매하기 </a>
+            <a href="#" class="btn_movie"><i class="fa-solid fa-pause"></i></a>
+            <a href="#" class="btn_movie"><i class="fa-solid fa-volume-xmark"></i></a>
+            <a href="#" class="btn_movie"><i class="fa-solid fa-play"></i></a>
+            <a href="#" class="btn_movie"><i class="fa-solid fa-volume-high"></i></a>
+        </div>
         
-    <!-- More --> 
-    <a class="btn_more"> 전체보기 + </a>
+            <!--------------- S  --------------->
+        <div id="btn_fixed">
+            <a href="#" class="btn_fixed_ticket">
+                <img src="img/btn_fixed_ticket-01.png" alt="예매하기">
+                <h3>예매하기</h3>
+            </a>
+            <a href="#" class="btn_fixed_top">
+                <img src="img/btn_fixed_top-01.png" alt="top">
+                <h3><i class="fa-solid fa-arrow-up"></i></h3>
+            </a>
+        </div>
 
-    <!-- Ticketing Navigation  -->
-    <a class="btn_nav_left"> <i class="fa-sharp fa-solid fa-triangle"></i> </div> </a>
- 
-    <a class="btn_nav_right"> <i class="fa-sharp fa-solid fa-triangle"></i> </a>
-</body>
+        <!-- BUTTON More --> 
+        <a class="btn_more">전체보기 +</a>
+
+    </body>
 </html>
+
+<!--  -->
