@@ -95,8 +95,6 @@ video{
 
 
 
-
-
 /* --------------- 이벤트, 할인정보 --------------- */
 
 .service {
@@ -111,8 +109,9 @@ video{
     height: 392px;
 }
 .service_contents:first-of-type{
-    margin-right: 30px;
+    margin-right: 46px;
 }
+/* float left 로 정렬,, 54px로 수정해야함 */
 .service_contents > div:first-child *{
     display: inline-block;
     margin-bottom: 18px;
@@ -137,11 +136,11 @@ ul[class^="svc"]{
     height: 346px;
 }
 .service_event, .service_discount{
+    float: left;
     width: 260px;
 }
 ul[class^="svc"] li{
     height: 100%;
-    float: left;
     text-align: center;
 }
 ul[class^="svc"] li::before{
