@@ -4,7 +4,13 @@
     margin:0 auto;
 }
 /*--------------- E 컨테이너 ---------------*/
-
+/*--------------- S float cf ---------------*/
+.cf{
+    content: '';
+    clear:both;
+    display: block;
+}
+/*--------------- E float cf ---------------*/
 /*--------------- S 폰트 ---------------*/
 * {
     font-family: 'Open Sans', sans-serif;
