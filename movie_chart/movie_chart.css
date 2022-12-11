@@ -53,6 +53,7 @@
 
 .chart_form label i{
     font-size: 28px;
+    color: #666666;
 }
 .chart_form input{
     border-top: 0px;
@@ -265,6 +266,9 @@ a[class^="btn_nav"], svg, polygon {
     font-size: 32px; 
     left: calc(50% - 14px);
     bottom: -57px;
+}
+.chart_arrow i {
+    color: #666666;
 }
 
 /* 28*32 */
