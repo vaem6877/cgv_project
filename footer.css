@@ -1,16 +1,35 @@
+/*--------------- S theater ---------------*/
 .theater_bg{
     background: linear-gradient(to right, #000 10%, rgba(0,0,0,0) 20% 80%, #000 90%), url("img/theater/special_BG.png") no-repeat center;
-
 }
 .theater{
-    /*padding: 135px auto auto;*/
+    padding-top: 135px;
+    padding-bottom: 135px;
+}
+.theater_header{
+    margin-bottom: 0.3em;
+    line-height: 3rem;
+}
+.theater_header:after{
+    content: '';
+    clear:both;
+    display: block;
+}
+.theater_header h2{
+    float: left;
+}
+.theater_header a{
+    float: right;
 }
 .theater h2{
     color:#fff;
 }
-.theater.container{
-    margin:0 auto;
+.theater h3{
+    color:#fff;
+    margin-top: 50px;
+    margin-bottom: 0.3em;
 }
+
 .best li{
     float:left;
 }
@@ -66,3 +85,58 @@
 .toptheater.dim{
     display: none;
 }
+.theme:after{
+    content: '';
+    clear:both;
+    display: block;
+}
+.theme li{
+    float: left;
+    width: 363px;
+    height: 84px;
+    border-radius: 8px;
+    margin-right: 23px;
+    position: relative;
+}
+.theme li p{
+    color:#fff;
+    position: absolute;
+    right:10px;
+    bottom:10px;
+}
+.theme li:nth-child(1){
+    background:linear-gradient(to bottom, rgba(0,0,0,.5)0%, rgba(0,0,0,.5) 100%) ,url("img/theater/theme_tech.png") 100%/cover;    
+}
+.theme li:nth-child(2){
+    background:linear-gradient(to bottom, rgba(0,0,0,.5)0%, rgba(0,0,0,.5) 100%) ,url("img/theater/theme_prestige.png") 100%/cover;    
+}
+.theme li:nth-child(3){
+    background:linear-gradient(to bottom, rgba(0,0,0,.5)0%, rgba(0,0,0,.5) 100%) ,url("img/theater/theme_concept.jpg") 100%/cover;
+    margin-right: 0;
+}
+/*--------------- E theater ---------------*/
+/*--------------- S footer ---------------*/
+.polish_menu{
+    display: block;
+    line-height: 50px;
+    border:1px #666;;
+    border-style: none none solid none;
+}
+.polish_menu:after{
+    content: '';
+    clear:both;
+    display: block;
+}
+.polish_menu li{
+    font-size: 14px; 
+    float:left;
+ }
+.polish_menu li:after{
+    content:"|";
+    width:1rem;
+    margin: 0 15px 0 10px;
+}
+.polish_menu li:last-child::after{
+    content:"";
+}
+
