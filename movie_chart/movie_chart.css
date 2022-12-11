@@ -1,0 +1,270 @@
+.movie_chart {
+    width: 100%;
+    height: 756px;
+    background: linear-gradient(#EEE0E1,#FAF2F3)
+}
+
+.chart_wrap {
+    height: 100%;
+    margin: 0 auto;
+    /* position: relative; */
+}
+
+/*--------------- CHART HEADER ---------------*/
+.chart_header {
+    position: relative;
+}
+
+.chart_header > h2, h3, .movie_chart_form {
+    display: inline-block;
+    font-family: 'Open Sans';
+}
+
+.chart_header h2, .btn_more, label {
+    cursor: pointer;
+}
+
+.chart_header > h2 {
+    font-size: 28px;
+    margin-right: 30px;
+}
+
+.chart_header > .chart {
+    font-weight: bold;
+}
+.chart_wrap .showing, h3, span {
+    font-weight:400;
+}
+
+.chart_header {
+    padding-top: 56px;
+}
+
+/* form */
+.chart_form {
+    display: inline;
+    float: right;
+    position: relative;
+    top: 6px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.chart_form label i{
+    font-size: 28px;
+}
+.chart_form input{
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: transparent;
+    outline: 0; 
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* MOVIE CHART form (hover 효과만 원할 경우 밑에 4줄로 구현 가능 js파일에 있는 MOVIE CHART form 필요 없음. */
+/* .chart_form:hover .input_active {
+    border-bottom: 2px solid red;
+}
+.chart_form:hover .i_active {
+    color: #E72B20;
+} */
+
+.input_active {
+    border-bottom: 2px solid red;
+}
+.i_active {
+    color: #E72B20;
+}
+
+/*--------------- CHART SECTION ---------------*/
+.chart_section {
+    position: relative;
+}
+
+.chart_poster {
+    position: absolute;
+    left: 0;
+    /* transition: left 0.3s ease-in-out; */
+}
+
+.chart_poster_wrap {
+    margin-top: 56px;
+    height: 496px;
+    position: relative;
+    overflow: hidden;
+}
+
+.chart_poster li {
+    position: absolute;
+    display: inline-block;
+}
+
+.chart_poster li img {
+    width: 258px;
+    height: 364px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.title_ticketing {
+    margin: 28px 0;
+}
+
+.chart_poster .title_ticketing{
+    width: 258px;
+    height: 104px;
+    position: relative;
+}
+
+.chart_poster h3, span, .btn_ticketing {
+    position: absolute;
+}
+
+.chart_poster h3 {
+    font-size: 24px;
+    top: 0;
+    width: 250px;
+    text-align: center;
+}
+.chart_poster span {
+    font-size: 18px;
+    bottom: 0;
+    right: 0;
+    display: inline-block;
+    line-height: 47px;
+}
+
+/* chart_poster_show */
+/* .chart_poster_show li {
+    position: absolute;
+    display: inline-block;
+}
+
+.chart_poster_show li img {
+    width: 258px;
+    height: 364px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.title_ticketing {
+    margin: 28px 0;
+}
+
+.chart_poster_show .title_ticketing{
+    width: 258px;
+    height: 104px;
+    position: relative;
+}
+
+.chart_poster_show h3, span, .btn_ticketing {
+    position: absolute;
+}
+
+.chart_poster_show h3 {
+    font-size: 24px;
+    top: 0;
+    width: 250px;
+    text-align: center;
+}
+.chart_poster_show span {
+    font-size: 18px;
+    bottom: 0;
+    right: 0;
+    display: inline-block;
+    line-height: 47px;
+} */
+
+
+/*--------------- BUTTON Ticketing ---------------*/
+.btn_ticketing {
+    color: red;
+    border: 1px solid red;
+    border-radius: 22.5px;
+    width: 150px;
+    line-height: 45px;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    transition: 0.3s ease-out;
+    box-sizing: border-box;
+    bottom: 0;
+    cursor: pointer;
+    background: white;
+}
+.btn_ticketing:hover {
+    color: white;
+    background: red;
+}
+
+/*--------------- BUTTON Ticketing Navigation ---------------*/
+/* BTN_NAV */
+a[class^="btn_nav"] {
+    width: 55px;
+    border-radius: 50%;
+    height: 55px;
+    border: 1px solid #ffffff;
+    box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.25);
+    background: rgba(255, 255, 255, 0.5);
+    /* border: 1px solid black; */
+    
+    position: absolute; 
+    top: 153px; /* 포스터 높이: 364px(절반 182), 버튼 높이 : 57(절반 28.5) */
+}
+a[class^="btn_nav"], svg, polygon {
+    transition: 0.3s ease-out;
+}
+
+/* BTN_NAV_LEFT */
+.btn_nav_left {
+    left: -30px;
+    display: none;
+    transition: all 0.3s;
+}
+.st_left {
+    fill: red;
+}
+.btn_nav_left:hover .st_left {
+    fill: white;
+}
+.btn_nav_left:hover {
+    background: red;
+}
+.svg_left {
+    width: 100%;
+    height: 100%;
+    transform: scale(0.6) translateX(-15%);
+}
+/* BTN_NAV_RIGHT */
+.btn_nav_right {
+    display: inline-block;
+    right: -30px;
+}
+.st_right {
+    fill: red;
+}
+.btn_nav_right:hover .st_right {
+    fill: white;
+}
+.btn_nav_right:hover {
+    background: red;
+}
+.svg_right {
+    width: 100%;
+    height: 100%;
+    transform: scale(0.6) translateX(15%) rotate(180deg);
+}
+
+/* 스크롤 화살표 */
+.chart_arrow {
+    position: absolute;
+    font-size: 32px; 
+    left: calc(50% - 14px);
+    bottom: -57px;
+}
+
+/* 28*32 */
