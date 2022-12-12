@@ -108,6 +108,16 @@
     margin-right: 0;
 }
 /*--------------- E theater ---------------*/
+/*--------------- S footer_ad ---------------*/
+.foot_ad_bg{
+    background: #182b6c;
+}
+.foot_ad_image{
+    background: url("http://adimg.cgv.co.kr/images/202212/heydealer/980x240.png") no-repeat center;
+    height:240px;
+}
+
+/*--------------- E footer_ad ---------------*/
 /*--------------- S footer_polish ---------------*/
 .polish_menu{
     display: block;
@@ -116,6 +126,7 @@
     border:1px #ccc;;
     border-style: none none solid none;
     box-sizing: border-box;
+    margin:0 auto;
 }
 .polish_menu li{
     font-size: 14px; 
@@ -132,16 +143,15 @@
 }
 /*--------------- E footer_polish ---------------*/
 /*--------------- S footer_info ---------------*/
-.info > div{
-float: left;}
+.info .logo{
+    float: left;
+}
 
 .info_content{
+    float: left;
     font-size: 14px;
-    width: 400px;
+    line-height: 20px;
 }
-.form_branch{
-}
-
 
 .info_content dt, 
 .info_content dd{
@@ -160,5 +170,8 @@ float: left;}
 }
 .info_content dd:last-child:after{
     content:none;
+}
+.info .form_branch{
+    float:right;
 }
 
