@@ -20,11 +20,13 @@ nav{
 
 }
 .nav_menu{
-    display: flex;
-    justify-content: space-evenly;
+    width: 1140px;
+    margin: 0 auto;
 }
 .nav_menu li{
     line-height: 72px;
+    width: 170px;
+    display: inline-block;
 }
 .nav_menu dl{
     line-height: 34px;
