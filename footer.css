@@ -65,31 +65,57 @@
     background: linear-gradient(to bottom, rgba(0,0,0,0)50%, #000 100%), url("img/theater/chef.jpg") 100%/cover ;
     background-position: center bottom 10%;
 }
-.toptheater h3,
-.toptheater p
-{
+.best_title,
+.best_desc{
     color:#fff;
     position: absolute;
 }
-.toptheater h3{
+.best_title{
     left:20px;
     font-size: 24px;
     font-weight: 800;
     bottom:calc(20px + .5em);
 }
-.suite h3,
-.living h3{
-    text-transform: uppercase;
-}
-.toptheater p{
+.best_desc{
     left:20px;
     bottom:20px;
     font-size: 16px;
 }
-.toptheater.dim{
-    display: none;
+.best_title.active,
+.best_desc.active{
+    visibility:hidden;
+
 }
 
+.suite .best_title,
+.living .best_title,
+.fdx .best_title{
+    text-transform: uppercase;
+}
+.dim{
+    visibility: hidden;
+    width: 558px;
+    height: 280px;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    text-align: center;
+    text-transform: none;
+}
+.dim_text{
+    margin-top:85px;
+}
+.dim.active{
+    visibility: visible;
+}
+.dim h3{
+    font-weight: 800;
+}
+.dim p{
+    line-height: 1.2em;
+    color:#fff;
+}
+
+/*--------------- best - theme ---------------*/
 .theme li{
     float: left;
     width: 363px;
@@ -106,7 +132,7 @@
     font-size: 24px;
 }
 .theme li:nth-child(1){
-    background:linear-gradient(to bottom, rgba(0,0,0,.5)0%, rgba(0,0,0,.5) 100%) ,url("img/theater/theme_tech.png") 100%/cover;    
+    background:linear-gradient(to bottom, rgba(0,0,0,.5)0%, rgba(0,0,0,.5) 100%) ,url("img/theater/theme_tech.png") 100%/cover;
 }
 .theme li:nth-child(2){
     background:linear-gradient(to bottom, rgba(0,0,0,.5)0%, rgba(0,0,0,.5) 100%) ,url("img/theater/theme_prestige.png") 100%/cover;    
@@ -115,6 +141,7 @@
     background:linear-gradient(to bottom, rgba(0,0,0,.5)0%, rgba(0,0,0,.5) 100%) ,url("img/theater/theme_concept.jpg") 100%/cover;
     margin-right: 0;
 }
+
 /*--------------- E theater ---------------*/
 
 /*--------------- S footer_ad ---------------*/
@@ -122,7 +149,7 @@
     background: #182b6c;
 }
 .foot_ad_image{
-    background: url("http://adimg.cgv.co.kr/images/202212/heydealer/980x240.png") no-repeat center;
+    background: url("img/theater/980x240.png") no-repeat center;
     height:240px;
 }
 
@@ -148,18 +175,25 @@
     color:#ccc;
 }
 .polish_menu li:last-child::after{
-    content:"";
+    content:none;
 }
 /*--------------- E footer_polish ---------------*/
 /*--------------- S footer_info ---------------*/
+
+.info{
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
 .info .logo{
     float: left;
+    margin-right: 2em;
 }
 
 .info_content{
     float: left;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 20px;
+    text-align: center;
 }
 
 .info_content dt, 
@@ -175,12 +209,19 @@
     content: '|';
     margin-left: .5em;
     margin-right: .5em;
-    color:#ccc
+    color:#ccc;
+}
+.info_content p{
+    font-size: 12px;
 }
 .info_content dd:last-child:after{
     content:none;
 }
+.info_content a{
+    text-decoration: underline;
+}
 .info .form_branch{
     float:right;
+
 }
 
