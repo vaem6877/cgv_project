@@ -1,0 +1,156 @@
+/*--------------- S 컨테이너 ---------------*/
+.container {
+    width: 1140px;
+}
+/*--------------- E 컨테이너 ---------------*/
+
+/*--------------- S 폰트 ---------------*/
+* {
+    font-family: 'Open Sans', sans-serif;
+    color:#222222;
+    font-weight: regular;
+}
+h2, .maintitle {
+    font-size: 28px;
+}
+h3{
+    font-size: 24px;
+}
+h4{
+    font-size: 24px;
+}
+p{
+    font-size: 18px;
+}
+
+/*--------------- E 폰트 ---------------*/
+
+/*--------------- S 컬러박스 ---------------*/
+.color{
+    width:100px;
+    line-height: 60px;
+    border: #000000 solid 1px;
+    text-align: center;
+}
+.red{
+    background:#E72B20 ;
+} 
+.yellow{
+    background: #FFA443;
+}
+.white{
+    background: #FFFFFF;  
+}
+.dark{
+    background: #222222;
+    color:#FFFFFF;
+}
+.gray{
+    background: #666666;
+}
+.gradient{
+    background: linear-gradient(to right, #D74357, #F14F3A,#EF642F);
+    font-size: 6px;
+}
+/*--------------- E 컬러박스 ---------------*/
+
+/*--------------- S 로고 ---------------*/
+.logo{
+    background: url('img/logo.svg')  ;
+    display:inline-block;
+    width:186px;
+    height: 82px;
+    text-indent:-100%;
+    overflow: hidden;
+}
+/*--------------- E 로고 ---------------*/
+
+/*--------------- S fixedbtn ---------------*/
+.btn_fixed_ticket,
+.btn_fixed_top{
+    display: inline-block;
+    position: relative;
+}
+.btn_fixed_ticket{
+    width: 170px; height: 170px;
+}
+.btn_fixed_top{
+    width: 75px; height: 75px;
+}
+
+#btn_fixed h3{
+    /* display: inline-block; */
+    position: absolute;
+    text-decoration: none;
+    text-align: center;
+}
+.btn_fixed_ticket > h3{
+    left: 25%; top: 10%;
+}
+.btn_fixed_top > h3{
+    left: 30%; bottom: 25%;
+    margin: 0;
+}
+/*--------------- E fixedbtn ---------------*/
+
+/*--------------- S 동영상 ---------------*/
+.ex_bg {
+    width: 450px;
+    height: 50px;
+    background: #000;
+    text-align: center;
+}
+
+.btn_movie_ticket {
+    display: inline-block;
+    color:white;
+    border: 1px solid white;
+    border-radius: 22.5px;
+    width: 120px;
+    line-height: 45px;
+    font-size: 14px;
+    text-align: center;
+    transition: 0.3s ease-out;
+}
+.btn_movie_ticket:hover {
+    color: white;
+    background: red;
+    border:1px solid red;
+}
+
+.btn_movie {
+    display: inline-block;
+    width: 50px; height: 50px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid white;
+    position: relative;
+    box-sizing: border-box;
+}
+.btn_movie > i {
+    font-size:28px;
+    color: white;
+    position: absolute;
+    top:50%; left: 50%;
+    transform: translate(-50%,-50%);
+}
+/*--------------- E 동영상 ---------------*/
+
+
+/*--------------- BUTTON More ---------------*/
+.btn_more {
+    color: red;
+    border: 1px solid red;
+    border-radius: 22.5px;
+    width: 120px;
+    line-height: 36px;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    transition: 0.3s ease-out;
+    background-color: white;
+}
+.btn_more:hover {
+    color: white;
+    background: red;
+}
