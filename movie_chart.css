@@ -107,10 +107,10 @@
 .chart_poster .poster_num {
     font-family: Old Standard TT;
     font-style: italic;
-    font-size: 170px;
+    font-size: 120px;
     position: absolute;
     left: 10px;
-    bottom: 181px;
+    bottom: 167px;
     color: #ffffff;
     letter-spacing: -20px;
 }
