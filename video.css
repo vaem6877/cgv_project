@@ -1,0 +1,194 @@
+
+.video{
+    position: relative;
+    width: 100%;
+    height: 720px;
+    background: black;
+}
+.video_wrap{
+    position: relative;
+    margin: 0 auto;
+    height: 100%;
+    padding: 28px 73px;
+    box-sizing: border-box;
+}
+.video_contents{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.video h2{
+    color: white;
+    margin-bottom: 34px;
+}
+#video_controls{
+    position: absolute;
+    width: 300px;
+    height: 168px;
+    box-sizing: border-box;
+    padding: 28px 20px;
+    text-align: center;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+.video_txt{
+    height: 50px;
+    position: relative;
+}
+.video_txt *{
+    position: absolute;
+}
+.video_txt a:first-child{
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.video_txt a:nth-child(2){
+    right: 68px;
+}
+.video_txt a:last-child{
+    right: 0;
+}
+
+#video_pager{
+    width: 125px;
+    height: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.video_pager_link{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid white;
+    overflow: hidden;
+    text-indent: -9999em;
+    float: left;
+    box-sizing: border-box;
+}
+
+.video_pager:after{
+    content: '';
+    clear: both;
+}
+
+.video_pager_link.active{
+    background: white;
+}
+
+.video_pager_link:not(:last-child){
+    margin-right: 15px;
+}
+
+video{
+    position: absolute;
+    top:50%; left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+/* --------------- 이벤트, 할인정보 --------------- */
+
+.service {
+    height: 560px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 84px 0;
+}
+.service_contents {
+    display: inline-block;
+    width: 544px;
+    height: 392px;
+}
+.service_contents:first-of-type{
+    margin-right: 46px;
+}
+/* float left 로 정렬,, 54px로 수정해야함 */
+.service_contents > div:first-child *{
+    display: inline-block;
+    margin-bottom: 18px;
+}
+.service_contents > div:first-child {
+    position: relative;
+}
+.service_contents > div:first-child > a{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.service_contents img{
+    width: 260px;
+    height: 260px;
+    margin-bottom: 20px;
+}
+.service_contents > ul li:first-child{
+    margin-right: 24px;
+}
+ul[class^="svc"]{
+    height: 346px;
+}
+.service_event, .service_discount{
+    float: left;
+    width: 260px;
+}
+ul[class^="svc"] li{
+    height: 100%;
+    text-align: center;
+}
+ul[class^="svc"] li::before{
+    content: '';
+    clear: both;
+}
+.svc_txt_wrap{
+    height: 64px;
+    position: relative;
+}
+/* .service_contents li[class^="service"] p:first-child{
+    position: absolute;
+    top: 0;right: 0;left: 0;
+} */
+.service_contents li[class^="service"] p:last-child{
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;right: 0;left: 0;
+}
+
+/* --------------- 개인서비스 --------------- */
+
+.personal{
+    width: 100%;
+    height: 308px;
+    background: #E72B20;
+    box-sizing: border-box;
+    padding: 56px 0;
+    text-align: center;   
+}
+.personal_wrap{
+    display: inline-block;
+}
+.personal_wrap li{
+    display: inline-block;
+    width: 150px;
+    height: 196px;
+    box-sizing: border-box;
+    padding-top: 30px;
+}
+.personal_wrap li *{
+    color: white;
+    text-transform: uppercase;
+}
+.personal_wrap li i{
+    font-size: 90px;
+    margin-bottom: 43px;
+}
+.personal_wrap li:not(:last-of-type){
+    margin-right: 75px;
+}
