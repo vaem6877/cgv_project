@@ -104,6 +104,17 @@
     display: inline-block;
 }
 
+.chart_poster .poster_num {
+    font-family: Old Standard TT;
+    font-style: italic;
+    font-size: 170px;
+    position: absolute;
+    left: 10px;
+    bottom: 181px;
+    color: #ffffff;
+    letter-spacing: -20px;
+}
+
 .chart_poster li img {
     width: 258px;
     height: 364px;
@@ -230,3 +241,10 @@ a[class^="btn_nav"], svg, polygon {
 }
 
 /* 28*32 */
+
+/* .test {
+    font-family: Old Standard TT;
+    font-style: italic;
+    font-size: 170px;
+    color: #666666;
+} */
