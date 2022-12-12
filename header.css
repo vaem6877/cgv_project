@@ -3,71 +3,75 @@
 .sns li > i,
 .memberinfo li > i{
 color:#222;
-font-size: 32px;
+font-size: 28px;
+transition: 0.5s;
 }
 .sns li > i:hover,
 .memberinfo li > i:hover{
     color:#E72B20 ;
 }
 
-/*--------------- menu ---------------*/
+/*--------------- S menu ---------------*/
 nav{
     width: 100%;
-    height: 72px;
-    background: #ccc;
+    height: 60px;
+    position: relative;
+    background: #fff; /*완성후 화이트로 변경. 현재 확인을 위해 색감 삽입*/
+    /* border-bottom: 2px solid #E72B20; */
+}
+nav:after{
+    content: '';
+    position: absolute;
+    left: 0;right: 0;top: 100%;bottom: 0;
+    border-bottom: 3px solid #E72B20;
 }
 .nav_menu{
+    width: 100%; height: 100%;
+    text-transform: uppercase;
     position: absolute;
-}
-.nav_menu ul{
-    width: 100%;
-    height: 72px;
-    background: linear-gradient(#ccc 72px, rgba(255,255,255,.5) 50px, rgba(255,255,255,.5));
+    background: linear-gradient(#fff 60px, rgba(255,255,255,.5) 60px, rgba(255,255,255,.5));
     overflow: hidden;
     transition: height 0.5s;
 }
 .nav_menu li{
-    line-height: 72px;
     width: 170px;
+    line-height: 60px;
     text-align: center;
-    display: inline-block;
     float: left;
     margin-right: 24px;
+    white-space: nowrap;
+}
+.nav_menu li h3{
+    font-size: 20px;
 }
 .nav_menu li:last-child{
     margin: 0;
 }
-.nav_menu dl{
-    line-height: 34px;
-    white-space: nowrap;
-}
 .nav_menu dt{
     display: none;
 }
-nav:after{
-    content: '';
-    display: block;
-    clear:both;
+.nav_menu dl dd{
+    line-height: 18px;
+    margin-top: 32px;
+    box-sizing: border-box;
 }
-
 /*--------------- E menu ---------------*/
 
 /*--------------- S header ---------------*/
-
 header{
     width: 100%;
-    height: 168px;
+    height: 146px;
 }
 .header{
     width: 100%;
     height: 112px;
-    margin: 28px 0;
+    margin: 16px 0;
     box-sizing: border-box;
-    position: relative
+    position: relative;
 }
 .header .logo_bg{
     display: block;
-    position: relative;
+    /* position: relative; */
     position: absolute;
     left:50%; top:50%;
     transform:translate(-50%,-50%);
@@ -76,7 +80,7 @@ header{
     background: url('img/logo.svg') top center no-repeat;
     display:inline-block;
     width:218px;
-    height: 84px;
+    height: 72px;
     text-indent:-100%;
     overflow: hidden;
 }
@@ -84,10 +88,10 @@ header{
     display: block;
     text-transform: uppercase;
     font-size: 18px;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.2em;
     line-height: 28px;
-    position: absolute;
-    top: 100%; left: 0; right: 0;
+    /* position: absolute;
+    top: 100%; left: 0; right: 0; */
     text-align: center;
 }
 
@@ -111,12 +115,15 @@ header{
     float: left;
     margin-right: 30px;
 }
+.memberinfo li h5{
+    display: none;
+}
 /*--------------- E header ---------------*/
 
 /*--------------- S head Ad ---------------*/
 .head_ad{
     width: 100%;
-    height: 84px;
+    height: 72px;
     background: black;
 }
 .head_ad_content{
@@ -128,17 +135,19 @@ header{
     background: url(img/head_ad_img.jpg) top center no-repeat;
     display:inline-block;
     width: 1140px;
-    height: 84px;
+    height: 72px;
     text-indent:-100%;
     overflow: hidden;
 }
-.head_ad_content .btn_ad_close{
+.btn_ad_close i{
     position: absolute;
     top: 10px; right: 10px;
     color: white;
+    font-size: 18px;
 }
 /*--------------- E head Ad ---------------*/
 
+/*--------------- S fixed-btn ---------------*/
 #btn_fixed{
 
     position: fixed;
@@ -152,3 +161,4 @@ header{
     visibility: visible;
     opacity: 1;
 }
+/*--------------- E fixed-btn ---------------*/
