@@ -89,6 +89,9 @@ chart.addEventListener('click', (e) => {
     chartPoster.style.left = 0 * 294 + "px";
     btnPrev.style.display = "none";
     currentIdx = 0;
+
+    chart.style.fontWeight = "bold";
+    chartShowing.style.fontWeight = "400";
 })
 
 /* 상영예정작 클릭시 */
@@ -97,6 +100,9 @@ chartShowing.addEventListener("click", (e) => {
     chartPoster.style.left = 20 * -294 + "px";
     btnPrev.style.display = "none";
     currentIdx = 10;
+    
+    chart.style.fontWeight = "400";
+    chartShowing.style.fontWeight = "bold";
 })
 
 
