@@ -1,7 +1,5 @@
-.sns,
-.memberinfo{
-    margin-top: 40px;
-}
+.cf:after{content:''; clear:both; display:block; }
+
 .sns li > i,
 .memberinfo li > i{
 color:#222;
@@ -16,12 +14,11 @@ font-size: 32px;
 nav{
     width: 100%;
     height: 72px;
-    background: blue;
+    background: #ccc;
 
 }
 .nav_menu{
-    width: 1140px;
-    margin: 0 auto;
+    position: absolute;
 }
 .nav_menu li{
     line-height: 72px;
@@ -39,41 +36,64 @@ nav:after{
     display: block;
 }
 
-/*--------------- menu ---------------*/
+/*--------------- E menu ---------------*/
+
+/*--------------- S header ---------------*/
+
 header{
+    width: 100%;
+    height: 168px;
+}
+.header{
     width: 100%;
     height: 112px;
     margin: 28px 0;
+    box-sizing: border-box;
+    position: relative
 }
-.header{
-    display: flex;
-    align-content: center;
-    justify-content: space-between;
+.header .logo_bg{
+    display: inline-block;
+    position: relative;
+    position: absolute;
+    left:50%; top:50%;
+    transform:translate(-50%,-50%)
 }
-header .logo{
-    order: 2;
+.header .logo{
+    background: url('img/logo.svg') top center no-repeat;
+    display:inline-block;
+    width:218px;
+    height: 84px;
+    text-indent:-100%;
+    overflow: hidden;
 }
-
-.cf:after{content:''; clear:both; display:block; }
+.logo_bg span{
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 0.15em;
+    position: absolute;
+    top: 100%; left: 0; right: 0;
+    text-align: center;
+}
 
 .sns{
-    order: 1;
+    float: left;
 }
 .sns li{
-    display: inline-block;
+    float: left;
     margin-left: 30px;
 }
 
 .memberinfo{
-    order: 3;
+    float: right;
     text-align: center;
 }
 .memberinfo li{
-    display: inline-block;
+    float: left;
     margin-right: 30px;
 }
+/*--------------- E header ---------------*/
 
-/*--------------- header ---------------*/
+/*--------------- S head Ad ---------------*/
 .head_ad{
     width: 100%;
     height: 84px;
@@ -87,3 +107,4 @@ header .logo{
     position: absolute;
     top: 10px; right: 10px;
 }
+/*--------------- E head Ad ---------------*/
