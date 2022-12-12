@@ -14,19 +14,19 @@
 
 .theater_header h2{
     float: left;
+    font-weight: 800;
+    color:#fff;
 }
 .theater_header a{
     float: right;
 }
-.theater h2{
-    color:#fff;
-}
 .theater h3{
     color:#fff;
-    margin-top: 50px;
-    margin-bottom: 0.3em;
+    line-height: 1.5em;
 }
-
+.best{
+    margin-bottom: 50px;
+}
 .best li{
     float:left;
 }
@@ -40,9 +40,7 @@
 .best li:nth-child(3){
     margin-right: 23px;
 }
-.best h3{
-    display: inline-block;
-}
+
 .toptheater{
     width: 558px;
     height: 280px;
@@ -67,17 +65,26 @@
     background: linear-gradient(to bottom, rgba(0,0,0,0)50%, #000 100%), url("img/theater/chef.jpg") 100%/cover ;
     background-position: center bottom 10%;
 }
-.toptheater p{
+.toptheater h3,
+.toptheater p
+{
     color:#fff;
     position: absolute;
 }
-.toptheater p:first-child{
+.toptheater h3{
     left:20px;
-    bottom:calc(20px + 1.1em);
+    font-size: 24px;
+    font-weight: 800;
+    bottom:calc(20px + .5em);
 }
-.toptheater p:last-child{
+.suite h3,
+.living h3{
+    text-transform: uppercase;
+}
+.toptheater p{
     left:20px;
     bottom:20px;
+    font-size: 16px;
 }
 .toptheater.dim{
     display: none;
@@ -96,6 +103,7 @@
     position: absolute;
     right:10px;
     bottom:10px;
+    font-size: 24px;
 }
 .theme li:nth-child(1){
     background:linear-gradient(to bottom, rgba(0,0,0,.5)0%, rgba(0,0,0,.5) 100%) ,url("img/theater/theme_tech.png") 100%/cover;    
@@ -108,6 +116,7 @@
     margin-right: 0;
 }
 /*--------------- E theater ---------------*/
+
 /*--------------- S footer_ad ---------------*/
 .foot_ad_bg{
     background: #182b6c;
