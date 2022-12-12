@@ -5,7 +5,7 @@
 }
 /*--------------- E 컨테이너 ---------------*/
 /*--------------- S float cf ---------------*/
-.cf{
+.cf:after{
     content: '';
     clear:both;
     display: block;

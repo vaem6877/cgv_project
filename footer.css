@@ -132,15 +132,19 @@
 }
 /*--------------- E footer_polish ---------------*/
 /*--------------- S footer_info ---------------*/
-.info div{
-     float: left;
-}
+.info > div{
+float: left;}
+
 .info_content{
-    text-align: center;
-    width:600px;
-    font-size: 12px;
+    font-size: 14px;
+    width: 400px;
 }
-.info_content dt, .info_content dd, address {
+.form_branch{
+}
+
+
+.info_content dt, 
+.info_content dd{
     float: left;
 }
 .info_content dt:after{
@@ -148,10 +152,13 @@
     margin-left: .3em;
     margin-right: .3em;
 }
-.info_content dd{
-    float: left;
+.info_content dd:after{
+    content: '|';
+    margin-left: .5em;
+    margin-right: .5em;
+    color:#ccc
 }
-.form_branch{
-    float:right;
+.info_content dd:last-child:after{
+    content:none;
 }
 
