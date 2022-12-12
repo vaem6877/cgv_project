@@ -29,6 +29,8 @@
 }
 .best li{
     float:left;
+    position: relative;
+
 }
 .best li:nth-child(1){
     margin-right: 23px;
@@ -48,7 +50,6 @@
     text-align: center;
     border-radius: 8px;
     color:#fff;
-    position: relative;
 }
 .toptheater.suite{
     background: linear-gradient(to bottom, rgba(0,0,0,0)50%, #000 100%), url("img/theater/suite.jpg") 100%/cover ;
@@ -93,17 +94,28 @@
     text-transform: uppercase;
 }
 .dim{
-    visibility: hidden;
-    width: 558px;
-    height: 280px;
-    background: rgba(0,0,0,.5);
+    width: 400px;
     position: absolute;
+    top:50%; left:50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    text-transform: none;
+    opacity: 0;
 }
-.dim_text{
-    margin-top:85px;
+.toptheater:hover + div{
+    opacity: 1;
 }
+.toptheater:after{
+    content: '';
+    position: absolute; 
+    left: 0;right: 0; top: 0; bottom: 0;
+    background: rgba(0,0,0,.5);
+    opacity: 0;
+    transition: 0.3s;
+}
+.toptheater:hover:after{
+    opacity: 1;
+}
+
 .dim.active{
     visibility: visible;
 }
