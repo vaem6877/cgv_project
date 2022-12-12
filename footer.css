@@ -11,11 +11,7 @@
     margin-bottom: 0.3em;
     line-height: 3rem;
 }
-/* .theater_header:after{
-    content: '';
-    clear:both;
-    display: block;
-} */
+
 .theater_header h2{
     float: left;
 }
@@ -86,11 +82,7 @@
 .toptheater.dim{
     display: none;
 }
-/* .theme:after{
-    content: '';
-    clear:both;
-    display: block;
-} */
+
 .theme li{
     float: left;
     width: 363px;
@@ -120,14 +112,11 @@
 .polish_menu{
     display: block;
     line-height: 50px;
+    height:50px;
     border:1px #ccc;;
     border-style: none none solid none;
+    box-sizing: border-box;
 }
-/* .polish_menu:after{
-    content: '';
-    clear:both;
-    display: block;
-} */
 .polish_menu li{
     font-size: 14px; 
     float:left;
@@ -143,25 +132,26 @@
 }
 /*--------------- E footer_polish ---------------*/
 /*--------------- S footer_info ---------------*/
-.info .logo{
-    float: left; 
+.info div{
+     float: left;
 }
 .info_content{
-    float: left;
     text-align: center;
     width:600px;
     font-size: 12px;
 }
-.info_content dt{
+.info_content dt, .info_content dd, address {
     float: left;
 }
 .info_content dt:after{
     content: ':';
-    float: left;
     margin-left: .3em;
     margin-right: .3em;
 }
 .info_content dd{
     float: left;
+}
+.form_branch{
+    float:right;
 }
 
