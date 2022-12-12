@@ -5,6 +5,12 @@
     height: 720px;
     background: black;
 }
+.video_wrap::before{
+    content: '';
+    position: absolute;
+    top: 0;bottom: 0;right: 0; left: 0;
+    background: linear-gradient(to right 10% #000,transparent,10% #000);
+}
 .video_wrap{
     position: relative;
     margin: 0 auto;
