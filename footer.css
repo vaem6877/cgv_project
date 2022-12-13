@@ -94,30 +94,26 @@
     text-transform: uppercase;
 }
 .dim{
-    width: 400px;
     position: absolute;
-    top:50%; left:50%;
-    transform: translate(-50%, -50%);
     text-align: center;
-    opacity: 0;
-}
-.toptheater:hover + div{
-    opacity: 1;
-}
-.toptheater:after{
-    content: '';
-    position: absolute; 
     left: 0;right: 0; top: 0; bottom: 0;
     background: rgba(0,0,0,.5);
+    line-height: 280px;
+    border-radius: 8px;
     opacity: 0;
     transition: 0.3s;
 }
-.toptheater:hover:after{
+.dim span{
+    display: block;
+    margin-top: 25%;
+    transform: translateY(-50%);
+}
+.best li:hover .dim{
     opacity: 1;
 }
-
-.dim.active{
-    visibility: visible;
+.best li:hover .best_title,
+.best li:hover .best_desc{
+    opacity: 0;
 }
 .dim h3{
     font-weight: 800;
@@ -142,18 +138,28 @@
     right:10px;
     bottom:10px;
     font-size: 24px;
+    z-index: 1;
 }
 .theme li:nth-child(1){
-    background:linear-gradient(to bottom, rgba(0,0,0,.5)0%, rgba(0,0,0,.5) 100%) ,url("img/theater/theme_tech.png") 100%/cover;
+    background:url("img/theater/theme_tech.png") 100%/cover;
 }
 .theme li:nth-child(2){
-    background:linear-gradient(to bottom, rgba(0,0,0,.5)0%, rgba(0,0,0,.5) 100%) ,url("img/theater/theme_prestige.png") 100%/cover;    
+    background:url("img/theater/theme_prestige.png") 100%/cover;    
 }
 .theme li:nth-child(3){
-    background:linear-gradient(to bottom, rgba(0,0,0,.5)0%, rgba(0,0,0,.5) 100%) ,url("img/theater/theme_concept.jpg") 100%/cover;
+    background:url("img/theater/theme_concept.jpg") 100%/cover;
     margin-right: 0;
 }
-
+.theme li:after{
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background:rgba(0,0,0,.5);
+    transition: 0.3s;
+}
+.theme li:hover:after{
+    opacity: 0;
+}
 /*--------------- E theater ---------------*/
 
 /*--------------- S footer_ad ---------------*/
