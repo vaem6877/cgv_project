@@ -1,82 +1,102 @@
-.cf:after{content:''; clear:both; display:block; }
+/*--------------- S menu ---------------*/
+nav{
+    width: 100%;
+    height: 60px;
+    position: relative;
+    background: #fff; /*완성후 화이트로 변경. 현재 확인을 위해 색감 삽입*/
+    /* border-bottom: 2px solid #E72B20; */
+}
+nav:after{
+    content: '';
+    position: absolute;
+    left: 0;right: 0;top: 100%;bottom: 0;
+    border-bottom: 3px solid #E72B20;
+}
+.nav_menu{
+    width: 100%; height: 100%;
+    text-transform: uppercase;
+    position: absolute;
+    background: linear-gradient(#fff 60px, rgba(255,255,255,.5) 60px, rgba(255,255,255,.5));
+    overflow: hidden;
+    transition: height 0.5s;
+}
+.nav_menu li{
+    width: 170px;
+    line-height: 60px;
+    text-align: center;
+    float: left;
+    margin-right: 24px;
+    white-space: nowrap;
+}
+.nav_menu li h3{
+    font-size: 20px;
+}
+.nav_menu li:last-child{
+    margin: 0;
+}
+.nav_menu dt{
+    display: none;
+}
+.nav_menu dl dd{
+    line-height: 18px;
+    margin-top: 32px;
+    box-sizing: border-box;
+}
+/*--------------- E menu ---------------*/
+
+/*--------------- S header ---------------*/
+header{
+    width: 100%;
+    height: 146px;
+}
+.header{
+    width: 100%;
+    height: 112px;
+    margin: 16px 0;
+    box-sizing: border-box;
+    position: relative;
+}
+.header .logo_bg{
+    display: block;
+    /* position: relative; */
+    position: absolute;
+    left:50%; top:50%;
+    transform:translate(-50%,-50%);
+}
+.header .logo{
+    background: url('img/logo.svg') top center no-repeat;
+    display:inline-block;
+    width:218px;
+    height: 72px;
+    text-indent:-100%;
+    overflow: hidden;
+}
+.logo_bg h2{
+    display: block;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    line-height: 28px;
+    /* position: absolute;
+    top: 100%; left: 0; right: 0; */
+    text-align: center;
+}
 
 .sns li > i,
 .memberinfo li > i{
 color:#222;
-font-size: 32px;
+font-size: 28px;
+transition: 0.5s;
 }
 .sns li > i:hover,
 .memberinfo li > i:hover{
     color:#E72B20 ;
 }
 
-/*--------------- menu ---------------*/
-nav{
-    width: 100%;
-    height: 72px;
-    background: #ccc;
-
-}
-.nav_menu{
-    position: absolute;
-}
-.nav_menu li{
-    line-height: 72px;
-    width: 170px;
-    display: inline-block;
-}
-.nav_menu dl{
-    line-height: 34px;
-}
-.nav_menu dt{
-    display: none;
-}
-nav:after{
-    content: '';
-    display: block;
-}
-
-/*--------------- E menu ---------------*/
-
-/*--------------- S header ---------------*/
-
-header{
-    width: 100%;
-    height: 168px;
-}
-.header{
-    width: 100%;
-    height: 112px;
-    margin: 28px 0;
-    box-sizing: border-box;
-    position: relative
-}
-.header .logo_bg{
-    display: inline-block;
-    position: relative;
-    position: absolute;
-    left:50%; top:50%;
-    transform:translate(-50%,-50%)
-}
-.header .logo{
-    background: url('img/logo.svg') top center no-repeat;
-    display:inline-block;
-    width:218px;
-    height: 84px;
-    text-indent:-100%;
-    overflow: hidden;
-}
-.logo_bg span{
-    text-transform: uppercase;
-    font-size: 18px;
-    letter-spacing: 0.15em;
-    position: absolute;
-    top: 100%; left: 0; right: 0;
-    text-align: center;
-}
-
 .sns{
-    float: left;
+    position: absolute;
+    top:50%; left: 30px;
+    transform:translateY(-50%)
 }
 .sns li{
     float: left;
@@ -84,27 +104,59 @@ header{
 }
 
 .memberinfo{
-    float: right;
     text-align: center;
+    position: absolute;
+    top:50%; right: 30px;
+    transform:translateY(-50%)
 }
 .memberinfo li{
     float: left;
     margin-right: 30px;
+}
+.memberinfo li h5{
+    display: none;
 }
 /*--------------- E header ---------------*/
 
 /*--------------- S head Ad ---------------*/
 .head_ad{
     width: 100%;
-    height: 84px;
-    background: #ccc;
+    height: 72px;
+    background: black;
 }
 .head_ad_content{
+    margin: 0 auto;
     width: 1140px;
     position: relative;
 }
-.head_ad_content .btn_ad_close{
+.head_ad_content .ad_poster{
+    background: url(img/head_ad_img.jpg) top center no-repeat;
+    display:inline-block;
+    width: 1140px;
+    height: 72px;
+    text-indent:-100%;
+    overflow: hidden;
+}
+.btn_ad_close i{
     position: absolute;
     top: 10px; right: 10px;
+    color: white;
+    font-size: 18px;
 }
 /*--------------- E head Ad ---------------*/
+
+/*--------------- S fixed-btn ---------------*/
+#btn_fixed{
+
+    position: fixed;
+    bottom: 100px;
+    left: calc(50% + 636px);
+    /* visibility: hidden; */
+    /* opacity: 0; */
+    /* transition: 0.5s; */
+}
+#btn_fixed.active{
+    visibility: visible;
+    opacity: 1;
+}
+/*--------------- E fixed-btn ---------------*/

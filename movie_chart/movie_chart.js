@@ -92,6 +92,8 @@ chart.addEventListener('click', (e) => {
 
     chart.style.fontWeight = "bold";
     chartShowing.style.fontWeight = "400";
+    chartShowing.style.color = "#666666";
+    chart.style.color = "#222222";
 })
 
 /* 상영예정작 클릭시 */
@@ -103,6 +105,8 @@ chartShowing.addEventListener("click", (e) => {
     
     chart.style.fontWeight = "400";
     chartShowing.style.fontWeight = "bold";
+    chart.style.color = "#666666";
+    chartShowing.style.color = "#222222";
 })
 
 
