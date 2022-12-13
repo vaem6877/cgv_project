@@ -126,11 +126,14 @@
 /*--------------- best - theme ---------------*/
 .theme li{
     float: left;
+}
+.theme a{
     width: 363px;
     height: 84px;
     border-radius: 8px;
     margin-right: 23px;
     position: relative;
+    display: block;
 }
 .theme li p{
     color:#fff;
@@ -140,24 +143,24 @@
     font-size: 24px;
     z-index: 1;
 }
-.theme li:nth-child(1){
+.theme li:nth-child(1) a{
     background:url("img/theater/theme_tech.png") 100%/cover;
 }
-.theme li:nth-child(2){
+.theme li:nth-child(2) a{
     background:url("img/theater/theme_prestige.png") 100%/cover;    
 }
-.theme li:nth-child(3){
+.theme li:nth-child(3) a{
     background:url("img/theater/theme_concept.jpg") 100%/cover;
     margin-right: 0;
 }
-.theme li:after{
+.theme a:after{
     content: '';
     position: absolute;
     top: 0; right: 0; bottom: 0; left: 0;
     background:rgba(0,0,0,.5);
     transition: 0.3s;
 }
-.theme li:hover:after{
+.theme a:hover:after{
     opacity: 0;
 }
 /*--------------- E theater ---------------*/
@@ -169,6 +172,8 @@
 .foot_ad_image{
     background: url("img/theater/980x240.png") no-repeat center;
     height:240px;
+    display: block;
+    text-indent: -100em;
 }
 
 /*--------------- E footer_ad ---------------*/
@@ -186,10 +191,13 @@
     font-size: 14px; 
     float:left;
  }
+.polish_menu li:nth-child(7) a{
+    color: #E72B20;
+ }
 .polish_menu li:after{
     content:"|";
     width:1rem;
-    margin: 0 15px 0 10px;
+    margin: 0 10px 0 10px;
     color:#ccc;
 }
 .polish_menu li:last-child::after{
@@ -242,4 +250,30 @@
     float:right;
 
 }
-
+/*--------------- S selectbox ---------------*/
+select,
+select:focus-visible{
+    float: left;
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none;
+    height: 30px;
+    border: 1px solid;
+    border-color: #FFA443 transparent #FFA443 #FFA443;
+    padding-left: .3em;
+    color: #999;
+    outline: none;
+    box-sizing: border-box;
+}
+.form_branch span{
+    float: left;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #FFA443;
+    border-color: #FFA443 #FFA443 #FFA443 transparent;
+    padding: 0;
+    line-height: 30px;
+    box-sizing: border-box;
+    color: #999;
+}
