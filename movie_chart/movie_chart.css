@@ -1,3 +1,7 @@
+main {
+    margin-top: 43px;
+}
+
 .movie_chart {
     width: 100%;
     height: 756px;
@@ -111,10 +115,10 @@
 .chart_poster .poster_num {
     font-family: Old Standard TT;
     font-style: italic;
-    font-size: 120px;
+    font-size: 90px;
     position: absolute;
     left: 10px;
-    bottom: 167px;
+    bottom: 174px;
     color: #ffffff;
     letter-spacing: -20px;
     transition: 0.2s;
@@ -140,13 +144,13 @@
     opacity: 0;
     transition: 0.2s;
 }
-.chart_poster li:hover .poster_modal {
+
+.chart_poster li .poster_wrap:hover .poster_modal {
     opacity: 1;
 } 
-.chart_poster li:hover .poster_num {
+.chart_poster li .poster_wrap:hover .poster_num {
     opacity: 0;
 }
-
 .poster_btn {
     color: rgba(255, 255, 255);
     /* border: 1px solid #ffffff; */
