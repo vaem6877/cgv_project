@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="movie_chart.css">
+    <link rel="stylesheet" href="movie_chart/movie_chart.css">
     <link rel="stylesheet" href="video.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -140,79 +140,643 @@
     <main>
         <!--------------- 홍효헌 파트 --------------->
         <div class="movie_chart">
-            <div class="movie_chart_wrap container">
+            <div class="chart_wrap container">
+                
+                <!-- CHART HEADER -->
                 <div class="chart_header">
+                    <!-- 무비차트, 상영예정작, 전체보기 -->
                     <h2 class="chart"> 무비차트 </h2>
                     <h2 class="showing"> 상영예정작 </h2>
-                    <button class="btn_more"> 전체보기 </button>
-                    <form action="" method="get" class="movie_chart_form">
-                        <input type="text">
-                        <label for=""> <i class="fa-solid fa-magnifying-glass"> </i> </label>
+                    <a class="btn_more"> 전체보기 + </a> 
+
+                    <!-- MOVIE CHART form  -->
+                    <form action="" method="get" class="chart_form">
+                        <input type="text" id="search"> <!-- class="input_active" -->
+                        <label for="search"> <i class="fa-solid fa-magnifying-glass"> </i> </label> <!-- i_active -->
                     </form>
+                </div> 
+                <!-- CHART HEADER -->
+
+                <!-- CHART SECTION -->
+                <div class="chart_section">
+                    <div class="chart_poster_wrap">
+                        <ul class="chart_poster">
+                            <!-- 무비차트 poster 총 19개 -->
+                            <li> 
+                                <div class="poster_wrap">
+                                    <span class="poster_num"> 1 </span>
+                                    <img src="movie_chart/images/movie_chart/image_slide/01 아바타-물의 길.jpg" alt="">
+                                    <div class="poster_modal">
+                                        <a href="" class="poster_btn"> 상세보기 </a>
+                                    </div>
+                                </div>
+
+                                <div class="title_ticketing">
+                                    <h3> 아바타-물의 길 </h3>
+                                    <a class="btn_ticketing"> 예매하기 </a> 
+                                    <span> 예매율 66% </span>
+                                </div>
+                            </li>
+    
+                            <li> 
+                                <div class="poster_wrap">
+                                    <span class="poster_num"> 2 </span>
+                                    <img src="movie_chart/images/movie_chart/image_slide/02 올빼미.jpg" alt="">
+                                    <div class="poster_modal">
+                                        <a href="" class="poster_btn"> 상세보기 </a>
+                                    </div>
+                                </div>
+                                <div class="title_ticketing">
+                                    <h3> 올빼미 </h3>
+                                    <a class="btn_ticketing"> 예매하기 </a>
+                                    <span> 예매율 12% </span>
+                                </div>
+                            </li>
+    
+                            <li> 
+                                <div class="poster_wrap">
+                                    <span class="poster_num"> 3 </span>
+                                    <img src="movie_chart/images/movie_chart/image_slide/03 그래비티.jpg" alt="">
+                                    <div class="poster_modal">
+                                        <a href="" class="poster_btn"> 상세보기 </a>
+                                    </div>
+                                </div>
+                                <div class="title_ticketing">
+                                    <h3> 그래비티 </h3>
+                                    <a class="btn_ticketing"> 예매하기 </a>
+                                    <span> 예매율 1.8% </span>
+                                </div>
+                            </li>
+    
+                            <li> 
+                                <div class="poster_wrap">
+                                    <span class="poster_num"> 4 </span>
+                                    <img src="movie_chart/images/movie_chart/image_slide/04 매드맥스-분노의 도로.jpg" alt="">
+                                    <div class="poster_modal">
+                                        <a href="" class="poster_btn"> 상세보기 </a>
+                                    </div>
+                                </div>
+                                <div class="title_ticketing">
+                                    <h3> 매드맥스-분노의 도로 </h3>
+                                    <a class="btn_ticketing"> 예매하기 </a>
+                                    <span> 예매율 1.2% </span>
+                                </div>
+                            </li>
+    
+                            <li> 
+                                <div class="poster_wrap">
+                                    <span class="poster_num"> 5 </span>
+                                    <img src="movie_chart/images/movie_chart/image_slide/05 프레이 포 더 데블.jpg" alt="">
+                                    <div class="poster_modal">
+                                        <a href="" class="poster_btn"> 상세보기 </a>
+                                    </div>
+                                </div>
+                                <div class="title_ticketing">
+                                    <h3> 프레이 포 더 데블 </h3>
+                                    <a class="btn_ticketing"> 예매하기 </a>
+                                    <span> 예매율 1.6% </span>
+                                </div>
+                            </li>
+    
+                            <li> 
+                                <div class="poster_wrap">
+                                    <span class="poster_num"> 6 </span>
+                                    <img src="movie_chart/images/movie_chart/image_slide/06 탄생.jpg" alt="">
+                                    <div class="poster_modal">
+                                        <a href="" class="poster_btn"> 상세보기 </a>
+                                    </div>
+                                </div>
+                                <div class="title_ticketing">
+                                    <h3> 탄생 </h3>
+                                    <a class="btn_ticketing"> 예매하기 </a>
+                                    <span> 예매율 1.9% </span>
+                                </div>
+                            </li>
+
+                            <li> 
+                                <div class="poster_wrap">
+                                    <span class="poster_num"> 7 </span>
+                                    <img src="movie_chart/images/movie_chart/image_slide/07 크리스마스 캐럴.jpg" alt="">
+                                    <div class="poster_modal">
+                                        <a href="" class="poster_btn"> 상세보기 </a>
+                                    </div>
+                                </div>
+                                <div class="title_ticketing">
+                                    <h3> 크리스마스 캐럴 </h3>
+                                    <a class="btn_ticketing"> 예매하기 </a>
+                                    <span> 예매율 1.1% </span>
+                                </div>
+                            </li>
+
+                            <li> 
+                                <div class="poster_wrap">
+                                    <span class="poster_num"> 8 </span>
+                                    <img src="movie_chart/images/movie_chart/image_slide/08 더 메뉴.jpg" alt="">
+                                    <div class="poster_modal">
+                                        <a href="" class="poster_btn"> 상세보기 </a>
+                                    </div>
+                                </div>
+                                <div class="title_ticketing">
+                                    <h3> 더 메뉴 </h3>
+                                    <a class="btn_ticketing"> 예매하기 </a>
+                                    <span>예매율 1.0% </span>
+                                </div>
+                            </li>
+
+                            <li> 
+                                <div class="poster_wrap">
+                                    <span class="poster_num"> 9 </span>
+                                    <img src="movie_chart/images/movie_chart/image_slide/09 오늘 밤, 세계에서 이 사랑이 사라진다 해도.jpg" alt="">
+                                    <div class="poster_modal">
+                                        <a href="" class="poster_btn"> 상세보기 </a>
+                                    </div>
+                                </div>
+                                <div class="title_ticketing">
+                                    <h3> 오늘 밤, 세계에서 이 사랑이 사라진다 해도 </h3>
+                                    <a class="btn_ticketing"> 예매하기 </a>
+                                    <span> 예매율 2.0% </span>
+                                </div>
+                            </li>
+
+                            <li> 
+                                <div class="poster_wrap">
+                                    <span class="poster_num"> 10 </span>
+                                    <img src="movie_chart/images/movie_chart/image_slide/10 압꾸정.jpg" alt="">
+                                    <div class="poster_modal">
+                                        <a href="" class="poster_btn"> 상세보기 </a>
+                                    </div>
+                                </div>
+                                <div class="title_ticketing">
+                                    <h3> 압꾸정 </h3>
+                                    <a class="btn_ticketing"> 예매하기 </a>
+                                    <span> 예매율 1.6% </span>
+                                </div>
+                            </li>
+
+                            <li> 
+                                <div class="poster_wrap">
+                                    <span class="poster_num"> 11 </span>
+                                    <img src="movie_chart/images/movie_chart/image_slide/11 (라이브뷰잉)Ensemble Stars!! DREAM LIVE -7th Tour Allied Worlds-.jpg" alt="">
+                                    <div class="poster_modal">
+                                        <a href="" class="poster_btn"> 상세보기 </a>
+                                    </div>
+                                </div>
+                                <div class="title_ticketing">
+                                    <h3> (라이브뷰잉)Ensemble Stars!! <!-- DREAM LIVE -7th Tour Allied Worlds --> </h3>
+                                    <a class="btn_ticketing"> 예매하기 </a>
+                                    <span> 예매율 1.1% </span>
+                                </div>
+                            </li>
+
+                            <li> 
+                                <div class="poster_wrap">
+                                    <span class="poster_num"> 12 </span>
+                                    <img src="movie_chart/images/movie_chart/image_slide/12 원피스 필름 레드.jpg" alt="">
+                                    <div class="poster_modal">
+                                        <a href="" class="poster_btn"> 상세보기 </a>
+                                    </div>
+                                </div>
+                                <div class="title_ticketing">
+                                    <h3> 원피스 필름 레드 </h3>
+                                    <a class="btn_ticketing"> 예매하기 </a>
+                                    <span> 예매율 0.9% </span>
+                                </div>
+                            </li>
+
+                            <li> 
+                                <div class="poster_wrap">
+                                    <span class="poster_num"> 13 </span>
+                                    <img src="movie_chart/images/movie_chart/image_slide/13 화이트 노이즈.jpg" alt="">
+                                    <div class="poster_modal">
+                                        <a href="" class="poster_btn"> 상세보기 </a>
+                                    </div>
+                                </div>
+                                <div class="title_ticketing">
+                                    <h3> 화이트 노이즈 </h3>
+                                    <a class="btn_ticketing"> 예매하기 </a>
+                                    <span> 예매율 0.8% </span>
+                                </div>
+                            </li>
+
+                            <li> 
+                                <div class="poster_wrap">
+                                    <span class="poster_num"> 14 </span>
+                                    <img src="movie_chart/images/movie_chart/image_slide/14 엔시티 드림 더 무비 - 인 어 드림.jpg" alt="">
+                                    <div class="poster_modal">
+                                        <a href="" class="poster_btn"> 상세보기 </a>
+                                    </div>
+                                </div>
+                                <div class="title_ticketing">
+                                    <h3> 엔시티 드림 더 무비 - 인 어 드림 </h3>
+                                    <a class="btn_ticketing"> 예매하기 </a>
+                                    <span> 예매율 0.8% </span>
+                                </div>
+                            </li>
+
+                            <li> 
+                                <div class="poster_wrap">
+                                    <span class="poster_num"> 15 </span>
+                                    <img src="movie_chart/images/movie_chart/image_slide/15 신비아파트 극장판 차원도깨비와 7개의 세계.jpg" alt="">
+                                    <div class="poster_modal">
+                                        <a href="" class="poster_btn"> 상세보기 </a>
+                                    </div>
+                                </div>
+                                <div class="title_ticketing">
+                                    <h3> 신비아파트 극장판 차원도깨비와 7개의 세계 </h3>
+                                    <a class="btn_ticketing"> 예매하기 </a>
+                                    <span> 예매율 2.2% </span>
+                                </div>
+                            </li>
+
+                            <li> 
+                                <div class="poster_wrap">
+                                    <span class="poster_num"> 16 </span>
+                                    <img src="movie_chart/images/movie_chart/image_slide/16 본즈 앤 올.jpg" alt="">
+                                    <div class="poster_modal">
+                                        <a href="" class="poster_btn"> 상세보기 </a>
+                                    </div>
+                                </div>
+                                <div class="title_ticketing">
+                                    <h3> 본즈 앤 올 </h3>
+                                    <a class="btn_ticketing"> 예매하기 </a>
+                                    <span> 예매율 0.5% </span>
+                                </div>
+                            </li>
+
+                            <li> 
+                                <div class="poster_wrap">
+                                    <span class="poster_num"> 17 </span>
+                                    <img src="movie_chart/images/movie_chart/image_slide/17 너와 사랑한 시간.jpg" alt="">
+                                    <div class="poster_modal">
+                                        <a href="" class="poster_btn"> 상세보기 </a>
+                                    </div>
+                                </div>
+                                <div class="title_ticketing">
+                                    <h3> 너와 사랑한 시간 </h3>
+                                    <a class="btn_ticketing"> 예매하기 </a>
+                                    <span> 예매율 0.2% </span>
+                                </div>
+                            </li>
+
+                            <li> 
+                                <div class="poster_wrap">
+                                    <span class="poster_num"> 18 </span>
+                                    <img src="movie_chart/images/movie_chart/image_slide/18 영웅.jpg" alt="">
+                                    <div class="poster_modal">
+                                        <a href="" class="poster_btn"> 상세보기 </a>
+                                    </div>
+                                </div>
+                                <div class="title_ticketing">
+                                    <h3> 영웅 </h3>
+                                    <a class="btn_ticketing"> 예매하기 </a>
+                                    <span> 예매율 0.7% </span>
+                                </div>
+                            </li>
+
+                            <li> 
+                                <div class="poster_wrap">
+                                    <span class="poster_num"> 19 </span>
+                                    <img src="movie_chart/images/movie_chart/image_slide/19 블랙 팬서-와칸다 포에버.jpg" alt="">
+                                    <div class="poster_modal">
+                                        <a href="" class="poster_btn"> 상세보기 </a>
+                                    </div>
+                                </div>
+                                <div class="title_ticketing">
+                                    <h3> 블랙 팬서-와칸다 포에버 </h3>
+                                    <a class="btn_ticketing"> 예매하기 </a>
+                                    <span> 예매율 0.2% </span>
+                                </div>
+                            </li>
+
+                            <!-- 칸수 채우기용 -->
+                            <li> </li>
+
+                            <!-- 상영예정작 poster 총 20개 -->
+                            <li> 
+                                <div class="poster_wrap">
+                                    <span class="poster_num"> 1 </span>
+                                    <img src="movie_chart/images/movie_chart/image_slide show/01 제이오원 더 무비.jpg" alt="">
+                                    <div class="poster_modal">
+                                        <a href="" class="poster_btn"> 상세보기 </a>
+                                    </div>
+                                </div>
+                                <div class="title_ticketing">
+                                    <h3> 제이오원 더 무비 </h3>
+                                    <a class="btn_ticketing"> 예매하기 </a> 
+                                    <span> 예매율 0.0% </span>
+                                </div>
+                            </li>
+    
+                            <li> 
+                                <div class="poster_wrap">
+                                    <span class="poster_num"> 2 </span>
+                                    <img src="movie_chart/images/movie_chart/image_slide show/02 [사이다경제] 빅데이터로 바라본 2023년 부동산.jpg" alt="">
+                                    <div class="poster_modal">
+                                        <a href="" class="poster_btn"> 상세보기 </a>
+                                    </div>
+                                </div>
+                                <div class="title_ticketing">
+                                    <h3> [사이다경제] 빅데이터로 바라본 2023년 ... <!-- 부동산 --> </h3>
+                                    <a class="btn_ticketing"> 예매하기 </a>
+                                    <span> 예매율 0.0% </span>
+                                </div>
+                            </li>
+    
+                            <li> 
+                                <div class="poster_wrap">
+                                    <span class="poster_num"> 3 </span>
+                                    <img src="movie_chart/images/movie_chart/image_slide show/03 아바타-물의 길.jpg" alt="">
+                                    <div class="poster_modal">
+                                        <a href="" class="poster_btn"> 상세보기 </a>
+                                    </div>
+                                </div>
+                                <div class="title_ticketing">
+                                    <h3> 아바타-물의 길 </h3>
+                                    <a class="btn_ticketing"> 예매하기 </a>
+                                    <span> 예매율 73% </span>
+                                </div>
+                            </li>
+    
+                            <li> 
+                                <div class="poster_wrap">
+                                    <span class="poster_num"> 4 </span>
+                                    <img src="movie_chart/images/movie_chart/image_slide show/04 신비아파트 극장판 차원도깨비와 7개의 세계.jpg" alt="">
+                                    <div class="poster_modal">
+                                        <a href="" class="poster_btn"> 상세보기 </a>
+                                    </div>
+                                </div>
+                                <div class="title_ticketing">
+                                    <h3> 신비아파트 극장판 차원도깨비와 7개의 세계 </h3>
+                                    <a class="btn_ticketing"> 예매하기 </a>
+                                    <span> 예매율 1.2% </span>
+                                </div>
+                            </li>
+    
+                            <li> 
+                                <div class="poster_wrap">
+                                    <span class="poster_num"> 5 </span>
+                                    <img src="movie_chart/images/movie_chart/image_slide show/05 라 비 앙 로즈.jpg" alt="">
+                                    <div class="poster_modal">
+                                        <a href="" class="poster_btn"> 상세보기 </a>
+                                    </div>
+                                </div>
+                                <div class="title_ticketing">
+                                    <h3> 라 비 앙 로즈 </h3>
+                                    <a class="btn_ticketing"> 예매하기 </a>
+                                    <span> 예매율 0.1% </span>
+                                </div>
+                            </li>
+    
+                            <li> 
+                                <div class="poster_wrap">
+                                    <span class="poster_num"> 6 </span>
+                                    <img src="movie_chart/images/movie_chart/image_slide show/06 뮤직 by SIA.jpg" alt="">
+                                    <div class="poster_modal">
+                                        <a href="" class="poster_btn"> 상세보기 </a>
+                                    </div>
+                                </div>
+                                <div class="title_ticketing">
+                                    <h3> 뮤직 by SIA </h3>
+                                    <a class="btn_ticketing"> 예매하기 </a>
+                                    <span> 예매율 0.0% </span>
+                                </div>
+                            </li>
+
+                            <li> 
+                                <div class="poster_wrap">
+                                    <span class="poster_num"> 7 </span>
+                                    <img src="movie_chart/images/movie_chart/image_slide show/07 지옥의 화원.jpg" alt="">
+                                    <div class="poster_modal">
+                                        <a href="" class="poster_btn"> 상세보기 </a>
+                                    </div>
+                                </div>
+                                <div class="title_ticketing">
+                                    <h3> 지옥의 화원 </h3>
+                                    <a class="btn_ticketing"> 예매하기 </a>
+                                    <span> 예매율 0.0% </span>
+                                </div>
+                            </li>
+
+                            <li> 
+                                <div class="poster_wrap">
+                                    <span class="poster_num"> 8 </span>
+                                    <img src="movie_chart/images/movie_chart/image_slide show/08 페르시아어 수업.jpg" alt="">
+                                    <div class="poster_modal">
+                                        <a href="" class="poster_btn"> 상세보기 </a>
+                                    </div>
+                                </div>
+                                <div class="title_ticketing">
+                                    <h3> 페르시아어 수업 </h3>
+                                    <a class="btn_ticketing"> 예매하기 </a>
+                                    <span>예매율 0.0% </span>
+                                </div>
+                            </li>
+
+                            <li> 
+                                <div class="poster_wrap">
+                                    <span class="poster_num"> 9 </span>
+                                    <img src="movie_chart/images/movie_chart/image_slide show/09 나나.jpg" alt="">
+                                    <div class="poster_modal">
+                                        <a href="" class="poster_btn"> 상세보기 </a>
+                                    </div>
+                                </div>
+                                <div class="title_ticketing">
+                                    <h3> 나나 </h3>
+                                    <a class="btn_ticketing"> 예매하기 </a>
+                                    <span> 예매율 0.0% </span>
+                                </div>
+                            </li>
+
+                            <li> 
+                                <div class="poster_wrap">
+                                    <span class="poster_num"> 10 </span>
+                                    <img src="movie_chart/images/movie_chart/image_slide show/10 제8회 스토리업쇼츠 섹션1.jpg" alt="">
+                                    <div class="poster_modal">
+                                        <a href="" class="poster_btn"> 상세보기 </a>
+                                    </div>
+                                </div>
+                                <div class="title_ticketing">
+                                    <h3> 제8회 스토리업쇼츠 섹션1 </h3>
+                                    <a class="btn_ticketing"> 예매하기 </a>
+                                    <span> 예매율 0.0% </span>
+                                </div>
+                            </li>
+
+                            <li> 
+                                <div class="poster_wrap">
+                                    <span class="poster_num"> 11 </span>
+                                    <img src="movie_chart/images/movie_chart/image_slide show/11 제8회 스토리업쇼츠 섹션2.jpg" alt="">
+                                    <div class="poster_modal">
+                                        <a href="" class="poster_btn"> 상세보기 </a>
+                                    </div>
+                                </div>
+                                <div class="title_ticketing">
+                                    <h3> 제8회 스토리업쇼츠 섹션2</h3>
+                                    <a class="btn_ticketing"> 예매하기 </a>
+                                    <span> 예매율 0.0% </span>
+                                </div>
+                            </li>
+
+                            <li> 
+                                <div class="poster_wrap">
+                                    <span class="poster_num"> 12 </span>
+                                    <img src="movie_chart/images/movie_chart/image_slide show/12 [사이다경제] 올해 고생한 만큼 내년 증시가 더 기대되는 이유.jpg" alt="">
+                                    <div class="poster_modal">
+                                        <a href="" class="poster_btn"> 상세보기 </a>
+                                    </div>
+                                </div>
+                                <div class="title_ticketing">
+                                    <h3> [사이다경제] 올해 고생한 만큼 내년 증시 ... <!-- 가 더 기대되는 이유 --> </h3>
+                                    <a class="btn_ticketing"> 예매하기 </a>
+                                    <span> 예매율 0.0% </span>
+                                </div>
+                            </li>
+
+                            <li> 
+                                <div class="poster_wrap">
+                                    <span class="poster_num"> 13 </span>
+                                    <img src="movie_chart/images/movie_chart/image_slide show/13 영웅.jpg" alt="">
+                                    <div class="poster_modal">
+                                        <a href="" class="poster_btn"> 상세보기 </a>
+                                    </div>
+                                </div>
+                                <div class="title_ticketing">
+                                    <h3> 영웅 </h3>
+                                    <a class="btn_ticketing"> 예매하기 </a>
+                                    <span> 예매율 0.8% </span>
+                                </div>
+                            </li>
+
+                            <li> 
+                                <div class="poster_wrap">
+                                    <span class="poster_num"> 14 </span>
+                                    <img src="movie_chart/images/movie_chart/image_slide show/14 코르사주.jpg" alt="">
+                                    <div class="poster_modal">
+                                        <a href="" class="poster_btn"> 상세보기 </a>
+                                    </div>
+                                </div>
+                                <div class="title_ticketing">
+                                    <h3> 코르사주 </h3>
+                                    <a class="btn_ticketing"> 예매하기 </a>
+                                    <span> 예매율 0.1% </span>
+                                </div>
+                            </li>
+
+                            <li> 
+                                <div class="poster_wrap">
+                                    <span class="poster_num"> 15 </span>
+                                    <img src="movie_chart/images/movie_chart/image_slide show/15 핑크퐁 시네마 콘서트 2.jpg" alt="">
+                                    <div class="poster_modal">
+                                        <a href="" class="poster_btn"> 상세보기 </a>
+                                    </div>
+                                </div>
+                                <div class="title_ticketing">
+                                    <h3> 핑크퐁 시네마 콘서트 2 </h3>
+                                    <a class="btn_ticketing"> 예매하기 </a>
+                                    <span> 예매율 0.0% </span>
+                                </div>
+                            </li>
+
+                            <li> 
+                                <div class="poster_wrap">
+                                    <span class="poster_num"> 16 </span>
+                                    <img src="movie_chart/images/movie_chart/image_slide show/16 가가린.jpg" alt="">
+                                    <div class="poster_modal">
+                                        <a href="" class="poster_btn"> 상세보기 </a>
+                                    </div>
+                                </div>
+                                <div class="title_ticketing">
+                                    <h3> 16 가가린 </h3>
+                                    <a class="btn_ticketing"> 예매하기 </a>
+                                    <span> 예매율 0.0% </span>
+                                </div>
+                            </li>
+
+                            <li> 
+                                <div class="poster_wrap">
+                                    <span class="poster_num"> 17 </span>
+                                    <img src="movie_chart/images/movie_chart/image_slide show/17 눈의 여왕5.jpg" alt="">
+                                    <div class="poster_modal">
+                                        <a href="" class="poster_btn"> 상세보기 </a>
+                                    </div>
+                                </div>
+                                <div class="title_ticketing">
+                                    <h3> 눈의 여왕5 </h3>
+                                    <a class="btn_ticketing"> 예매하기 </a>
+                                    <span> 예매율 0.0% </span>
+                                </div>
+                            </li>
+
+                            <li> 
+                                <div class="poster_wrap">
+                                    <span class="poster_num"> 18 </span>
+                                    <img src="movie_chart/images/movie_chart/image_slide show/18 [인사이터 X CGV] 데이터보다 중요한 일의 감 높이는 법.jpg" alt="">
+                                    <div class="poster_modal">
+                                        <a href="" class="poster_btn"> 상세보기 </a>
+                                    </div>
+                                </div>
+                                <div class="title_ticketing">
+                                    <h3> [인사이터 X CGV] 데이터보다 중요한 일의 ... <!-- 감 높이는 법 --> </h3>
+                                    <a class="btn_ticketing"> 예매하기 </a>
+                                    <span> 예매율 0.0% </span>
+                                </div>
+                            </li>
+
+                            <li> 
+                                <div class="poster_wrap">
+                                    <span class="poster_num"> 19 </span>
+                                    <img src="movie_chart/images/movie_chart/image_slide show/19 [사이다경제] 지금 당장 유튜브가 아닌 블로그를 해야 하는 이유.jpg" alt="">
+                                    <div class="poster_modal">
+                                        <a href="" class="poster_btn"> 상세보기 </a>
+                                    </div>
+                                </div>
+                                <div class="title_ticketing">
+                                    <h3> [사이다경제] 지금 당장 유튜브가 아닌 ... <!-- 블로그를 해야 하는 이유 --> </h3>
+                                    <a class="btn_ticketing"> 예매하기 </a>
+                                    <span> 예매율 0.0% </span>
+                                </div>
+                            </li>
+                            <li> 
+                                <div class="poster_wrap">
+                                    <span class="poster_num"> 20 </span>
+                                    <img src="movie_chart/images/movie_chart/image_slide show/20 몬스터 신부-101번 프로포즈.jpg" alt="">
+                                    <div class="poster_modal">
+                                        <a href="" class="poster_btn"> 상세보기 </a>
+                                    </div>
+                                </div>
+                                <div class="title_ticketing">
+                                    <h3> 몬스터 신부-101번 프로포즈 </h3>
+                                    <a class="btn_ticketing"> 예매하기 </a>
+                                    <span> 예매율 0.0% </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- 이미지 슬라이드 좌우 버튼  -->
+                    <a href="" class="btn_nav_left"> 
+                        <svg viewBox="0 0 70.9 82.1" class="svg_left"> 
+                            <polygon class="st_left" points="0,41.1 70.9,82.1 70.9,0.2 "/> 
+                        </svg> 
+                    </a>
+                    
+                    <a href="" class="btn_nav_right"> 
+                        <svg viewBox="0 0 70.9 82.1" class="svg_right"> 
+                            <polygon class="st_right" points="0,41.1 70.9,82.1 70.9,0.2 "/> 
+                        </svg> 
+                    </a>
+
+                    <!-- 스크롤 화살표 -->
+                    <a href="#" class="chart_arrow">
+                        <i class="fa-solid fa-angles-down"> </i>
+                    </a>
                 </div>
-
-                <di v class="chart_section">
-                    <ul class="movie_chart_poster">
-                        <!-- poster 총 19개 -->
-                        <li> 
-                            <img src="" alt="">
-                            <h3> 올빼미 </h3>
-                            <a class="btn_ticketing"> 예매하기 </a>
-                            <span> 예매율 25% </span>
-                        </li>
-
-                        <li> 
-                            <img src="" alt="">
-                            <h3> 압꾸정 </h3>
-                            <a class="btn_ticketing"> 예매하기 </a>
-                            <span> 예매율 25% </span>
-                        </li>
-
-                        <li> 
-                            <img src="" alt="">
-                            <h3> 엔시티 드림 더 무비 </h3>
-                            <a class="btn_ticketing"> 예매하기 </a>
-                            <span> 예매율 25% </span>
-                        </li>
-
-                        <li> 
-                            <img src="" alt="">
-                            <h3> 탄생 </h3>
-                            <a class="btn_ticketing"> 예매하기 </a>
-                            <span> 예매율 25% </span>
-                        </li>
-
-                        <li> 
-                            <img src="" alt="">
-                            <h3> 그래비티 </h3>
-                            <a class="btn_ticketing"> 예매하기 </a>
-                            <span> 예매율 25% </span>
-                        </li>
-
-                        <li> 
-                            <img src="" alt="">
-                            <h3> 매드맥스 </h3>
-                            <a class="btn_ticketing"> 예매하기 </a>
-                            <span> 예매율 25% </span>
-                        </li>
-                    </ul>
-
-                    <p class="chart_controls">
-                        <i></i>
-                        <i></i>
-                    </p>
-                </di>
-
-                <!-- 상영 예정작 클릭하면 무비 차트에서 상영 예정작으로 바뀌는는거(cgv 홈페이지 참고) -->
-                <div class="chart_section show">
-
-                </div>
-
-
-                <!-- 스크롤 화살표 -->
-                <i class="movie_chart_arrow"> </i>
+                <!-- CHART SECTION -->
+                
             </div>
         </div>
+
+
         <!--------------- 홍효헌 파트 --------------->
         <!--------------- 박민지 파트 --------------->
         <div class="video">
@@ -544,6 +1108,7 @@
             </div>
         </div>
     </footer>
+<script src="movie_chart/movie_chart.js"></script>
 <script src="header.js"></script>
 <script src="footer.js"></script>
 </body>
