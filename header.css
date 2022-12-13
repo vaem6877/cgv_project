@@ -1,48 +1,31 @@
-/*--------------- S menu ---------------*/
-nav{
+.cf:after{content:''; clear:both; display:block; }
+
+/*--------------- S head Ad ---------------*/
+.head_ad{
     width: 100%;
-    height: 60px;
+    height: 84px;
+    background: black;
+}
+.head_ad_content{
+    margin: 0 auto;
+    width: 1140px;
     position: relative;
-    background: #fff; /*완성후 화이트로 변경. 현재 확인을 위해 색감 삽입*/
-    /* border-bottom: 2px solid #E72B20; */
 }
-nav:after{
-    content: '';
-    position: absolute;
-    left: 0;right: 0;top: 100%;bottom: 0;
-    border-bottom: 3px solid #E72B20;
-}
-.nav_menu{
-    width: 100%; height: 100%;
-    text-transform: uppercase;
-    position: absolute;
-    background: linear-gradient(#fff 60px, rgba(255,255,255,.5) 60px, rgba(255,255,255,.5));
+.head_ad_content .ad_poster{
+    background: url(img/head_ad_img.jpg) top center no-repeat;
+    display:inline-block;
+    width: 1140px;
+    height: 84px;
+    text-indent:-100%;
     overflow: hidden;
-    transition: height 0.5s;
 }
-.nav_menu li{
-    width: 170px;
-    line-height: 60px;
-    text-align: center;
-    float: left;
-    margin-right: 24px;
-    white-space: nowrap;
-}
-.nav_menu li h3{
-    font-size: 20px;
-}
-.nav_menu li:last-child{
-    margin: 0;
-}
-.nav_menu dt{
-    display: none;
-}
-.nav_menu dl dd{
-    line-height: 18px;
-    margin-top: 32px;
-    box-sizing: border-box;
-}
-/*--------------- E menu ---------------*/
+.btn_ad_close i{
+    position: absolute;
+    top: 10px; right: 10px;
+    color: white;
+    font-size: 18px;
+} /*click event로 광고 height 0으로*/
+/*--------------- E head Ad ---------------*/
 
 /*--------------- S header ---------------*/
 header{
@@ -82,14 +65,14 @@ header{
     text-align: center;
 }
 
-.sns li > i,
-.memberinfo li > i{
+.sns li a > i,
+.memberinfo li a > i{
 color:#222;
 font-size: 28px;
 transition: 0.5s;
 }
-.sns li > i:hover,
-.memberinfo li > i:hover{
+.sns li:hover a > i,
+.memberinfo li:hover a > i{
     color:#E72B20 ;
 }
 
@@ -99,6 +82,7 @@ transition: 0.5s;
     transform:translateY(-50%)
 }
 .sns li{
+    width: 40px;
     float: left;
     margin-left: 30px;
 }
@@ -110,44 +94,88 @@ transition: 0.5s;
     transform:translateY(-50%)
 }
 .memberinfo li{
+    position: relative;
+    width: 40px;
     float: left;
     margin-right: 30px;
 }
-.memberinfo li h5{
-    display: none;
+.memberinfo li span{
+    position: absolute;
+    visibility: hidden; opacity: 0;
+    top: 150%; left: -25%; right: -25%;
+    width: 60px; height: 25px;
+    background: #fff;
+    border-radius: 2px;
+    outline: #E72B20 1.5px solid;
+    text-align: center; line-height: 25px; text-transform: uppercase; font-size: 12px;
+    transform: translateY(-15%);
+    transition:  0.5s;
+}
+.memberinfo li:hover span{
+    visibility: visible; opacity: 1;
+    transform: translateY(0);
+}
+.memberinfo li span::after{
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 5px;
+    border-color: transparent transparent #E72B20 transparent;
+    bottom: 100%; left: 50%;
+    transform: translateX(-50%);
 }
 /*--------------- E header ---------------*/
 
-/*--------------- S head Ad ---------------*/
-.head_ad{
+/*--------------- S menu ---------------*/
+nav{
     width: 100%;
-    height: 72px;
-    background: black;
-}
-.head_ad_content{
-    margin: 0 auto;
-    width: 1140px;
+    height: 60px;
     position: relative;
+    background: #fff; /*완성후 화이트로 변경. 현재 확인을 위해 색감 삽입*/
+    /* border-bottom: 2px solid #E72B20; */
 }
-.head_ad_content .ad_poster{
-    background: url(img/head_ad_img.jpg) top center no-repeat;
-    display:inline-block;
-    width: 1140px;
-    height: 72px;
-    text-indent:-100%;
-    overflow: hidden;
-}
-.btn_ad_close i{
+nav:after{
+    content: '';
     position: absolute;
-    top: 10px; right: 10px;
-    color: white;
-    font-size: 18px;
+    left: 0;right: 0;top: 100%; bottom: 0;
+    transform: translateY(-50%);
+    border-bottom: 2px solid #E72B20;
 }
-/*--------------- E head Ad ---------------*/
+.nav_menu{
+    width: 100%; height: 100%;
+    text-transform: uppercase;
+    position: absolute;
+    background: linear-gradient(#fff 60px, rgba(255,255,255,.5) 60px, rgba(255,255,255,.5));
+    overflow: hidden;
+    transition: height 0.5s;
+}/*현재 설정으로 해결이 안 되면 active를 걸어 submenu scroll-down 시킬 예정*/
+.nav_menu li{
+    width: 170px;
+    line-height: 60px;
+    text-align: center;
+    float: left;
+    margin-right: 24px;
+    white-space: nowrap;
+}
+.nav_menu li h3{
+    font-size: 20px;
+}
+.nav_menu li:last-child{
+    margin: 0;
+}
+.nav_menu dt{
+    display: none;
+}
+.nav_menu dl dd{
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 32px;
+    box-sizing: border-box;
+}
+/*--------------- E menu ---------------*/
 
 /*--------------- S fixed-btn ---------------*/
 #btn_fixed{
-
     position: fixed;
     bottom: 100px;
     left: calc(50% + 636px);
@@ -158,5 +186,9 @@ transition: 0.5s;
 #btn_fixed.active{
     visibility: visible;
     opacity: 1;
+}/*scroll event로 active 넣기*/
+#btn_fixed .btn_fixed_ticket h3{
+    display: block;
+    transform: rotateX('25deg');
 }
 /*--------------- E fixed-btn ---------------*/
