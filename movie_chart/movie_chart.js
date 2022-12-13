@@ -13,7 +13,7 @@ let formBtn = document.querySelector('.chart_form i');
 
 let currentIdxMovie = 0;
 let length = chartPosterSlide.length - 31; /* 슬라이드 넘기는 개수에 따라 빼주는 숫자 조절하기 */
-let lengthShow = chartPosterSlide.length - 20;
+let lengthShow = chartPosterSlide.length - 21;
 
 /*--------------- MOVIE CHART form ---------------*/
 chartForm.addEventListener('focusin', (e) => {
