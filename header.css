@@ -179,6 +179,7 @@ nav:after{
     position: fixed;
     bottom: 100px;
     left: calc(50% + 636px);
+    z-index: 100;
     /* visibility: hidden; */
     /* opacity: 0; */
     /* transition: 0.5s; */
