@@ -10,6 +10,7 @@ let pager = document.querySelector('#video_pager'),
 // 페이저버튼을 각각 클릭했을때 모든 클래스명 active가 제거되고, 누른 것에만 클래스명이 생긴다
 pagerBtn.forEach((item,idx)=>{
     item.addEventListener('click',(e)=>{
+        e.preventDefault();
         for(pb of pagerBtn){
             pb.classList.remove('active');
         }
