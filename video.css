@@ -106,16 +106,16 @@
     height: 50px;
     position: relative;
 }
-.video_txt *{
+.video_txt a {
     position: absolute;
-}
-.video_txt a:first-child{
-    left: 0;
     top: 50%;
     transform: translateY(-50%);
 }
+.video_txt a:first-child{
+    left: 0;
+}
 .video_txt a:nth-child(2){
-    right: 68px;
+    left: 140px;
 }
 .video_txt a:last-child{
     right: 0;
