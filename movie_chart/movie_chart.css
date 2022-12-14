@@ -19,7 +19,7 @@
     position: relative;
 }
 
-.chart_header > h2, h3, .movie_chart_form {
+.chart_header > .chart_header h2, .chart_header h3, .movie_chart_form {
     display: inline-block;
     font-family: 'Open Sans';
 }
@@ -31,12 +31,13 @@
 .chart_header > h2 {
     font-size: 28px;
     margin-right: 30px;
+    display: inline-block;
 }
 
 .chart_header > .chart {
     font-weight: bold;
 }
-.chart_wrap .showing, h3, span {
+.chart_wrap .showing, .chart_wrap h3, .chart_wrap span {
     font-weight:400;
 }
 
@@ -113,12 +114,12 @@
 }
 
 .chart_poster .poster_num {
-    font-family: Old Standard TT;
+    font-family: 'Old Standard TT', serif;
     font-style: italic;
     font-size: 90px;
     position: absolute;
     left: 10px;
-    bottom: 174px;
+    bottom: 168px;
     color: #ffffff;
     letter-spacing: -20px;
     transition: 0.2s;
@@ -180,7 +181,7 @@
     position: relative;
 }
 
-.chart_poster h3, span, .btn_ticketing {
+.chart_poster h3, .chart_poster span, .btn_ticketing {
     position: absolute;
 }
 

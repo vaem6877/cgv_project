@@ -269,7 +269,6 @@ select:focus-visible{
     box-sizing: border-box;
 }
 .form_branch .material-symbols-outlined{
-    position: static;
     float: left;
     display: block;
     width: 30px;
