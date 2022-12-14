@@ -253,7 +253,11 @@ ul[class^="svc"] li::before{
 .personal_wrap li i{
     font-size: 90px;
     margin-bottom: 43px;
+    transition: 0.3s;
 }
 .personal_wrap li:not(:last-of-type){
     margin-right: 75px;
 }
+.personal_wrap li:hover i {
+    transform: scale(1.222);
+} 
