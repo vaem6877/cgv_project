@@ -46,7 +46,7 @@
 }
 
 .chart_header {
-    padding-top: 56px;
+    padding-top: 40px;
 }
 
 /* form */
@@ -102,7 +102,7 @@
 }
 
 .chart_poster_wrap {
-    margin-top: 56px;
+    margin-top: 40px;
     height: 496px;
     position: relative;
     overflow: hidden;
