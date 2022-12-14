@@ -28,9 +28,10 @@
     cursor: pointer;
 }
 
-.chart_header > .chart_header h2 {
+.chart_header > h2 {
     font-size: 28px;
     margin-right: 30px;
+    display: inline-block;
 }
 
 .chart_header > .chart {
@@ -113,12 +114,12 @@
 }
 
 .chart_poster .poster_num {
-    font-family: Old Standard TT;
+    font-family: 'Old Standard TT', serif;
     font-style: italic;
     font-size: 90px;
     position: absolute;
     left: 10px;
-    bottom: 174px;
+    bottom: 169px;
     color: #ffffff;
     letter-spacing: -20px;
     transition: 0.2s;
