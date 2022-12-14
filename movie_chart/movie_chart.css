@@ -28,9 +28,10 @@
     cursor: pointer;
 }
 
-.chart_header > .chart_header h2 {
+.chart_header > h2 {
     font-size: 28px;
     margin-right: 30px;
+    display: inline-block;
 }
 
 .chart_header > .chart {
@@ -118,7 +119,7 @@
     font-size: 90px;
     position: absolute;
     left: 10px;
-    bottom: 174px;
+    bottom: 168px;
     color: #ffffff;
     letter-spacing: -20px;
     transition: 0.2s;
