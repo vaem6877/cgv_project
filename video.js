@@ -26,13 +26,12 @@ pagerBtn.forEach((item,idx)=>{
             ml.classList.remove('active');
         }
         movieList[currentIdx].classList.add('active');
-        // 속성 추가
+        // 멈추고, 시작시간 초기화 -> 재생
         for(vd of video){
-            vd.removeAttribute('autoplay');
+            vd.pause();
+            vd.currentTime = 0;
         }
-        e.currentTarget.setAttribute('autoplay','none');
-        console.log(e.currentTarget);
-    
+        video[currentIdx].play();
     })
 })
 
