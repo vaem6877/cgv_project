@@ -192,6 +192,7 @@
 .service_contents img{
     width: 260px;
     height: 260px;
+    border-radius: 20px;
     margin-bottom: 20px;
 }
 .service_contents > ul li:first-child{
