@@ -37,6 +37,7 @@
 .chart_header > .chart {
     font-weight: bold;
 }
+
 .chart_wrap .showing, .chart_wrap h3, .chart_wrap span {
     font-weight:400;
 }
@@ -74,6 +75,7 @@
     font-size: 16px;
     text-align: center;
 }
+
 
 /* MOVIE CHART form (hover 효과만 원할 경우 밑에 4줄로 구현 가능 js파일에 있는 MOVIE CHART form 필요 없음. */
 /* .chart_form:hover .input_active {
@@ -221,7 +223,7 @@
 
 /*--------------- BUTTON Ticketing Navigation ---------------*/
 a[class^="btn_nav_"] {
-    display: inline-block;
+    /* display: inline-block; */
     position: absolute;
     width: 55px;
     height: 55px;
@@ -254,6 +256,7 @@ a[class^="btn_nav_"] {
 
 .btn_nav_left {
     left: -30px; top: 30%;
+    display: none;
 }
 .btn_nav_right {
     right: -30px; top: 30%;
@@ -281,29 +284,9 @@ a[class^="btn_nav_"] {
     position: absolute;
     font-size: 32px; 
     left: calc(50% - 14px);
-    bottom: -57px;
-}
-.chart_arrow i {
-    color: #666666;
-}
-
-/* 스크롤 화살표 */
-.chart_arrow {
-    position: absolute;
-    font-size: 32px; 
-    left: calc(50% - 14px);
     display: inline-block;
     line-height: 142px;
 }
 .chart_arrow i {
     color: #666666;
 }
-
-/* 28*32 */
-
-/* .test {
-    font-family: Old Standard TT;
-    font-style: italic;
-    font-size: 170px;
-    color: #666666;
-} */

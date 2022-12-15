@@ -105,7 +105,7 @@ chartShowing.addEventListener("click", (e) => {
     chartPoster.style.left = 20 * -294 + "px";
     btnPrev.style.display = "none";
     currentIdxMovie = 10;
-    
+
     chart.style.fontWeight = "400";
     chartShowing.style.fontWeight = "bold";
     chart.style.color = "#666666";
@@ -116,8 +116,6 @@ chartShowing.addEventListener("click", (e) => {
 let videoOffset = document.querySelector(".chart_bottom_line");
 
 let videoOffsetAMT  = videoOffset.offsetTop;
-
-console.log(videoOffsetAMT);
 
 chartArrow.addEventListener('click', (e) => {
     e.preventDefault();
