@@ -1,7 +1,7 @@
 
 /*--------------- S theater ---------------*/
 .theater_bg{
-    background: linear-gradient(to right, #000 10%, rgba(0,0,0,0) 20% 80%, #000 90%), url("img/theater/special_BG.png") no-repeat center;
+    background: linear-gradient(to right, #000 10%, rgba(0,0,0,0) 20% 80%, #000 90%),linear-gradient(to bottom, rgba(255,255,255,.1)0% 100%) ,url("img/theater/special_BG.png") no-repeat center;
 }
 .theater{
     padding-top: 135px;
@@ -48,7 +48,7 @@
     height: 280px;
     display: block;
     text-align: center;
-    border-radius: 8px;
+    border-radius: 20px;
     color:#fff;
 }
 .toptheater.suite{
@@ -270,14 +270,17 @@ select > option{
     font-size: 12px;
 }
 
-.form_branch .material-symbols-outlined{
+.branch_expand{
     position: absolute;
     top: 2px; right: 35px;
     float: left;
     box-sizing: border-box;
     color: #999;
     transition: 0.3s;
-    cursor: pointer;
+    pointer-events: none;
+}
+.branch_expand.active{
+    transform:rotate(180deg);
 }
 
 #branch_submit{
