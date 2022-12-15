@@ -6,6 +6,7 @@ let chartPosterSlide = document.querySelectorAll(".chart_poster li");
 
 let btnPrev = document.querySelector('.btn_nav_left');
 let btnNext = document.querySelector('.btn_nav_right');
+let chartArrow = document.querySelector('.chart_arrow');
 
 let chartForm = document.querySelector('.chart_form')
 let formUnder = document.querySelector('.chart_form input');
@@ -109,4 +110,10 @@ chartShowing.addEventListener("click", (e) => {
     chartShowing.style.fontWeight = "bold";
     chart.style.color = "#666666";
     chartShowing.style.color = "#222222";
+})
+
+/* 화살표 클릭시 */
+chartArrow.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({top: 940, behavior: 'smooth'});
 })

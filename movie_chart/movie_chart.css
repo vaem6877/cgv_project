@@ -134,7 +134,7 @@
 
 .poster_modal {
     width: 258px;
-    line-height: 364px;
+    line-height: 360px;
     border-radius: 20px;
     background: rgba(0, 0, 0, 0.4);
     position: absolute;
@@ -283,7 +283,8 @@ a[class^="btn_nav"], svg, polygon {
     position: absolute;
     font-size: 32px; 
     left: calc(50% - 14px);
-    bottom: -57px;
+    display: inline-block;
+    line-height: 142px;
 }
 .chart_arrow i {
     color: #666666;
