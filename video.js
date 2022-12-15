@@ -26,6 +26,13 @@ pagerBtn.forEach((item,idx)=>{
             ml.classList.remove('active');
         }
         movieList[currentIdx].classList.add('active');
+        // 속성 추가
+        for(vd of video){
+            vd.removeAttribute('autoplay');
+        }
+        e.currentTarget.setAttribute('autoplay','none');
+        console.log(e.currentTarget);
+    
     })
 })
 
