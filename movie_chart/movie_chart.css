@@ -170,7 +170,6 @@
 }
 
 
-
 .title_ticketing {
     margin: 28px 0;
 }
@@ -221,61 +220,71 @@
 }
 
 /*--------------- BUTTON Ticketing Navigation ---------------*/
-/* BTN_NAV */
-a[class^="btn_nav"] {
+a[class^="btn_nav_"] {
+    display: inline-block;
+    position: absolute;
     width: 55px;
-    border-radius: 50%;
     height: 55px;
+    border-radius: 50%;
     border: 1px solid #ffffff;
     box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.25);
     background: rgba(255, 255, 255, 0.5);
-    /* border: 1px solid black; */
-    
-    position: absolute; 
-    top: 153px; /* 포스터 높이: 364px(절반 182), 버튼 높이 : 57(절반 28.5) */
-}
-a[class^="btn_nav"], svg, polygon {
     transition: 0.3s ease-out;
+
+    /* position: absolute; 
+    top: 153px;  */
 }
 
-/* BTN_NAV_LEFT */
+.material-symbols-outlined.fill {
+    position: absolute;
+    font-size: 40px;
+    color: red;
+    top: calc(50% - 20px);
+
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+.material_left {
+    left: calc(50% - 24px);
+    transform: rotate(-90deg);
+}
+
 .btn_nav_left {
-    left: -30px;
-    display: none;
-    transition: all 0.3s;
+    left: -30px; top: 30%;
 }
-.st_left {
-    fill: red;
-}
-.btn_nav_left:hover .st_left {
-    fill: white;
+.btn_nav_right {
+    right: -30px; top: 30%;
+} 
+
+.btn_nav_left:hover .material_left{
+    color: white;
 }
 .btn_nav_left:hover {
     background: red;
 }
-.svg_left {
-    width: 100%;
-    height: 100%;
-    transform: scale(0.6) translateX(-15%);
+.material_right {
+    right: calc(50% - 24px);
+    transform: rotate(90deg);
 }
-/* BTN_NAV_RIGHT */
-.btn_nav_right {
-    display: inline-block;
-    right: -30px;
-}
-.st_right {
-    fill: red;
-}
-.btn_nav_right:hover .st_right {
-    fill: white;
+.btn_nav_right:hover .material_right{
+    color: white;
 }
 .btn_nav_right:hover {
     background: red;
 }
-.svg_right {
-    width: 100%;
-    height: 100%;
-    transform: scale(0.6) translateX(15%) rotate(180deg);
+
+/* 스크롤 화살표 */
+.chart_arrow {
+    position: absolute;
+    font-size: 32px; 
+    left: calc(50% - 14px);
+    bottom: -57px;
+}
+.chart_arrow i {
+    color: #666666;
 }
 
 /* 스크롤 화살표 */
