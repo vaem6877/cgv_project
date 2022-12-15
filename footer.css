@@ -14,7 +14,6 @@
 
 .theater_header h2{
     float: left;
-    font-weight: 800;
     color:#fff;
 }
 .theater_header a{
@@ -74,7 +73,6 @@
 .best_title{
     left:20px;
     font-size: 24px;
-    font-weight: 800;
     bottom:calc(20px + .5em);
 }
 .best_desc{
