@@ -93,11 +93,12 @@ p{
     text-align: center;
 }
 .btn_fixed_ticket > h3{
-    left: 25%; top: 10%;
+    left: 30%; top: 20%;
 }
 .btn_fixed_top > h3{
-    left: 30%; bottom: 25%;
-    margin: 0;
+    left: 50%; bottom: 50%;
+    transform: translate(-50%, -50%);
+
 }
 /*--------------- E fixedbtn ---------------*/
 

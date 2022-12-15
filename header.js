@@ -32,13 +32,15 @@ for(mM of mainMenu){
 	})
 }
 
-//스크롤 이벤트 (1. 메뉴 상단 고정 및 스타일 변경 2. 예매하기 및 top 버튼 등장)
+//스크롤 이벤트 (1. 메뉴 상단 고정 및 스타일 변경 2. 예매하기 및 top 버튼 등장 3.페이지 돌아왔을 때 위치에 따라 자동적용)
 let nav = document.querySelector('nav');
 let fixBtn = document.querySelector('#btn_fixed'),
 	ticketBtn = document.querySelector('.btn_fixed_ticket'),
 	topBtn = document.querySelector('.btn_fixed_top');
 
-window.addEventListener('scroll',()=>{
+let relocateEvt = new Event('relocate');
+
+window.addEventListener('relocate',()=>{
     if(window.pageYOffset > 230){
         nav.classList.add('active');
     }else{
@@ -50,7 +52,11 @@ window.addEventListener('scroll',()=>{
         fixBtn.classList.remove('active');
     }
 });
-topBtn.addEventListener('click',e=>{
+
+window.dispatchEvent(relocateEvt);
+
+//top버튼 (클릭 시 상단으로 이동)
+topBtn.addEventListener('click',(e)=>{
     e.preventDefault();
     scrollTo({
         left:0,
