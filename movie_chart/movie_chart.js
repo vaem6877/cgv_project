@@ -123,3 +123,4 @@ chartArrow.addEventListener('click', (e) => {
     e.preventDefault();
     window.scrollTo({top: videoOffsetAMT, behavior: 'smooth'});
 })
+
