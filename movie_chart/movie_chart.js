@@ -113,7 +113,13 @@ chartShowing.addEventListener("click", (e) => {
 })
 
 /* 화살표 클릭시 */
+let videoOffset = document.querySelector(".chart_bottom_line");
+
+let videoOffsetAMT  = videoOffset.offsetTop;
+
+console.log(videoOffsetAMT);
+
 chartArrow.addEventListener('click', (e) => {
     e.preventDefault();
-    window.scrollTo({top: 940, behavior: 'smooth'});
+    window.scrollTo({top: videoOffsetAMT, behavior: 'smooth'});
 })
