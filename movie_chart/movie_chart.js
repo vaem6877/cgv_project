@@ -42,13 +42,13 @@ function imageSlide (slideIdx) {
     console.log(currentIdxMovie);
 
     /* 버튼 사라짐 */
-    if(currentIdxMovie == 10) {
+    /* if(currentIdxMovie == 10) {
         btnPrev.style.display = "none";
     } else if(currentIdxMovie > 0) {
         btnPrev.style.display = "inline-block";
     } else {
         btnPrev.style.display = "none";
-    }
+    } */
 }
 
 /* btnNext */
@@ -81,16 +81,27 @@ btnPrev.addEventListener('click', (e) => {
     
     chartPoster.style.transition = "left 0.3s ease-in-out";
 
-    nextIdx = (currentIdxMovie - 1) % chartPosterSlide.length;
-    imageSlide(nextIdx);
-    // currentIdxMovie = slideIdx;
+    if(currentIdxMovie == 0) {
+        nextIdx = 8;
+        // chartPoster.style.transition = "none";
+        imageSlide(nextIdx);
+    } else if (currentIdxMovie == 10) {
+        nextIdx = 18;
+        // chartPoster.style.transition = "none";
+        imageSlide(nextIdx);
+    } else {
+        nextIdx = (currentIdxMovie - 1) % chartPosterSlide.length;
+        imageSlide(nextIdx);
+        // currentIdxMovie = slideIdx;
+    }
+
 })
 
 /* 무비차트 클릭시 */
 chart.addEventListener('click', (e) => {
     chartPoster.style.transition = "none";
     chartPoster.style.left = 0 * 294 + "px";
-    btnPrev.style.display = "none";
+    // btnPrev.style.display = "none";
     currentIdxMovie = 0;
 
     chart.style.fontWeight = "bold";
@@ -103,7 +114,7 @@ chart.addEventListener('click', (e) => {
 chartShowing.addEventListener("click", (e) => {
     chartPoster.style.transition = "none";
     chartPoster.style.left = 20 * -294 + "px";
-    btnPrev.style.display = "none";
+    // btnPrev.style.display = "none";
     currentIdxMovie = 10;
 
     chart.style.fontWeight = "400";
@@ -121,4 +132,3 @@ chartArrow.addEventListener('click', (e) => {
     e.preventDefault();
     window.scrollTo({top: videoOffsetAMT, behavior: 'smooth'});
 })
-
