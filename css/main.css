@@ -1,6 +1,6 @@
 .cf:after{content:''; clear:both; display:block; }
 
-/*--------------- S head Ad ---------------*/
+/*--------------- S head Ad 손현진---------------*/
 .head_ad{
     width: 100%;
     height: 100%;
@@ -254,11 +254,11 @@ nav.active li:hover h3{
 #btn_fixed a:hover h3 i{
     color: #E72B20;
 }
-/*--------------- E fixed-btn ---------------*/
+/*--------------- E fixed-btn 손현진 ---------------*/
 
 
 
-/*--------------- S video ---------------*/
+/*--------------- S video 박민지 ---------------*/
 
 .video{
     position: relative;
@@ -273,7 +273,7 @@ nav.active li:hover h3{
     padding: 28px 73px;
     box-sizing: border-box;
 }
-.video_wrap::before {
+.video_wrap::before{
     content: '';
     position: absolute;
     top: 0;right: 0;left: 0;bottom: 0;
@@ -281,7 +281,7 @@ nav.active li:hover h3{
     z-index: 1;
 }
 
-.movie_contents {
+.movie_contents{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -290,7 +290,7 @@ nav.active li:hover h3{
     overflow: hidden;
 }
 
-.movie_list {
+.movie_list{
     position: absolute;
     width: 100%;
     height:100%;
@@ -309,14 +309,14 @@ nav.active li:hover h3{
     opacity: 0;
 }
 
-.movie_list > li video {
+.movie_list > li video{
     position: absolute;
     top:50%; left: 50%;
     transform: translate(-50%,-50%);
 }
 
 .movie_list > li.active,
-.video_title > li.active {
+.video_title > li.active{
     opacity: 1;
 }
 .video_title {
@@ -325,7 +325,7 @@ nav.active li:hover h3{
     overflow: hidden;
 }
 
-.video_title > li {
+.video_title > li{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -333,9 +333,6 @@ nav.active li:hover h3{
     transform: translate(-50%,-50%);
     opacity: 0;
 }
-
-
-
 
 .video_contents{
     position: relative;
@@ -350,9 +347,8 @@ nav.active li:hover h3{
     width: 100%;
     top:50%; left: 50%;
     transform: translate(-50%,-50%);
-
 }
-video {
+video{
     width: 1140px;
 }
 
@@ -383,16 +379,16 @@ video {
 .video_txt button{
     right: 0;
 }
-.video_txt button:first-of-type {
+.video_txt button:first-of-type{
     right: 70px;
 }
-.video_txt button i:last-child {
+.video_txt button i:last-child{
 	display: none;
 }
-.video_txt button.active i:last-child {
+.video_txt button.active i:last-child{
 	display: block;
 }
-.video_txt button.active i:first-child {
+.video_txt button.active i:first-child{
 	display: none;
 }
 
@@ -434,11 +430,11 @@ video {
 /*--------------- E video ---------------*/
 
 /* --------------- S 이벤트, 할인정보 --------------- */
-.service {
+.service{
     height: 580px;
 }
 
-.service_wrapper {
+.service_wrapper{
     box-sizing: border-box;
     height: 100%;
     padding: 84px 0;
@@ -457,7 +453,7 @@ video {
 .service_contents:last-of-type{
     right: 0;
 }
-.service_contents > div {
+.service_contents > div{
     width: 100%;
     position: relative;
     margin-bottom: 28px;
@@ -493,7 +489,7 @@ ul[class^="svc"] li::before{
     position: relative;
     text-align: center;
 }
-.svc_txt_wrap p:first-child {
+.svc_txt_wrap p:first-child{
     position: absolute;
     font-size: 18px;
     line-height: 18px;
@@ -501,7 +497,7 @@ ul[class^="svc"] li::before{
     left: 0;
     right: 0;
 }
-.svc_txt_wrap p:last-child {
+.svc_txt_wrap p:last-child{
     position: absolute;
     font-size: 14px;
     bottom: 0;
@@ -546,10 +542,10 @@ ul[class^="svc"] li::before{
     transform: scale(1.222);
 } 
 
-/* --------------- E 개인서비스 --------------- */
+/* --------------- E 개인서비스 박민지 --------------- */
 
 
-/*--------------- S theater ---------------*/
+/*--------------- S theater 윤상혁 ---------------*/
 .theater_bg{
     background: linear-gradient(to right, #000 10%, rgba(0,0,0,0) 20% 80%, #000 90%),linear-gradient(to bottom, rgba(255,255,255,.1)0% 100%) ,url("../img/theater/special_BG.png") no-repeat center;
 }
@@ -836,3 +832,4 @@ select > option{
     color: #fff;
     font-size: 800;
 }
+/*--------------- E selectbox 윤상혁 ---------------*/
