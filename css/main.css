@@ -530,7 +530,7 @@ a[class^="btn_nav_"] {
 /* 상세보기 모달창 */
 #overlay {
     width: 100%;
-    height: 100%;
+    height: 1000px;
     text-align: center;
     position: absolute;
     top: 0;

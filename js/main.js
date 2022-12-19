@@ -221,7 +221,6 @@ chartArrow.addEventListener('click', (e) => {
     e.preventDefault();
     window.scrollTo({top: videoOffsetAMT-120, behavior: 'smooth'});
     console.log(videoOffsetAMT);
-
 })
 
 let posterDetail = chartPoster.querySelectorAll('.poster_btn');
