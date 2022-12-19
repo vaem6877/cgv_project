@@ -73,35 +73,6 @@ p{
 }
 /*--------------- E 로고 ---------------*/
 
-/*--------------- S fixedbtn ---------------*/
-.btn_fixed_ticket,
-.btn_fixed_top{
-    display: inline-block;
-    position: relative;
-}
-.btn_fixed_ticket{
-    width: 170px; height: 170px;
-}
-.btn_fixed_top{
-    width: 75px; height: 75px;
-}
-
-#btn_fixed h3{
-    /* display: inline-block; */
-    position: absolute;
-    text-decoration: none;
-    text-align: center;
-}
-.btn_fixed_ticket > h3{
-    left: 30%; top: 20%;
-}
-.btn_fixed_top > h3{
-    left: 50%; bottom: 50%;
-    transform: translate(-50%, -50%);
-
-}
-/*--------------- E fixedbtn ---------------*/
-
 /*--------------- S 동영상 ---------------*/
 .ex_bg {
     width: 450px;
