@@ -12,7 +12,7 @@
     position: relative;
 }
 .head_ad_content .ad_poster{
-    background: url(/img/head_ad_img.jpg) top center no-repeat;
+    background: url(../img/head_ad_img.jpg) top center no-repeat;
     display:inline-block;
     width: 1140px;
     height: 84px;
@@ -593,18 +593,18 @@ ul[class^="svc"] li::before{
     color:#fff;
 }
 .toptheater.suite{
-    background: linear-gradient(to bottom, rgba(0,0,0,0)50%, #000 100%), url(/img/theater/suite.jpg) 100%/cover ;
+    background: linear-gradient(to bottom, rgba(0,0,0,0)50%, #000 100%), url(../img/theater/suite.jpg) 100%/cover ;
 }
 .toptheater.living{
-    background: linear-gradient(to bottom, rgba(0,0,0,0)50%, #000 100%), url(/img/theater/living.jpg) 100%/cover ;
+    background: linear-gradient(to bottom, rgba(0,0,0,0)50%, #000 100%), url(../img/theater/living.jpg) 100%/cover ;
 }
 .toptheater.fdx{
-    background: linear-gradient(to bottom, rgba(0,0,0,0)50%, #000 100%), url(/img/theater/fdx.jpg);
+    background: linear-gradient(to bottom, rgba(0,0,0,0)50%, #000 100%), url(../img/theater/fdx.jpg);
     background-size: 120%;
     background-position: center top 70%;
 }
 .toptheater.chef{
-    background: linear-gradient(to bottom, rgba(0,0,0,0)50%, #000 100%), url(/img/theater/chef.jpg) 100%/cover ;
+    background: linear-gradient(to bottom, rgba(0,0,0,0)50%, #000 100%), url(../img/theater/chef.jpg) 100%/cover ;
     background-position: center bottom 10%;
 }
 .best_title,
@@ -680,13 +680,13 @@ ul[class^="svc"] li::before{
 border-radius: 15px;
 }
 .theme li:nth-child(1) a{
-    background:url("/img/theater/theme_tech.png") 100%/cover;
+    background:url(../img/theater/theme_tech.png) 100%/cover;
 }
 .theme li:nth-child(2) a{
-    background:url("/img/theater/theme_prestige.png") 100%/cover;    
+    background:url(../img/theater/theme_prestige.png) 100%/cover;    
 }
 .theme li:nth-child(3) a{
-    background:url("/img/theater/theme_concept.jpg") 100%/cover;
+    background:url(../img/theater/theme_concept.jpg) 100%/cover;
     margin-right: 0;
 }
 .theme a:after{
