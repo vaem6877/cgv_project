@@ -135,3 +135,24 @@ chartArrow.addEventListener('click', (e) => {
     console.log(videoOffsetAMT);
 
 })
+
+let posterDetail = chartPoster.querySelectorAll('.poster_btn');
+let overlay = document.querySelector('#overlay');
+let overlayImg = document.querySelector('#overlay img');
+
+posterDetail.forEach((item, idx) => {
+    item.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        imgSrc = e.target.getAttribute('data-lightbox');
+        detailAddress = e.target.getAttribute('data-link');
+
+        overlayImg.setAttribute('src', imgSrc);
+
+        overlay.classList.add('overlay_visible');
+
+        setTimeout(() => {
+            location.href = detailAddress;
+        }, 800);
+    })
+})
