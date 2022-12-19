@@ -960,47 +960,64 @@ ul[class^="svc"] li::before{
 }
 
 /*--------------- best - theme ---------------*/
-.theme li{
-    float: left;
-}
-.theme a{
-    width: 363px;
-    height: 84px;
-    margin-right: 23px;
+.theme_wrapper{
     position: relative;
-    display: block;
+    
 }
-.theme li p{
-    color:#fff;
-    position: absolute;
-    right:10px;
-    bottom:10px;
-    font-size: 24px;
-    z-index: 1;
+.theme_content a:hover{
+    background-color: rgba(255,255,255,1);
+    transition: background-color 0.2s ;
 }
-.theme li a{
-border-radius: 15px;
+
+.theme_content{
+    width: 990px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+
 }
-.theme li:nth-child(1) a{
-    background:url(../img/theater/theme_tech.png) 100%/cover;
+.theme_container{
+    width: 2970px;
+    height: 100px;
+    transition: transform 0.3s;
 }
-.theme li:nth-child(2) a{
-    background:url(../img/theater/theme_prestige.png) 100%/cover;    
+.theme_container li{
+    float: left;
+    position: relative;
+
 }
-.theme li:nth-child(3) a{
-    background:url(../img/theater/theme_concept.jpg) 100%/cover;
+.theme_container a{
+    float:left;
+    position: relative;
+    width: 150px;
+    height: 100px;
+    background: rgba(255,255,255,.1);
+    border-radius: 20px;
+    margin:0 60px 0 0;
+}
+.theme_container a:last-child{
     margin-right: 0;
 }
-.theme a:after{
-    content: '';
+.theme_container li a img{
     position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-    background:rgba(0,0,0,.5);
-    transition: 0.3s;
-    border-radius: 15px;
+    width: 120px;
+    top: 50%; right:50%; bottom: 50%; left: 50%;
+    transform: translate(-50%, -50%);
 }
-.theme a:hover:after{
-    opacity: 0;
+.theme_controls a{
+    position: absolute;
+    top: 50%; bottom: 50%;
+    transform: translateY(-50%);
+    font-size: 48px;
+    height: 48px;
+    color: #000;
+    border-radius: 2px;
+}
+.theme_controls a:first-child{
+    left: 0;
+}
+.theme_controls a:last-child{
+    right: 0;
 }
 /*--------------- E theater ---------------*/
 
