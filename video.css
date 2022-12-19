@@ -91,6 +91,10 @@
     transform: translate(-50%,-50%);
 
 }
+video {
+    width: 1140px;
+}
+
 #video_controls{
     position: absolute;
     width: 300px;

@@ -35,25 +35,25 @@ pagerBtn.forEach((item,idx)=>{
         }
         video[currentIdx].play();
     })
-    vbtnP.addEventListener('click',(e)=>{
-        e.currentTarget.classList.toggle('active'); // toggle은 클릭한 시점에 없으면 추가하고 있으면 제거한다. 
-        /* 버튼을 클릭하면 비디오 재생, 다시 클릭하면 비디오 멈춤 */
-        if(e.currentTarget.classList.contains('active')){
-            video[currentIdx].play();
-        } else {
-            video[currentIdx].pause();
-        }
-    });
 })
 
 
+vbtnP.addEventListener('click',(e)=>{
+    e.currentTarget.classList.toggle('active'); // toggle은 클릭한 시점에 없으면 추가하고 있으면 제거한다. 
+    /* 버튼을 클릭하면 비디오 멈춤, 다시 클릭하면 비디오 멈춤 */
+    if(e.currentTarget.classList.contains('active')){
+        video[currentIdx].pause();
+    } else {
+        video[currentIdx].play();
+    }
+});
 
 vbtnM.addEventListener('click',(e)=>{
     e.currentTarget.classList.toggle('active'); // toggle은 클릭한 시점에 없으면 추가하고 있으면 제거한다. 
     /* 버튼을 클릭하면 비디오 재생, 다시 클릭하면 비디오 멈춤 */
     if(e.currentTarget.classList.contains('active')){
-        video.play();
+        video[currentIdx].muted = true;
     } else {
-        video.pause();
+        video[currentIdx].muted = false;
     }
 });
