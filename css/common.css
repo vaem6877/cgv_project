@@ -64,7 +64,7 @@ p{
 
 /*--------------- S 로고 ---------------*/
 .logo{
-    background: url('img/logo.svg') top center no-repeat;
+    background: url('../img/logo.svg') top center no-repeat;
     display:inline-block;
     width:186px;
     height: 82px;
