@@ -64,12 +64,13 @@ p{
 
 /*--------------- S 로고 ---------------*/
 .logo{
-    background: url('/img/logo.svg')  ;
+    background: url('img/logo.svg') top center no-repeat;
     display:inline-block;
     width:186px;
     height: 82px;
     text-indent:-100%;
     overflow: hidden;
+    transform: scale(90%, 90%);
 }
 /*--------------- E 로고 ---------------*/
 
