@@ -38,9 +38,9 @@ pagerBtn.forEach((item,idx)=>{
         vbtnP.classList.remove('active');
         vbtnM.classList.remove('active');
     })
-})
+});
 
-
+// 일시정지, 멈춤
 vbtnP.addEventListener('click',(e)=>{
     e.currentTarget.classList.toggle('active');
     if(e.currentTarget.classList.contains('active')){
@@ -49,7 +49,7 @@ vbtnP.addEventListener('click',(e)=>{
         video[currentIdx].play();
     }
 });
-
+// 소리, 음소거
 vbtnM.addEventListener('click',(e)=>{
     e.currentTarget.classList.toggle('active');
     if(e.currentTarget.classList.contains('active')){
