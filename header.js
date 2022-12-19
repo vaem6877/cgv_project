@@ -38,9 +38,9 @@ let fixBtn = document.querySelector('#btn_fixed'),
 	ticketBtn = document.querySelector('.btn_fixed_ticket'),
 	topBtn = document.querySelector('.btn_fixed_top');
 
-let relocateEvt = new Event('relocate');
+// let relocateEvt = new Event('relocate');
 
-window.addEventListener('relocate',()=>{
+window.addEventListener('scroll',()=>{
     if(window.pageYOffset > 230){
         nav.classList.add('active');
     }else{
@@ -53,7 +53,7 @@ window.addEventListener('relocate',()=>{
     }
 });
 
-window.dispatchEvent(relocateEvt);
+// window.dispatchEvent(relocateEvt);
 
 //top버튼 (클릭 시 상단으로 이동)
 topBtn.addEventListener('click',(e)=>{
