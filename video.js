@@ -34,6 +34,9 @@ pagerBtn.forEach((item,idx)=>{
             vd.currentTime = 0;
         }
         video[currentIdx].play();
+        // 버튼이 active가 없도록 
+        vbtnP.classList.remove('active');
+        vbtnM.classList.remove('active');
     })
 })
 
