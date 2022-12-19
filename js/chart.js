@@ -131,7 +131,7 @@ let videoOffsetAMT = videoOffset.offsetTop;
 
 chartArrow.addEventListener('click', (e) => {
     e.preventDefault();
-    window.scrollTo({top: videoOffsetAMT-120, behavior: 'smooth'});
+    window.scrollTo({top: videoOffsetAMT, behavior: 'smooth'});
     console.log(videoOffsetAMT);
 
 })
