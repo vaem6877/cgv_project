@@ -12,7 +12,7 @@
     position: relative;
 }
 .head_ad_content .ad_poster{
-    background: url(img/head_ad_img.jpg) top center no-repeat;
+    background: url(/img/head_ad_img.jpg) top center no-repeat;
     display:inline-block;
     width: 1140px;
     height: 84px;
