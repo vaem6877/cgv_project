@@ -1,3 +1,5 @@
+/* --------------- S 손현진 ----------------*/
+
 //서브메뉴 (메인메뉴에 마우스를 올리면 서브메뉴 열리기)
 let mainMenu = document.querySelectorAll('.nav_menu li'),
 	menu = document.querySelector('.menu'),
@@ -82,11 +84,12 @@ clsBtn.addEventListener('click',(e)=>{
 
 
 
-// 헤더
+/* --------------- E 손현진 ----------------*/
 
 
 
-// 비디오 스타트
+
+/* --------------- S 박민지 ----------------*/
 
 let pager = document.querySelector('#video_pager'),
     pagerBtn = document.querySelectorAll('.video_pager_link'),
@@ -150,11 +153,11 @@ vbtnM.addEventListener('click',(e)=>{
 });
 
 
-// 서비스 end 
+/* --------------- E 박민지 ----------------*/
 
 
 
-// footer
+/* --------------- S 윤상혁 ----------------*/
 
 
 let branchSubmit = document.querySelector('#branch_submit');
@@ -178,3 +181,4 @@ SelectOption.addEventListener('focusout', ()=>{
     branchExpand.classList.remove('active');
 });
 
+/* --------------- E 윤상혁 ----------------*/
