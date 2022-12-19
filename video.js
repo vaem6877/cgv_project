@@ -3,6 +3,8 @@ let pager = document.querySelector('#video_pager'),
     title = document.querySelectorAll('.video_title > li'),
     movieList = document.querySelectorAll('.movie_list > li'),
     video = document.querySelectorAll('.movie_list > li > video'),
+    vbtnP = document.querySelector('.video_txt button:first-of-type'),
+    vbtnM = document.querySelector('.video_txt button:last-of-type'),
     currentIdx = 0;
 
 
@@ -33,19 +35,25 @@ pagerBtn.forEach((item,idx)=>{
         }
         video[currentIdx].play();
     })
+    vbtnP.addEventListener('click',(e)=>{
+        e.currentTarget.classList.toggle('active'); // toggle은 클릭한 시점에 없으면 추가하고 있으면 제거한다. 
+        /* 버튼을 클릭하면 비디오 재생, 다시 클릭하면 비디오 멈춤 */
+        if(e.currentTarget.classList.contains('active')){
+            video[currentIdx].play();
+        } else {
+            video[currentIdx].pause();
+        }
+    });
 })
 
 
-// let btnPause = document.querySelector('.btn_movie .pause'),
-//     bpicon = document.querySelector(btnPause > 'a > i'),
-//     btnMuted = document.querySelector('.btn_movie .muted'),
-//     bmicon = document.querySelector(btnMuted >'i');
-    
-//     console.log(btnPause);
-//     btnPause.addEventListener('click',(e)=>{
-//         e.preventDefault();
-//         bpicon.setAttribute('class','fa-solid fa-play');
-//     })
-//     btnMuted.addEventListener('click',(e)=>{
-//         bmicon.setAttribute('class','fa-solid fa-volume-high');
-//     })
+
+vbtnM.addEventListener('click',(e)=>{
+    e.currentTarget.classList.toggle('active'); // toggle은 클릭한 시점에 없으면 추가하고 있으면 제거한다. 
+    /* 버튼을 클릭하면 비디오 재생, 다시 클릭하면 비디오 멈춤 */
+    if(e.currentTarget.classList.contains('active')){
+        video.play();
+    } else {
+        video.pause();
+    }
+});

@@ -106,7 +106,8 @@
     height: 50px;
     position: relative;
 }
-.video_txt a {
+.video_txt a,
+.video_txt button{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -114,11 +115,20 @@
 .video_txt a:first-child{
     left: 0;
 }
-.video_txt a:nth-child(2){
-    left: 140px;
-}
-.video_txt a:last-child{
+.video_txt button{
     right: 0;
+}
+.video_txt button:first-of-type {
+    right: 70px;
+}
+.video_txt button i:last-child {
+	display: none;
+}
+.video_txt button.active i:last-child {
+	display: block;
+}
+.video_txt button.active i:first-child {
+	display: none;
 }
 
 #video_pager{
@@ -178,14 +188,13 @@
     margin-right: 46px;
 }
 /* float left 로 정렬,, 54px로 수정해야함 */
-.service_contents > div:first-child *{
-    display: inline-block;
-    margin-bottom: 18px;
-}
-.service_contents > div:first-child {
+
+.service_contents > div {
+    width: 100%;
     position: relative;
+    margin-bottom: 28px;
 }
-.service_contents > div:first-child > a{
+.service_contents > div > a{
     position: absolute;
     top: 0;
     right: 0;
@@ -194,7 +203,7 @@
     width: 260px;
     height: 260px;
     border-radius: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 32px;
 }
 .service_contents > ul li:first-child{
     margin-right: 24px;
@@ -217,15 +226,22 @@ ul[class^="svc"] li::before{
 .svc_txt_wrap{
     height: 64px;
     position: relative;
+    text-align: center;
 }
-/* .service_contents li[class^="service"] p:first-child{
+.svc_txt_wrap p:first-child {
     position: absolute;
-    top: 0;right: 0;left: 0;
-} */
-.service_contents li[class^="service"] p:last-child{
+    font-size: 18px;
+    line-height: 18px;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.svc_txt_wrap p:last-child {
+    position: absolute;
     font-size: 14px;
-    position: absolute;
-    bottom: 0;right: 0;left: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 /* --------------- 개인서비스 --------------- */
