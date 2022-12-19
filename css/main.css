@@ -621,6 +621,7 @@ ul[class^="svc"] li::before{
     left:20px;
     font-size: 24px;
     bottom:calc(20px + .5em);
+    font-weight: 700;
 }
 .best_desc{
     left:20px;
@@ -654,7 +655,7 @@ ul[class^="svc"] li::before{
     opacity: 0;
 }
 .dim h3{
-    font-weight: 800;
+    font-weight: 700;
 }
 .dim p{
     line-height: 1.2em;
