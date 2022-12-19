@@ -734,7 +734,7 @@ ul[class^="svc"] li::before{
 .polish_menu li:nth-child(7) a{
     color: #E72B20;
  }
-.polish_menu li:after{
+.polish_menu:after{
     content:"|";
     width:1rem;
     margin: 0 10px 0 10px;

@@ -322,7 +322,7 @@ const   themeContainer = document.querySelector('.theme_container'),
  let themeCurrentIdx = 0;
 
 function themeMoveSlide(themeNum){
-    themeContainer.style.transform = `translateX(${-themeNum*990}px)`;
+    themeContainer.style.transform = `translateX(${-themeNum*1050}px)`;
     themeCurrentIdx = themeNum;
 }
 //이전 다음 버튼 기능

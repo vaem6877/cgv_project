@@ -866,15 +866,15 @@ ul[class^="svc"] li::before{
     color:#fff;
     line-height: 1.5em;
 }
-.best{
-    margin-bottom: 50px;
-}
 .best li{
     float:left;
     position: relative;
     border-radius: 20px;
     overflow: hidden;
 
+}
+.best{
+    margin-bottom: 30px;
 }
 .best li:nth-child(1){
     margin-right: 23px;
@@ -977,7 +977,7 @@ ul[class^="svc"] li::before{
 
 }
 .theme_container{
-    width: 2970px;
+    width: 3150px;
     height: 100px;
     transition: transform 0.3s;
 }
@@ -995,9 +995,7 @@ ul[class^="svc"] li::before{
     border-radius: 20px;
     margin:0 60px 0 0;
 }
-.theme_container a:last-child{
-    margin-right: 0;
-}
+
 .theme_container li a img{
     position: absolute;
     width: 120px;
@@ -1010,7 +1008,6 @@ ul[class^="svc"] li::before{
     transform: translateY(-50%);
     font-size: 48px;
     height: 48px;
-    color: #000;
     border-radius: 2px;
 }
 .theme_controls a:first-child{
@@ -1018,6 +1015,12 @@ ul[class^="svc"] li::before{
 }
 .theme_controls a:last-child{
     right: 0;
+}
+.theme_controls a i{
+    color: #666;
+}
+.theme_controls a:hover i{
+    color: #ccc;
 }
 /*--------------- E theater ---------------*/
 
@@ -1039,8 +1042,6 @@ ul[class^="svc"] li::before{
     height:50px;
     border:1px #ccc;;
     border-style: none none solid none;
-    box-sizing: border-box;
-    
 }
 .polish_menu li{
     font-size: 14px; 
