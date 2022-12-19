@@ -711,7 +711,7 @@ border-radius: 15px;
     background: #182b6c;
 }
 .foot_ad_image{
-    background: url("/img/theater/980x240.png") no-repeat center;
+    background: url(../img/theater/980x240.png) no-repeat center;
     height:240px;
     display: block;
     text-indent: -100em;
