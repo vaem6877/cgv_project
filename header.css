@@ -208,6 +208,32 @@ nav.active li:hover h3{
     opacity: 0;
     transition: 0.75s;
 }
+.btn_fixed_ticket,
+.btn_fixed_top{
+    display: inline-block;
+    position: relative;
+}
+.btn_fixed_ticket{
+    width: 170px; height: 170px;
+}
+.btn_fixed_top{
+    width: 75px; height: 75px;
+}
+
+#btn_fixed h3{
+    /* display: inline-block; */
+    position: absolute;
+    text-decoration: none;
+    text-align: center;
+}
+.btn_fixed_ticket > h3{
+    left: 33%; top: 25%;
+    transform: rotate(23deg);
+}
+.btn_fixed_top > h3{
+    left: 35%; bottom: 35%;
+}
+
 #btn_fixed.active{
     visibility: visible;
     opacity: 1;
