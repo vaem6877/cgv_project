@@ -175,24 +175,29 @@ video {
 
 
 /* --------------- 이벤트, 할인정보 --------------- */
-
-
 .service {
-    height: 560px;
-    box-sizing: border-box;
-    margin: 0 auto;
-    padding: 84px 0;
+    height: 580px;
 }
-.service_contents {
-    display: inline-block;
+
+.service_wrapper {
+    box-sizing: border-box;
+    height: 100%;
+    padding: 84px 0;
+    margin: 0 auto;
+    position: relative;
+}
+.service_contents{
+    position: absolute;
     width: 544px;
-    height: 392px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .service_contents:first-of-type{
-    margin-right: 46px;
+    left: 0;
 }
-/* float left 로 정렬,, 54px로 수정해야함 */
-
+.service_contents:last-of-type{
+    right: 0;
+}
 .service_contents > div {
     width: 100%;
     position: relative;
@@ -211,9 +216,6 @@ video {
 }
 .service_contents > ul li:first-child{
     margin-right: 24px;
-}
-ul[class^="svc"]{
-    height: 346px;
 }
 .service_event, .service_discount{
     float: left;
