@@ -1,14 +1,3 @@
-//header 광고 닫기 (닫기 버튼을 누르면 광고 height 0)
-let clsBtn = document.querySelector('.btn_ad_close i'),
-	headAd = document.querySelector('.head_ad')
-	headAdPost = document.querySelector('.head_ad_content .ad_poster');
-
-clsBtn.addEventListener('click',(e)=>{
-	e.preventDefault();
-	headAd.style.height = 0+'px';
-	headAdPost.style.height = 0+'px';
-});
-
 //서브메뉴 (메인메뉴에 마우스를 올리면 서브메뉴 열리기)
 let mainMenu = document.querySelectorAll('.nav_menu li'),
 	menu = document.querySelector('.menu'),
@@ -38,7 +27,9 @@ let fixBtn = document.querySelector('#btn_fixed'),
 	ticketBtn = document.querySelector('.btn_fixed_ticket'),
 	topBtn = document.querySelector('.btn_fixed_top');
 
-// let relocateEvt = new Event('relocate');
+console.log(subMenu.pageYoffset)
+
+let relocateEvt = new Event('scroll');
 
 window.addEventListener('scroll',()=>{
     if(window.pageYOffset > 230){
@@ -53,7 +44,7 @@ window.addEventListener('scroll',()=>{
     }
 });
 
-// window.dispatchEvent(relocateEvt);
+window.dispatchEvent(relocateEvt);
 
 //top버튼 (클릭 시 상단으로 이동)
 topBtn.addEventListener('click',(e)=>{
@@ -63,4 +54,28 @@ topBtn.addEventListener('click',(e)=>{
         top:0,
         behavior:'smooth'
     });
+});
+
+//header 광고 닫기 (닫기 버튼을 누르면 광고 height 0, 스크롤이벤트 조절)
+let clsBtn = document.querySelector('.btn_ad_close i'),
+	headAd = document.querySelector('.head_ad')
+	headAdPost = document.querySelector('.head_ad_content .ad_poster');
+
+clsBtn.addEventListener('click',(e)=>{
+	e.preventDefault();
+	headAd.style.height = 0+'px';
+	headAdPost.style.height = 0+'px';
+
+	window.addEventListener('scroll',()=>{
+		if(window.pageYOffset > 150){
+			nav.classList.add('active');
+		}else{
+			nav.classList.remove('active');
+		}
+		if(window.pageYOffset > 370){
+			fixBtn.classList.add('active');
+		}else{
+			fixBtn.classList.remove('active');
+		}
+	});
 });
