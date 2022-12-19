@@ -135,3 +135,7 @@ p{
     color: white;
     background: red;
 }
+
+* {
+    user-select: none;
+}
