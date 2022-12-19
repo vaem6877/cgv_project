@@ -637,7 +637,7 @@ ul[class^="svc"] li::before{
     opacity: 0;
     transition: 0.3s;
 }
-.dim span{
+.dim div{
     display: block;
     margin-top: 25%;
     transform: translateY(-50%);
