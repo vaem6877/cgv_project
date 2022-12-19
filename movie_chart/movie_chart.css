@@ -293,3 +293,29 @@ a[class^="btn_nav_"] {
 .chart_arrow i {
     color: #666666;
 }
+
+/* 상세보기 모달창 */
+#overlay {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1.5s ease-out;
+    z-index: 3;
+}
+#overlay img {
+    position: relative;
+    height: 650px;
+    top: 32%;
+    border-radius: 20px;
+    /* z-index: 3; */
+}
+
+#overlay.overlay_visible {
+    visibility: visible;
+    opacity: 1;
+}
