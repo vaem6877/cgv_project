@@ -262,7 +262,7 @@ pagerBtn.forEach((item,idx)=>{
     })
 });
 
-// 일시정지, 멈춤
+// 일시정지, 재생
 vbtnP.addEventListener('click',(e)=>{
     e.currentTarget.classList.toggle('active');
     if(e.currentTarget.classList.contains('active')){
