@@ -303,9 +303,9 @@ vbtnP.addEventListener('click',(e)=>{
 vbtnM.addEventListener('click',(e)=>{
     e.currentTarget.classList.toggle('active');
     if(e.currentTarget.classList.contains('active')){
-        video[currentIdx].muted = true;
-    } else {
         video[currentIdx].muted = false;
+    } else {
+        video[currentIdx].muted = true;
     }
 });
 
