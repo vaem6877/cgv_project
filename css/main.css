@@ -847,7 +847,7 @@ ul[class^="svc"] li::before{
 
 /*--------------- S theater 윤상혁 ---------------*/
 .theater_bg{
-    background: linear-gradient(to right, #000 10%, rgba(0,0,0,0) 20% 80%, #000 90%),linear-gradient(to bottom, rgba(255,255,255,.1)0% 100%) ,url("../img/theater/special_BG.png") no-repeat center;
+    background: linear-gradient(to right, #000 10%, rgba(0,0,0,0) 20% 80%, #000 90%),linear-gradient(to bottom, rgba(255,255,255,.1)0% 100%) ,url("../img/theater/special_BG.png") no-repeat center/cover;
 }
 .theater{
     padding-top: 135px;
@@ -1044,21 +1044,23 @@ ul[class^="svc"] li::before{
     height:50px;
     border:1px #ccc;;
     border-style: none none solid none;
+    text-align: center;
+
 }
 .polish_menu li{
+    display: inline-block;
     font-size: 14px; 
-    float:left;
+    margin:0 3px 0 0;
  }
 .polish_menu li:nth-child(7) a{
     color: #E72B20;
  }
-.polish_menu li:after{
+.polish_menu li a:after{
     content:"|";
-    width:1rem;
-    margin: 0 10px 0 10px;
+    margin-left: 10px;
     color:#ccc;
 }
-.polish_menu li:last-child::after{
+.polish_menu li:last-child a:after{
     content:none;
 }
 /*--------------- E footer_polish ---------------*/
@@ -1067,22 +1069,27 @@ ul[class^="svc"] li::before{
 .info{
     margin-top: 1em;
     margin-bottom: 2em;
-}
-.info .logo{
-    float: left;
-    margin-right: 2em;
+    position: relative;
 }
 
+.logo_wrap{
+    position: absolute;
+    left: 0; top: 50%; bottom: 50%;
+    transform: translateY(-50%);
+    display: block;
+}
 .info_content{
-    float: left;
+    position: absolute;
+    left: 50%;right: 50%;top: 50%; bottom: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
     font-size: 12px;
     line-height: 20px;
     text-align: center;
 }
-
 .info_content dt, 
 .info_content dd{
-    float: left;
+    display: inline;
 }
 .info_content dt:after{
     content: ':';
@@ -1106,8 +1113,12 @@ ul[class^="svc"] li::before{
 }
 /*--------------- S selectbox ---------------*/
 
-.info .form_branch{
-    float:right;
+.branch_wrapper{
+    position: absolute;
+    right: 0; top: 50%; bottom: 50%;
+    transform: translateY(-50%);
+}
+.form_branch{
     position: relative;
 }
 select,
