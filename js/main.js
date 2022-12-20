@@ -223,6 +223,7 @@ chartArrow.addEventListener('click', (e) => {
     console.log(videoOffsetAMT);
 })
 
+// 모달 페이지
 let posterDetail = chartPoster.querySelectorAll('.poster_btn');
 let overlay = document.querySelector('#overlay');
 let overlayImg = document.querySelector('#overlay img');
@@ -238,10 +239,16 @@ posterDetail.forEach((item, idx) => {
 
         overlay.classList.add('overlay_visible');
 
+        /* 해당 상세보기 페이지로 넘어가게 */
         setTimeout(() => {
-            location.href = detailAddress;
-        }, 900);
+            location.href = "https://vaem6877.github.io/cgv_project/";
+        }, 900); /* vaem6877.github.io/cgv_project/ */
     })
+})
+
+overlayImg.addEventListener('click', (e) => {
+    e.preventDefault();
+    overlay.classList.remove('overlay_visible');
 })
 /* --------------- E 홍효헌 ----------------*/
 

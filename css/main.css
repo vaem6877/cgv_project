@@ -339,7 +339,7 @@ nav.active li:hover h3{
 .chart_poster {
     position: absolute;
     left: 0;
-    /* transition: left 0.3s ease-in-out; */
+    /* transition: left 0.4s ease-in-out; */
 }
 
 .chart_poster_wrap {
