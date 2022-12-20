@@ -977,14 +977,13 @@ ul[class^="svc"] li::before{
 
 }
 .theme_container{
-    width: 3150px;
     height: 100px;
     transition: transform 0.3s;
 }
 .theme_container li{
     float: left;
     position: relative;
-
+    margin-right:60px;
 }
 .theme_container a{
     float:left;
@@ -993,7 +992,7 @@ ul[class^="svc"] li::before{
     height: 100px;
     background: rgba(255,255,255,.1);
     border-radius: 20px;
-    margin:0 60px 0 0;
+    margin:0;
 }
 
 .theme_container li a img{

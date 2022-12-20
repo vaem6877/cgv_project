@@ -319,26 +319,37 @@ vbtnM.addEventListener('click',(e)=>{
 const   themeContainer = document.querySelector('.theme_container'),
         themeSlides = themeContainer.querySelectorAll('.theme_slide'),
         themeSlideCount = themeSlides.length,
-        themeSlideBtns = document.querySelectorAll('.theme_controls a');
- let themeCurrentIdx = 0;
+        themePrev = document.querySelector('.theme_prev'),
+        themeNext = document.querySelector('.theme_next');
+ let    themeCurrentIdx = 0,
+        themeSlideToShow = 5,
+        themeSildeWidth = 150,
+        themeSlideMargin = 60,
+        themeMoveAmt = themeSildeWidth + themeSlideMargin;
+        
+themeContainer.style.width = `${themeMoveAmt*themeSlideCount}px`
 
 function themeMoveSlide(themeNum){
-    themeContainer.style.transform = `translateX(${-themeNum*1050}px)`;
+    themeContainer.style.transform = `translateX(${-themeMoveAmt*themeNum}px)`;
     themeCurrentIdx = themeNum;
 }
 //이전 다음 버튼 기능
-for(btn of themeSlideBtns){
-    btn.addEventListener('click',(e)=>{
-        e.preventDefault();
-        if(e.target.classList.contains('theme_prev')){
-            themeMoveSlide((themeSlideCount+themeCurrentIdx-1)%themeSlideCount); 
-
-        }else{
-            themeMoveSlide((themeCurrentIdx+1)%themeSlideCount);
-
-        }
-    });
-}
+themeNext.addEventListener('click',(e)=>{
+    e.preventDefault();
+    if(themeCurrentIdx == themeSlideCount-themeSlideToShow){
+        themeMoveSlide(0);
+    }else{
+        themeMoveSlide(++themeCurrentIdx)
+    }
+});
+themePrev.addEventListener('click',(e)=>{
+    e.preventDefault();
+    if(themeCurrentIdx == 0){
+        themeMoveSlide(themeSlideCount-themeSlideToShow);
+    }else{
+        themeMoveSlide(--themeCurrentIdx);
+    }
+});
 
 let branchSubmit = document.querySelector('#branch_submit');
 let SelectOption = document.querySelector('#branch');
