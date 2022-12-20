@@ -84,6 +84,8 @@ let chartArrow = document.querySelector('.chart_arrow');
 let currentIdxMovie = 0;
 let length = chartPosterSlide.length - 31;
 let lengthShow = chartPosterSlide.length - 21;
+let slideWidth = 294;
+let slideUnit = 2; 
 
 let chartForm = document.querySelector('.chart_form')
 let formUnder = document.querySelector('.chart_form input');
@@ -104,12 +106,12 @@ chartForm.addEventListener('focusout', (e) => {
 
 /* CHART SECTION image slide  */
 chartPosterSlide.forEach((item, idx) => {
-    item.style.left = idx * 294 + "px";  // 5880 부터
+    item.style.left = idx * slideWidth + "px";
 })
 
 /* imageSlide 함수 */
 function imageSlide (slideIdx) {
-    chartPoster.style.left = (slideIdx * -588) + "px";
+    chartPoster.style.left = (slideIdx * (-slideWidth*slideUnit)) + "px";
     currentIdxMovie = slideIdx;
 }
 
