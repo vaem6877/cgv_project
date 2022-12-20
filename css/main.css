@@ -201,22 +201,22 @@ nav.active li:hover h3{
     z-index: 100;
     visibility: hidden;
     opacity: 0;
+    transform: scale(50%) rotate(120deg);
     transition: 0.75s;
 }
-.btn_fixed_ticket,
-.btn_fixed_top{
-    display: inline-block;
+.btn_fixed_box{
+    width: 235px; height: 170px;
     position: relative;
 }
-.btn_fixed_ticket{
-    width: 170px; height: 170px;
+.btn_fixed_box a{
+    position: absolute;
+    bottom: 0;
 }
 .btn_fixed_top{
-    width: 75px; height: 75px;
+    right: 50%;
 }
 
 #btn_fixed h3{
-    /* display: inline-block; */
     position: absolute;
     text-decoration: none;
     text-align: center;
@@ -232,6 +232,10 @@ nav.active li:hover h3{
 #btn_fixed.active{
     visibility: visible;
     opacity: 1;
+    transform: scale(100%) rotate(0);
+}
+#btn_fixed.active .btn_fixed_top{
+    right: 0;
 }
 #btn_fixed a{
     transition: 0.5s;
@@ -250,7 +254,6 @@ nav.active li:hover h3{
     color: #E72B20;
 }
 /*--------------- E fixed-btn 손현진 ---------------*/
-
 
 /*--------------- S 홍효헌 ---------------*/
 .movie_chart {
