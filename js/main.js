@@ -240,7 +240,7 @@ posterDetail.forEach((item, idx) => {
 
         setTimeout(() => {
             location.href = detailAddress;
-        }, 800);
+        }, 900);
     })
 })
 /* --------------- E 홍효헌 ----------------*/
