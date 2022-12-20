@@ -40,15 +40,6 @@ function imageSlide (slideIdx) {
     currentIdxMovie = slideIdx;
 
     console.log(currentIdxMovie);
-
-    /* 버튼 사라짐 */
-    /* if(currentIdxMovie == 10) {
-        btnPrev.style.display = "none";
-    } else if(currentIdxMovie > 0) {
-        btnPrev.style.display = "inline-block";
-    } else {
-        btnPrev.style.display = "none";
-    } */
 }
 
 /* btnNext */

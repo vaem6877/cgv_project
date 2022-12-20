@@ -86,7 +86,6 @@ clsBtn.addEventListener('click',(e)=>{
 
 
 /* --------------- S 홍효헌 ----------------*/
-/* 변수 선언과 할당 */
 let chart = document.querySelector('.chart_header .chart');
 let chartShowing = document.querySelector('.chart_header .showing');
 let chartPoster = document.querySelector(".chart_poster");
@@ -96,13 +95,13 @@ let btnPrev = document.querySelector('.btn_nav_left');
 let btnNext = document.querySelector('.btn_nav_right');
 let chartArrow = document.querySelector('.chart_arrow');
 
+let currentIdxMovie = 0;
+let length = chartPosterSlide.length - 31;
+let lengthShow = chartPosterSlide.length - 21;
+
 let chartForm = document.querySelector('.chart_form')
 let formUnder = document.querySelector('.chart_form input');
 let formBtn = document.querySelector('.chart_form i');
-
-let currentIdxMovie = 0;
-let length = chartPosterSlide.length - 31; /* 슬라이드 넘기는 개수에 따라 빼주는 숫자 조절하기 */
-let lengthShow = chartPosterSlide.length - 21;
 
 /* MOVIE CHART form */
 chartForm.addEventListener('focusin', (e) => {
@@ -124,19 +123,8 @@ chartPosterSlide.forEach((item, idx) => {
 
 /* imageSlide 함수 */
 function imageSlide (slideIdx) {
-    chartPoster.style.left = (slideIdx * -588) + "px"; /* 1장-294, 2장-588*/
+    chartPoster.style.left = (slideIdx * -588) + "px";
     currentIdxMovie = slideIdx;
-
-    console.log(currentIdxMovie);
-
-    /* 버튼 사라짐 */
-    /* if(currentIdxMovie == 10) {
-        btnPrev.style.display = "none";
-    } else if(currentIdxMovie > 0) {
-        btnPrev.style.display = "inline-block";
-    } else {
-        btnPrev.style.display = "none";
-    } */
 }
 
 /* btnNext */
@@ -145,14 +133,10 @@ btnNext.addEventListener('click', (e) => {
 
     chartPoster.style.transition = "left 0.3s ease-in-out";
 
-    console.log(currentIdxMovie);
-
     if(currentIdxMovie < 10) {
         nextIdx = (currentIdxMovie + 1) % length;
         imageSlide(nextIdx);
     } else {
-        console.log(currentIdxMovie);
-
         if((currentIdxMovie + 1) % lengthShow == 0) {
             nextIdx = 10;
             imageSlide(nextIdx);
@@ -171,16 +155,13 @@ btnPrev.addEventListener('click', (e) => {
 
     if(currentIdxMovie == 0) {
         nextIdx = 8;
-        // chartPoster.style.transition = "none";
         imageSlide(nextIdx);
     } else if (currentIdxMovie == 10) {
         nextIdx = 18;
-        // chartPoster.style.transition = "none";
         imageSlide(nextIdx);
     } else {
         nextIdx = (currentIdxMovie - 1) % chartPosterSlide.length;
         imageSlide(nextIdx);
-        // currentIdxMovie = slideIdx;
     }
 
 })
@@ -189,7 +170,6 @@ btnPrev.addEventListener('click', (e) => {
 chart.addEventListener('click', (e) => {
     chartPoster.style.transition = "none";
     chartPoster.style.left = 0 * 294 + "px";
-    // btnPrev.style.display = "none";
     currentIdxMovie = 0;
 
     chart.style.fontWeight = "bold";
@@ -202,7 +182,6 @@ chart.addEventListener('click', (e) => {
 chartShowing.addEventListener("click", (e) => {
     chartPoster.style.transition = "none";
     chartPoster.style.left = 20 * -294 + "px";
-    // btnPrev.style.display = "none";
     currentIdxMovie = 10;
 
     chart.style.fontWeight = "400";
@@ -242,7 +221,7 @@ posterDetail.forEach((item, idx) => {
         /* 해당 상세보기 페이지로 넘어가게 */
         setTimeout(() => {
             location.href = "https://vaem6877.github.io/cgv_project/";
-        }, 900); /* vaem6877.github.io/cgv_project/ */
+        }, 1500);
     })
 })
 
