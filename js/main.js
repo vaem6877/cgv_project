@@ -240,7 +240,7 @@ posterDetail.forEach((item, idx) => {
 
         setTimeout(() => {
             location.href = detailAddress;
-        }, 800);
+        }, 900);
     })
 })
 /* --------------- E 홍효헌 ----------------*/
@@ -278,10 +278,11 @@ pagerBtn.forEach((item,idx)=>{
             ml.classList.remove('active');
         }
         movieList[currentIdx].classList.add('active');
-        // 멈추고, 시작시간 초기화 -> 재생
+        // 멈추고 음소거하고, 시작시간 초기화 -> 재생
         for(vd of video){
             vd.pause();
             vd.currentTime = 0;
+            vd.muted = true;
         }
         video[currentIdx].play();
         // 버튼이 active가 없도록 
@@ -303,9 +304,9 @@ vbtnP.addEventListener('click',(e)=>{
 vbtnM.addEventListener('click',(e)=>{
     e.currentTarget.classList.toggle('active');
     if(e.currentTarget.classList.contains('active')){
-        video[currentIdx].muted = true;
-    } else {
         video[currentIdx].muted = false;
+    } else {
+        video[currentIdx].muted = true;
     }
 });
 
