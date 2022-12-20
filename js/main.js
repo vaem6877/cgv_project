@@ -25,21 +25,20 @@ for(mM of mainMenu){
 
 //스크롤 이벤트 (1. 메뉴 상단 고정 및 스타일 변경 2. 예매하기 및 top 버튼 등장 3.페이지 돌아왔을 때 위치에 따라 자동적용)
 let nav = document.querySelector('nav');
+let main = document.querySelector('main'),
+    movieChart = document.querySelector('.movie_chart');
 let fixBtn = document.querySelector('#btn_fixed'),
 	ticketBtn = document.querySelector('.btn_fixed_ticket'),
 	topBtn = document.querySelector('.btn_fixed_top');
 
-console.log(subMenu.pageYoffset)
-
 let relocateEvt = new Event('scroll');
-
 window.addEventListener('scroll',()=>{
-    if(window.pageYOffset > 230){
+    if(window.pageYOffset > nav.offsetTop){
         nav.classList.add('active');
-    }else{
+    }if(window.pageYOffset < main.offsetTop){
         nav.classList.remove('active');
     }
-    if(window.pageYOffset > 450){
+    if(window.pageYOffset > movieChart.offsetHeight){
         fixBtn.classList.add('active');
     }else{
         fixBtn.classList.remove('active');
@@ -67,19 +66,6 @@ clsBtn.addEventListener('click',(e)=>{
 	e.preventDefault();
 	headAd.style.height = 0+'px';
 	headAdPost.style.height = 0+'px';
-
-	window.addEventListener('scroll',()=>{
-		if(window.pageYOffset > 150){
-			nav.classList.add('active');
-		}else{
-			nav.classList.remove('active');
-		}
-		if(window.pageYOffset > 370){
-			fixBtn.classList.add('active');
-		}else{
-			fixBtn.classList.remove('active');
-		}
-	});
 });
 
 /* --------------- E 손현진 ----------------*/
