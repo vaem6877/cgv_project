@@ -248,8 +248,7 @@ posterDetail.forEach((item, idx) => {
 
 /* --------------- S 박민지 ----------------*/
 
-let pager = document.querySelector('#video_pager'),
-    pagerBtn = document.querySelectorAll('.video_pager_link'),
+let pagerBtn = document.querySelectorAll('.video_pager_link'),
     title = document.querySelectorAll('.video_title > li'),
     movieList = document.querySelectorAll('.movie_list > li'),
     video = document.querySelectorAll('.movie_list > li > video'),
