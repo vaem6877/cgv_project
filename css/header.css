@@ -233,20 +233,17 @@ nav.active li:hover h3{
     visibility: visible;
     opacity: 1;
 }
-#btn_fixed a{
-    transition: 0.5s;
-}
-#btn_fixed a h3{
+#btn_fixed a,
+#btn_fixed a h3,
+#btn_fixed a i{
     transition: 0.5s;
 }
 #btn_fixed a:hover{
     transform: rotate(-30deg);
 }
-#btn_fixed a:hover h3{
+#btn_fixed a:hover h3,
+#btn_fixed a:hover i{
     transform: rotate(30deg);
-    color: #E72B20;
-}
-#btn_fixed a:hover h3 i{
     color: #E72B20;
 }
 /*--------------- E fixed-btn ---------------*/
