@@ -13,11 +13,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
+        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
         <!-- css 로드 -->
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/common.css">
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="movie_chart/movie_chart.css">
 
         <!-- fonts.google -->
         <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital@1=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -53,15 +53,15 @@
                     <div class="memberinfo">
                         <ul>
                             <li>
-                                <a href=""><i class="fa-solid fa-globe" alt="eng"></i></a>
+                                <a href=""><i class="fa-solid fa-globe"></i></a>
                                 <span class="tip">eng</span>
                             </li>
                             <li>
-                                <a href=""><i class="fa-solid fa-user-lock" alt="log in"></i></a>
+                                <a href=""><i class="fa-solid fa-user-lock"></i></a>
                                 <span class="tip">log in</span>
                             </li>
                             <li>
-                                <a href=""><i class="fa-solid fa-user-plus" alt="sign up"></i></a>
+                                <a href=""><i class="fa-solid fa-user-plus"></i></a>
                                 <span class="tip">sign up</span>
                             </li>
                         </ul>
@@ -137,14 +137,16 @@
             </nav>
         </header>
         <div id="btn_fixed">
-            <a href="#" class="btn_fixed_ticket">
-                <img src="img/btn_fixed_ticket-01.png" alt="예매하기">
-                <h3>예매하기</h3>
-            </a>
-            <a href="#" class="btn_fixed_top">
-                <img src="img/btn_fixed_top-01.png" alt="top">
-                <h3><i class="fa-solid fa-arrow-up"></i></h3>
-            </a>
+            <div class="btn_fixed_box">
+                <a href="#" class="btn_fixed_ticket">
+                    <img src="img/btn_fixed_ticket-01.png" alt="예매하기">
+                    <h3>예매하기</h3>
+                </a>
+                <a href="#" class="btn_fixed_top">
+                    <img src="img/btn_fixed_top-01.png" alt="top">
+                    <h3><i class="fa-solid fa-arrow-up"></i></h3>
+                </a>
+            </div>
         </div>
             <!--------------- 손현진 파트 --------------->
 
@@ -175,15 +177,16 @@
                                 <li> 
                                     <div class="poster_wrap">
                                         <span class="poster_num"> 1 </span>
-                                        <img src="movie_chart/images/movie_chart/image_slide/01_avatar2.jpg" alt="아바타-물의길">
+                                        <img src="img/movie_chart/image_slide/01_avatar2.jpg" alt="아바타-물의길">
                                         <div class="poster_modal">
-                                            <a href="" class="poster_btn"> 상세보기 </a>
+                                            <a href="" class="poster_btn" data-lightbox="img/movie_chart/image_slide/01 아바타-물의 길.jpg"
+                                            data-link="http://www.cgv.co.kr/search/?query=%uC544%uBC14%uD0C0"> 상세보기 </a>
                                         </div>
                                     </div>
             
                                     <div class="title_ticketing">
                                         <h3> 아바타-물의 길 </h3>
-                                        <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20031460&MOVIE_CD_GROUP=20031460" class="btn_ticketing"> 예매하기 </a> 
+                                        <a href="#" class="btn_ticketing"> 예매하기 </a> 
                                         <span> 예매율 66% </span>
                                     </div>
                                 </li>
@@ -191,14 +194,15 @@
                                 <li> 
                                     <div class="poster_wrap">
                                         <span class="poster_num"> 2 </span>
-                                        <img src="movie_chart/images/movie_chart/image_slide/02_the_night_owl.jpg" alt="올빼미">
+                                        <img src="img/movie_chart/image_slide/02_the_night_owl.jpg" alt="올빼미">
                                         <div class="poster_modal">
-                                            <a href="" class="poster_btn"> 상세보기 </a>
+                                            <a href="" class="poster_btn" data-lightbox="img/movie_chart/image_slide/02 올빼미.jpg"
+                                            data-link="http://www.cgv.co.kr/movies/detail-view/?midx=86481"> 상세보기 </a>
                                         </div>
                                     </div>
                                     <div class="title_ticketing">
                                         <h3> 올빼미 </h3>
-                                        <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20031460&MOVIE_CD_GROUP=20031460" class="btn_ticketing"> 예매하기 </a>
+                                        <a href="#" class="btn_ticketing"> 예매하기 </a>
                                         <span> 예매율 12% </span>
                                     </div>
                                 </li>
@@ -206,14 +210,15 @@
                                 <li> 
                                     <div class="poster_wrap">
                                         <span class="poster_num"> 3 </span>
-                                        <img src="movie_chart/images/movie_chart/image_slide/03_gravity.jpg" alt="그래비티">
+                                        <img src="img/movie_chart/image_slide/03_gravity.jpg" alt="그래비티">
                                         <div class="poster_modal">
-                                            <a href="" class="poster_btn"> 상세보기 </a>
+                                            <a href="" class="poster_btn" data-lightbox="img/movie_chart/image_slide/03 그래비티.jpg"
+                                            data-link="http://www.cgv.co.kr/movies/detail-view/?midx=77200"> 상세보기 </a>
                                         </div>
                                     </div>
                                     <div class="title_ticketing">
                                         <h3> 그래비티 </h3>
-                                        <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20031460&MOVIE_CD_GROUP=20031460" class="btn_ticketing"> 예매하기 </a>
+                                        <a href="#" class="btn_ticketing"> 예매하기 </a>
                                         <span> 예매율 1.8% </span>
                                     </div>
                                 </li>
@@ -221,14 +226,15 @@
                                 <li> 
                                     <div class="poster_wrap">
                                         <span class="poster_num"> 4 </span>
-                                        <img src="movie_chart/images/movie_chart/image_slide/04_madmax.jpg" alt="매드맥스-분노의 도로">
+                                        <img src="img/movie_chart/image_slide/04_madmax.jpg" alt="매드맥스-분노의 도로">
                                         <div class="poster_modal">
-                                            <a href="" class="poster_btn"> 상세보기 </a>
+                                            <a href="" class="poster_btn" data-lightbox="img/movie_chart/image_slide/04 매드맥스-분노의 도로.jpg"
+                                            data-link="http://www.cgv.co.kr/movies/detail-view/?midx=78207"> 상세보기 </a>
                                         </div>
                                     </div>
                                     <div class="title_ticketing">
                                         <h3> 매드맥스-분노의 도로 </h3>
-                                        <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20031460&MOVIE_CD_GROUP=20031460" class="btn_ticketing"> 예매하기 </a>
+                                        <a href="#" class="btn_ticketing"> 예매하기 </a>
                                         <span> 예매율 1.2% </span>
                                     </div>
                                 </li>
@@ -236,14 +242,15 @@
                                 <li> 
                                     <div class="poster_wrap">
                                         <span class="poster_num"> 5 </span>
-                                        <img src="movie_chart/images/movie_chart/image_slide/05_Prey_for_the_Devil.jpg" alt="프레이 포 더 데블">
+                                        <img src="img/movie_chart/image_slide/05_Prey_for_the_Devil.jpg" alt="프레이 포 더 데블">
                                         <div class="poster_modal">
-                                            <a href="" class="poster_btn"> 상세보기 </a>
+                                            <a href="" class="poster_btn" data-lightbox="img/movie_chart/image_slide/05 프레이 포 더 데블.jpg"
+                                            data-link="http://www.cgv.co.kr/search/?query=%uD504%uB808%uC774%20%uD3EC%20%uB354%20%uB370%uBE14"> 상세보기 </a>
                                         </div>
                                     </div>
                                     <div class="title_ticketing">
                                         <h3> 프레이 포 더 데블 </h3>
-                                        <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20031460&MOVIE_CD_GROUP=20031460" class="btn_ticketing"> 예매하기 </a>
+                                        <a href="#" class="btn_ticketing"> 예매하기 </a>
                                         <span> 예매율 1.6% </span>
                                     </div>
                                 </li>
@@ -251,14 +258,15 @@
                                 <li> 
                                     <div class="poster_wrap">
                                         <span class="poster_num"> 6 </span>
-                                        <img src="movie_chart/images/movie_chart/image_slide/06_birth.jpg" alt="탄생">
+                                        <img src="img/movie_chart/image_slide/06_birth.jpg" alt="탄생">
                                         <div class="poster_modal">
-                                            <a href="" class="poster_btn"> 상세보기 </a>
+                                            <a href="" class="poster_btn" data-lightbox="img/movie_chart/image_slide/06 탄생.jpg"
+                                            data-link="http://www.cgv.co.kr/search/?query=%uD0C4%uC0DD"> 상세보기 </a>
                                         </div>
                                     </div>
                                     <div class="title_ticketing">
                                         <h3> 탄생 </h3>
-                                        <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20031460&MOVIE_CD_GROUP=20031460" class="btn_ticketing"> 예매하기 </a>
+                                        <a href="#" class="btn_ticketing"> 예매하기 </a>
                                         <span> 예매율 1.9% </span>
                                     </div>
                                 </li>
@@ -266,14 +274,15 @@
                                 <li> 
                                     <div class="poster_wrap">
                                         <span class="poster_num"> 7 </span>
-                                        <img src="movie_chart/images/movie_chart/image_slide/07_A_Christmas_Carol.jpg" alt="크리스마스 캐럴">
+                                        <img src="img/movie_chart/image_slide/07_A_Christmas_Carol.jpg" alt="크리스마스 캐럴">
                                         <div class="poster_modal">
-                                            <a href="" class="poster_btn"> 상세보기 </a>
+                                            <a href="" class="poster_btn" data-lightbox="img/movie_chart/image_slide/07 크리스마스 캐럴.jpg"
+                                            data-link="http://www.cgv.co.kr/search/?query=%uD06C%uB9AC%uC2A4%uB9C8%uC2A4%20%uCE90%uB7F4"> 상세보기 </a>
                                         </div>
                                     </div>
                                     <div class="title_ticketing">
                                         <h3> 크리스마스 캐럴 </h3>
-                                        <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20031460&MOVIE_CD_GROUP=20031460" class="btn_ticketing"> 예매하기 </a>
+                                        <a href="#" class="btn_ticketing"> 예매하기 </a>
                                         <span> 예매율 1.1% </span>
                                     </div>
                                 </li>
@@ -281,14 +290,15 @@
                                 <li> 
                                     <div class="poster_wrap">
                                         <span class="poster_num"> 8 </span>
-                                        <img src="movie_chart/images/movie_chart/image_slide/08_The_menu.jpg" alt="더 메뉴">
+                                        <img src="img/movie_chart/image_slide/08_The_menu.jpg" alt="더 메뉴">
                                         <div class="poster_modal">
-                                            <a href="" class="poster_btn"> 상세보기 </a>
+                                            <a href="" class="poster_btn" data-lightbox="img/movie_chart/image_slide/08 더 메뉴.jpg"
+                                            data-link="http://www.cgv.co.kr/search/?query=%uB354%20%uBA54%uB274"> 상세보기 </a>
                                         </div>
                                     </div>
                                     <div class="title_ticketing">
                                         <h3> 더 메뉴 </h3>
-                                        <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20031460&MOVIE_CD_GROUP=20031460" class="btn_ticketing"> 예매하기 </a>
+                                        <a href="#" class="btn_ticketing"> 예매하기 </a>
                                         <span>예매율 1.0% </span>
                                     </div>
                                 </li>
@@ -296,14 +306,15 @@
                                 <li> 
                                     <div class="poster_wrap">
                                         <span class="poster_num"> 9 </span>
-                                        <img src="movie_chart/images/movie_chart/image_slide/09_Even_If_This Love_Disappears_from_the_World Tonight.jpg" alt="오늘 밤, 세계에서 이 사랑이 사라진다 해도">
+                                        <img src="img/movie_chart/image_slide/09_Even_If_This Love_Disappears_from_the_World Tonight.jpg" alt="오늘 밤, 세계에서 이 사랑이 사라진다 해도">
                                         <div class="poster_modal">
-                                            <a href="" class="poster_btn"> 상세보기 </a>
+                                            <a href="" class="poster_btn" data-lightbox="img/movie_chart/image_slide/09 오늘 밤, 세계에서 이 사랑이 사라진다 해도.jpg"
+                                            data-link="http://www.cgv.co.kr/search/?query=%uC624%uB298%20%uBC24%2C%20%uC138%uACC4%uC5D0%uC11C%20%uC774%20%uC0AC%uB791%uC774%20%uC0AC%uB77C%uC9C4%uB2E4%20%uD574%uB3C4"> 상세보기 </a>
                                         </div>
                                     </div>
                                     <div class="title_ticketing">
                                         <h3> 오늘 밤, 세계에서 이 사랑이 사라진다 해도 </h3>
-                                        <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20031460&MOVIE_CD_GROUP=20031460" class="btn_ticketing"> 예매하기 </a>
+                                        <a href="#" class="btn_ticketing"> 예매하기 </a>
                                         <span> 예매율 2.0% </span>
                                     </div>
                                 </li>
@@ -311,14 +322,15 @@
                                 <li> 
                                     <div class="poster_wrap">
                                         <span class="poster_num"> 10 </span>
-                                        <img src="movie_chart/images/movie_chart/image_slide/10_Stellar.jpg" alt="압꾸정">
+                                        <img src="img/movie_chart/image_slide/10_Stellar.jpg" alt="압꾸정">
                                         <div class="poster_modal">
-                                            <a href="" class="poster_btn"> 상세보기 </a>
+                                            <a href="" class="poster_btn" data-lightbox="img/movie_chart/image_slide/10 압꾸정.jpg"
+                                            data-link="http://www.cgv.co.kr/search/?query=%uC555%uAFB8%uC815"> 상세보기 </a>
                                         </div>
                                     </div>
                                     <div class="title_ticketing">
                                         <h3> 압꾸정 </h3>
-                                        <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20031460&MOVIE_CD_GROUP=20031460" class="btn_ticketing"> 예매하기 </a>
+                                        <a href="#" class="btn_ticketing"> 예매하기 </a>
                                         <span> 예매율 1.6% </span>
                                     </div>
                                 </li>
@@ -326,14 +338,15 @@
                                 <li> 
                                     <div class="poster_wrap">
                                         <span class="poster_num"> 11 </span>
-                                        <img src="movie_chart/images/movie_chart/image_slide/11_Ensemble_Stars_DREAM_LIVE_7th_Tour_Allied_Worlds.jpg" alt="라이브뷰잉">
+                                        <img src="img/movie_chart/image_slide/11_Ensemble_Stars_DREAM_LIVE_7th_Tour_Allied_Worlds.jpg" alt="라이브뷰잉">
                                         <div class="poster_modal">
-                                            <a href="" class="poster_btn"> 상세보기 </a>
+                                            <a href="" class="poster_btn" data-lightbox="img/movie_chart/image_slide/11 (라이브뷰잉)Ensemble Stars!! DREAM LIVE -7th Tour Allied Worlds-.jpg"
+                                            data-link="http://www.cgv.co.kr/movies/detail-view/?midx=86435"> 상세보기 </a>
                                         </div>
                                     </div>
                                     <div class="title_ticketing">
                                         <h3> (라이브뷰잉)Ensemble Stars!! <!-- DREAM LIVE -7th Tour Allied Worlds --> </h3>
-                                        <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20031460&MOVIE_CD_GROUP=20031460" class="btn_ticketing"> 예매하기 </a>
+                                        <a href="#" class="btn_ticketing"> 예매하기 </a>
                                         <span> 예매율 1.1% </span>
                                     </div>
                                 </li>
@@ -341,14 +354,15 @@
                                 <li> 
                                     <div class="poster_wrap">
                                         <span class="poster_num"> 12 </span>
-                                        <img src="movie_chart/images/movie_chart/image_slide/12_ONE_PIECE FILM_RED.jpg" alt="원피스 필름 레드">
+                                        <img src="img/movie_chart/image_slide/12_ONE_PIECE FILM_RED.jpg" alt="원피스 필름 레드">
                                         <div class="poster_modal">
-                                            <a href="" class="poster_btn"> 상세보기 </a>
+                                            <a href="" class="poster_btn" data-lightbox="img/movie_chart/image_slide/12 원피스 필름 레드.jpg"
+                                            data-link="http://www.cgv.co.kr/search/?query=%uC6D0%uD53C%uC2A4%20%uD544%uB984%20%uB808%uB4DC"> 상세보기 </a>
                                         </div>
                                     </div>
                                     <div class="title_ticketing">
                                         <h3> 원피스 필름 레드 </h3>
-                                        <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20031460&MOVIE_CD_GROUP=20031460" class="btn_ticketing"> 예매하기 </a>
+                                        <a href="#" class="btn_ticketing"> 예매하기 </a>
                                         <span> 예매율 0.9% </span>
                                     </div>
                                 </li>
@@ -356,14 +370,15 @@
                                 <li> 
                                     <div class="poster_wrap">
                                         <span class="poster_num"> 13 </span>
-                                        <img src="movie_chart/images/movie_chart/image_slide/13_White_Noise.jpg" alt="화이트 노이즈">
+                                        <img src="img/movie_chart/image_slide/13_White_Noise.jpg" alt="화이트 노이즈">
                                         <div class="poster_modal">
-                                            <a href="" class="poster_btn"> 상세보기 </a>
+                                            <a href="" class="poster_btn" data-lightbox="img/movie_chart/image_slide/13 화이트 노이즈.jpg"
+                                            data-link="http://www.cgv.co.kr/search/?query=%uD654%uC774%uD2B8%20%uB178%uC774%uC988"> 상세보기 </a>
                                         </div>
                                     </div>
                                     <div class="title_ticketing">
                                         <h3> 화이트 노이즈 </h3>
-                                        <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20031460&MOVIE_CD_GROUP=20031460" class="btn_ticketing"> 예매하기 </a>
+                                        <a href="#" class="btn_ticketing"> 예매하기 </a>
                                         <span> 예매율 0.8% </span>
                                     </div>
                                 </li>
@@ -371,14 +386,15 @@
                                 <li> 
                                     <div class="poster_wrap">
                                         <span class="poster_num"> 14 </span>
-                                        <img src="movie_chart/images/movie_chart/image_slide/14_the_dream_show2.jpg" alt="엔시티 드림 더 무비 - 인 어 드림">
+                                        <img src="img/movie_chart/image_slide/14_the_dream_show2.jpg" alt="엔시티 드림 더 무비 - 인 어 드림">
                                         <div class="poster_modal">
-                                            <a href="" class="poster_btn"> 상세보기 </a>
+                                            <a href="" class="poster_btn" data-lightbox="img/movie_chart/image_slide/14 엔시티 드림 더 무비 - 인 어 드림.jpg"
+                                            data-link="http://www.cgv.co.kr/search/?query=%uC5D4%uC2DC%uD2F0%20%uB4DC%uB9BC%20%uB354%20%uBB34%uBE44%20-%20%uC778%20%uC5B4%20%uB4DC%uB9BC"> 상세보기 </a>
                                         </div>
                                     </div>
                                     <div class="title_ticketing">
                                         <h3> 엔시티 드림 더 무비 - 인 어 드림 </h3>
-                                        <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20031460&MOVIE_CD_GROUP=20031460" class="btn_ticketing"> 예매하기 </a>
+                                        <a href="#" class="btn_ticketing"> 예매하기 </a>
                                         <span> 예매율 0.8% </span>
                                     </div>
                                 </li>
@@ -386,14 +402,15 @@
                                 <li> 
                                     <div class="poster_wrap">
                                         <span class="poster_num"> 15 </span>
-                                        <img src="movie_chart/images/movie_chart/image_slide/15_Shinbis_Haunted_House.jpg" alt="신비아파트 극장판 차원도깨비와 7개의 세계">
+                                        <img src="img/movie_chart/image_slide/15_Shinbis_Haunted_House.jpg" alt="신비아파트 극장판 차원도깨비와 7개의 세계">
                                         <div class="poster_modal">
-                                            <a href="" class="poster_btn"> 상세보기 </a>
+                                            <a href="" class="poster_btn" data-lightbox="img/movie_chart/image_slide/15 신비아파트 극장판 차원도깨비와 7개의 세계.jpg"
+                                            data-link="http://www.cgv.co.kr/search/?query=%uC2E0%uBE44%uC544%uD30C%uD2B8%20%uADF9%uC7A5%uD310%20%uCC28%uC6D0%uB3C4%uAE68%uBE44%uC640%207%uAC1C%uC758%20%uC138%uACC4"> 상세보기 </a>
                                         </div>
                                     </div>
                                     <div class="title_ticketing">
                                         <h3> 신비아파트 극장판 차원도깨비와 7개의 세계 </h3>
-                                        <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20031460&MOVIE_CD_GROUP=20031460" class="btn_ticketing"> 예매하기 </a>
+                                        <a href="#" class="btn_ticketing"> 예매하기 </a>
                                         <span> 예매율 2.2% </span>
                                     </div>
                                 </li>
@@ -401,14 +418,15 @@
                                 <li> 
                                     <div class="poster_wrap">
                                         <span class="poster_num"> 16 </span>
-                                        <img src="movie_chart/images/movie_chart/image_slide/16_Bones_and_All.jpg" alt="본즈 앤 올">
+                                        <img src="img/movie_chart/image_slide/16_Bones_and_All.jpg" alt="본즈 앤 올">
                                         <div class="poster_modal">
-                                            <a href="" class="poster_btn"> 상세보기 </a>
-                                        </div>
+                                            <a href="" class="poster_btn" data-lightbox="img/movie_chart/image_slide/16 본즈 앤 올.jpg"
+                                            data-link="http://www.cgv.co.kr/search/?query=%uBCF8%uC988%uC564%uC62C"> 상세보기 </a>
+                                        </div> 
                                     </div>
                                     <div class="title_ticketing">
                                         <h3> 본즈 앤 올 </h3>
-                                        <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20031460&MOVIE_CD_GROUP=20031460" class="btn_ticketing"> 예매하기 </a>
+                                        <a href="#" class="btn_ticketing"> 예매하기 </a>
                                         <span> 예매율 0.5% </span>
                                     </div>
                                 </li>
@@ -416,14 +434,15 @@
                                 <li> 
                                     <div class="poster_wrap">
                                         <span class="poster_num"> 17 </span>
-                                        <img src="movie_chart/images/movie_chart/image_slide/17_Dont_Forget_I_Love_You.jpg" alt="너와 사랑한 시간">
+                                        <img src="img/movie_chart/image_slide/17_Dont_Forget_I_Love_You.jpg" alt="너와 사랑한 시간">
                                         <div class="poster_modal">
-                                            <a href="" class="poster_btn"> 상세보기 </a>
+                                            <a href="" class="poster_btn" data-lightbox="img/movie_chart/image_slide/17 너와 사랑한 시간.jpg"
+                                            data-link="http://www.cgv.co.kr/search/?query=%uB108%uC640%20%uC0AC%uB791"> 상세보기 </a>
                                         </div>
                                     </div>
                                     <div class="title_ticketing">
                                         <h3> 너와 사랑한 시간 </h3>
-                                        <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20031460&MOVIE_CD_GROUP=20031460" class="btn_ticketing"> 예매하기 </a>
+                                        <a href="#" class="btn_ticketing"> 예매하기 </a>
                                         <span> 예매율 0.2% </span>
                                     </div>
                                 </li>
@@ -431,14 +450,15 @@
                                 <li> 
                                     <div class="poster_wrap">
                                         <span class="poster_num"> 18 </span>
-                                        <img src="movie_chart/images/movie_chart/image_slide/18_hero.jpg" alt="영웅">
+                                        <img src="img/movie_chart/image_slide/18_hero.jpg" alt="영웅">
                                         <div class="poster_modal">
-                                            <a href="" class="poster_btn"> 상세보기 </a>
+                                            <a href="" class="poster_btn" data-lightbox="img/movie_chart/image_slide/18 영웅.jpg"
+                                            data-link="http://www.cgv.co.kr/search/?query=%uC601%uC6C5"> 상세보기 </a>
                                         </div>
                                     </div>
                                     <div class="title_ticketing">
                                         <h3> 영웅 </h3>
-                                        <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20031460&MOVIE_CD_GROUP=20031460" class="btn_ticketing"> 예매하기 </a>
+                                        <a href="#" class="btn_ticketing"> 예매하기 </a>
                                         <span> 예매율 0.7% </span>
                                     </div>
                                 </li>
@@ -446,33 +466,48 @@
                                 <li> 
                                     <div class="poster_wrap">
                                         <span class="poster_num"> 19 </span>
-                                        <img src="movie_chart/images/movie_chart/image_slide/19_Black_Panther_2_Wakanda_Forever.jpg" alt="블랙 팬서-와칸다 포에버">
+                                        <img src="img/movie_chart/image_slide/19_Black_Panther_2_Wakanda_Forever.jpg" alt="블랙 팬서-와칸다 포에버">
                                         <div class="poster_modal">
-                                            <a href="" class="poster_btn"> 상세보기 </a>
+                                            <a href="" class="poster_btn" data-lightbox="img/movie_chart/image_slide/19 블랙 팬서-와칸다 포에버.jpg"
+                                            data-link="http://www.cgv.co.kr/search/?query=%uBE14%uB799%20%uD32C%uC11C-%uC640%uCE78%uB2E4%20%uD3EC%uC5D0%uBC84"> 상세보기 </a>
                                         </div>
                                     </div>
                                     <div class="title_ticketing">
                                         <h3> 블랙 팬서-와칸다 포에버 </h3>
-                                        <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20031460&MOVIE_CD_GROUP=20031460" class="btn_ticketing"> 예매하기 </a>
+                                        <a href="#" class="btn_ticketing"> 예매하기 </a>
                                         <span> 예매율 0.2% </span>
                                     </div>
                                 </li>
-            
-                                <!-- 칸 채우기용 -->
-                                <li> </li>
+                                    
+                                <li> 
+                                    <div class="poster_wrap">
+                                        <span class="poster_num"> 20 </span>
+                                        <img src="img/movie_chart/image_slide/20 드라이브 마이 카.jpg" alt="블랙 팬서-와칸다 포에버">
+                                        <div class="poster_modal">
+                                            <a href="" class="poster_btn" data-lightbox="img/movie_chart/image_slide/20 드라이브 마이 카.jpg"
+                                            data-link="http://www.cgv.co.kr/search/?query=%uBE14%uB799%20%uD32C%uC11C-%uC640%uCE78%uB2E4%20%uD3EC%uC5D0%uBC84"> 상세보기 </a>
+                                        </div>
+                                    </div>
+                                    <div class="title_ticketing">
+                                        <h3> 드라이브 마이 카 </h3>
+                                        <a href="#" class="btn_ticketing"> 예매하기 </a>
+                                        <span> 예매율 0.1% </span>
+                                    </div>
+                                </li>
             
                                 <!-- 상영예정작 poster 총 20개 -->
                                 <li> 
                                     <div class="poster_wrap">
                                         <span class="poster_num"> 1 </span>
-                                        <img src="movie_chart/images/movie_chart/image_slide show/01_jo1_the_movie.jpg" alt="제이오원 더 무비">
+                                        <img src="img/movie_chart/image_slide show/01_jo1_the_movie.jpg" alt="제이오원 더 무비">
                                         <div class="poster_modal">
-                                            <a href="" class="poster_btn"> 상세보기 </a>
+                                            <a href="" class="poster_btn" data-lightbox="img/movie_chart/image_slide show/01 제이오원 더 무비.jpg"
+                                            data-link="http://www.cgv.co.kr/movies/detail-view/?midx=86698"> 상세보기 </a>
                                         </div>
                                     </div>
                                     <div class="title_ticketing">
                                         <h3> 제이오원 더 무비 </h3>
-                                        <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20031460&MOVIE_CD_GROUP=20031460" class="btn_ticketing"> 예매하기 </a> 
+                                        <a href="#" class="btn_ticketing"> 예매하기 </a> 
                                         <span> 예매율 0.0% </span>
                                     </div>
                                 </li>
@@ -480,14 +515,15 @@
                                 <li> 
                                     <div class="poster_wrap">
                                         <span class="poster_num"> 2 </span>
-                                        <img src="movie_chart/images/movie_chart/image_slide show/02_big_data_2023.jpg" alt="[사이다경제] 빅데이터로 바라본 2023년 부동산">
+                                        <img src="img/movie_chart/image_slide show/02_big_data_2023.jpg" alt="[사이다경제] 빅데이터로 바라본 2023년 부동산">
                                         <div class="poster_modal">
-                                            <a href="" class="poster_btn"> 상세보기 </a>
+                                            <a href="" class="poster_btn" data-lightbox="img/movie_chart/image_slide show/02 [사이다경제] 빅데이터로 바라본 2023년 부동산.jpg"
+                                            data-link="http://www.cgv.co.kr/movies/detail-view/?midx=86690"> 상세보기 </a>
                                         </div>
                                     </div>
                                     <div class="title_ticketing">
                                         <h3> [사이다경제] 빅데이터로 바라본 2023년 ... <!-- 부동산 --> </h3>
-                                        <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20031460&MOVIE_CD_GROUP=20031460" class="btn_ticketing"> 예매하기 </a>
+                                        <a href="#" class="btn_ticketing"> 예매하기 </a>
                                         <span> 예매율 0.0% </span>
                                     </div>
                                 </li>
@@ -495,14 +531,15 @@
                                 <li> 
                                     <div class="poster_wrap">
                                         <span class="poster_num"> 3 </span>
-                                        <img src="movie_chart/images/movie_chart/image_slide show/03_avatar2.jpg" alt="아바타-물의 길">
+                                        <img src="img/movie_chart/image_slide show/03_avatar2.jpg" alt="아바타-물의 길">
                                         <div class="poster_modal">
-                                            <a href="" class="poster_btn"> 상세보기 </a>
+                                            <a href="" class="poster_btn" data-lightbox="img/movie_chart/image_slide show/03 아바타-물의 길.jpg"
+                                            data-link="http://www.cgv.co.kr/search/?query=%uC544%uBC14%uD0C0-%uBB3C%uC758%20%uAE38"> 상세보기 </a>
                                         </div>
                                     </div>
                                     <div class="title_ticketing">
                                         <h3> 아바타-물의 길 </h3>
-                                        <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20031460&MOVIE_CD_GROUP=20031460" class="btn_ticketing"> 예매하기 </a>
+                                        <a href="#" class="btn_ticketing"> 예매하기 </a>
                                         <span> 예매율 73% </span>
                                     </div>
                                 </li>
@@ -510,14 +547,15 @@
                                 <li> 
                                     <div class="poster_wrap">
                                         <span class="poster_num"> 4 </span>
-                                        <img src="movie_chart/images/movie_chart/image_slide show/04_Shinbis_Haunted_House.jpg" alt="신비아파트 극장판 차원도깨비와 7개의 세계">
+                                        <img src="img/movie_chart/image_slide show/04_Shinbis_Haunted_House.jpg" alt="신비아파트 극장판 차원도깨비와 7개의 세계">
                                         <div class="poster_modal">
-                                            <a href="" class="poster_btn"> 상세보기 </a>
+                                            <a href="" class="poster_btn" data-lightbox="img/movie_chart/image_slide show/04 신비아파트 극장판 차원도깨비와 7개의 세계"
+                                            data-link="http://www.cgv.co.kr/search/?query=%uC2E0%uBE44%uC544%uD30C%uD2B8%20%uADF9%uC7A5%uD310%20%uCC28%uC6D0%uB3C4%uAE68%uBE44%uC640%207%uAC1C%uC758%20%uC138%uACC4"> 상세보기 </a>
                                         </div>
                                     </div>
                                     <div class="title_ticketing">
                                         <h3> 신비아파트 극장판 차원도깨비와 7개의 세계 </h3>
-                                        <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20031460&MOVIE_CD_GROUP=20031460" class="btn_ticketing"> 예매하기 </a>
+                                        <a href="#" class="btn_ticketing"> 예매하기 </a>
                                         <span> 예매율 1.2% </span>
                                     </div>
                                 </li>
@@ -525,14 +563,15 @@
                                 <li> 
                                     <div class="poster_wrap">
                                         <span class="poster_num"> 5 </span>
-                                        <img src="movie_chart/images/movie_chart/image_slide show/05_La_vie_en_rose.jpg" alt="라 비 앙 로즈">
+                                        <img src="img/movie_chart/image_slide show/05_La_vie_en_rose.jpg" alt="라 비 앙 로즈">
                                         <div class="poster_modal">
-                                            <a href="" class="poster_btn"> 상세보기 </a>
+                                            <a href="" class="poster_btn" data-lightbox="img/movie_chart/image_slide show/05 라 비 앙 로즈.jpg"
+                                            data-link="http://www.cgv.co.kr/search/?query=%uB77C%20%uBE44%20%uC559%20%uB85C%uC988"> 상세보기 </a>
                                         </div>
                                     </div>
                                     <div class="title_ticketing">
                                         <h3> 라 비 앙 로즈 </h3>
-                                        <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20031460&MOVIE_CD_GROUP=20031460" class="btn_ticketing"> 예매하기 </a>
+                                        <a href="#" class="btn_ticketing"> 예매하기 </a>
                                         <span> 예매율 0.1% </span>
                                     </div>
                                 </li>
@@ -540,14 +579,15 @@
                                 <li> 
                                     <div class="poster_wrap">
                                         <span class="poster_num"> 6 </span>
-                                        <img src="movie_chart/images/movie_chart/image_slide show/06_music_by_sia.jpg" alt="뮤직 by SIA">
+                                        <img src="img/movie_chart/image_slide show/06_music_by_sia.jpg" alt="뮤직 by SIA">
                                         <div class="poster_modal">
-                                            <a href="" class="poster_btn"> 상세보기 </a>
+                                            <a href="" class="poster_btn" data-lightbox="img/movie_chart/image_slide show/06 뮤직 by SIA.jpg"
+                                            data-link="http://www.cgv.co.kr/search/?query=%uBBA4%uC9C1%20by%20SIA"> 상세보기 </a>
                                         </div>
                                     </div>
                                     <div class="title_ticketing">
                                         <h3> 뮤직 by SIA </h3>
-                                        <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20031460&MOVIE_CD_GROUP=20031460" class="btn_ticketing"> 예매하기 </a>
+                                        <a href="#" class="btn_ticketing"> 예매하기 </a>
                                         <span> 예매율 0.0% </span>
                                     </div>
                                 </li>
@@ -555,14 +595,15 @@
                                 <li> 
                                     <div class="poster_wrap">
                                         <span class="poster_num"> 7 </span>
-                                        <img src="movie_chart/images/movie_chart/image_slide show/07_hells_garden.jpg" alt="지옥의 화원">
+                                        <img src="img/movie_chart/image_slide show/07_hells_garden.jpg" alt="지옥의 화원">
                                         <div class="poster_modal">
-                                            <a href="" class="poster_btn"> 상세보기 </a>
+                                            <a href="" class="poster_btn" data-lightbox="img/movie_chart/image_slide show/07 지옥의 화원.jpg"
+                                            data-link="http://www.cgv.co.kr/search/?query=%uC9C0%uC625%uC758%20%uD654%uC6D0"> 상세보기 </a>
                                         </div>
                                     </div>
                                     <div class="title_ticketing">
                                         <h3> 지옥의 화원 </h3>
-                                        <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20031460&MOVIE_CD_GROUP=20031460" class="btn_ticketing"> 예매하기 </a>
+                                        <a href="#" class="btn_ticketing"> 예매하기 </a>
                                         <span> 예매율 0.0% </span>
                                     </div>
                                 </li>
@@ -570,14 +611,15 @@
                                 <li> 
                                     <div class="poster_wrap">
                                         <span class="poster_num"> 8 </span>
-                                        <img src="movie_chart/images/movie_chart/image_slide show/08_Persian_Lessons.jpg" alt="페르시아어 수업">
+                                        <img src="img/movie_chart/image_slide show/08_Persian_Lessons.jpg" alt="페르시아어 수업">
                                         <div class="poster_modal">
-                                            <a href="" class="poster_btn"> 상세보기 </a>
+                                            <a href="" class="poster_btn" data-lightbox="img/movie_chart/image_slide show/08 페르시아어 수업.jpg"
+                                            data-link="http://www.cgv.co.kr/search/?query=%uD398%uB974%uC2DC%uC544%uC5B4%20%uC218%uC5C5"> 상세보기 </a>
                                         </div>
                                     </div>
                                     <div class="title_ticketing">
                                         <h3> 페르시아어 수업 </h3>
-                                        <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20031460&MOVIE_CD_GROUP=20031460" class="btn_ticketing"> 예매하기 </a>
+                                        <a href="#" class="btn_ticketing"> 예매하기 </a>
                                         <span>예매율 0.0% </span>
                                     </div>
                                 </li>
@@ -585,14 +627,15 @@
                                 <li> 
                                     <div class="poster_wrap">
                                         <span class="poster_num"> 9 </span>
-                                        <img src="movie_chart/images/movie_chart/image_slide show/09_nana.jpg" alt="나나">
+                                        <img src="img/movie_chart/image_slide show/09_nana.jpg" alt="나나">
                                         <div class="poster_modal">
-                                            <a href="" class="poster_btn"> 상세보기 </a>
+                                            <a href="" class="poster_btn" data-lightbox="img/movie_chart/image_slide show/09 나나.jpg"
+                                            data-link="http://www.cgv.co.kr/search/?query=%uB098%uB098"> 상세보기 </a>
                                         </div>
                                     </div>
                                     <div class="title_ticketing">
                                         <h3> 나나 </h3>
-                                        <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20031460&MOVIE_CD_GROUP=20031460" class="btn_ticketing"> 예매하기 </a>
+                                        <a href="#" class="btn_ticketing"> 예매하기 </a>
                                         <span> 예매율 0.0% </span>
                                     </div>
                                 </li>
@@ -600,14 +643,15 @@
                                 <li> 
                                     <div class="poster_wrap">
                                         <span class="poster_num"> 10 </span>
-                                        <img src="movie_chart/images/movie_chart/image_slide show/10_story_up_shorts_section1.jpg" alt="제8회 스토리업쇼츠 섹션1">
+                                        <img src="img/movie_chart/image_slide show/10_story_up_shorts_section1.jpg" alt="제8회 스토리업쇼츠 섹션1">
                                         <div class="poster_modal">
-                                            <a href="" class="poster_btn"> 상세보기 </a>
+                                            <a href="" class="poster_btn" data-lightbox="img/movie_chart/image_slide show/10 제8회 스토리업쇼츠 섹션1.jpg"
+                                            data-link="http://www.cgv.co.kr/movies/detail-view/?midx=86672"> 상세보기 </a>
                                         </div>
                                     </div>
                                     <div class="title_ticketing">
                                         <h3> 제8회 스토리업쇼츠 섹션1 </h3>
-                                        <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20031460&MOVIE_CD_GROUP=20031460" class="btn_ticketing"> 예매하기 </a>
+                                        <a href="#" class="btn_ticketing"> 예매하기 </a>
                                         <span> 예매율 0.0% </span>
                                     </div>
                                 </li>
@@ -615,14 +659,15 @@
                                 <li> 
                                     <div class="poster_wrap">
                                         <span class="poster_num"> 11 </span>
-                                        <img src="movie_chart/images/movie_chart/image_slide show/10_story_up_shorts_section2.jpg" alt="제8회 스토리업쇼츠 섹션2">
+                                        <img src="img/movie_chart/image_slide show/10_story_up_shorts_section2.jpg" alt="제8회 스토리업쇼츠 섹션2">
                                         <div class="poster_modal">
-                                            <a href="" class="poster_btn"> 상세보기 </a>
+                                            <a href="" class="poster_btn" data-lightbox="img/movie_chart/image_slide show/11 제8회 스토리업쇼츠 섹션2.jpg"
+                                            data-link="http://www.cgv.co.kr/movies/detail-view/?midx=86673"> 상세보기 </a>
                                         </div>
                                     </div>
                                     <div class="title_ticketing">
                                         <h3> 제8회 스토리업쇼츠 섹션2</h3>
-                                        <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20031460&MOVIE_CD_GROUP=20031460" class="btn_ticketing"> 예매하기 </a>
+                                        <a href="#" class="btn_ticketing"> 예매하기 </a>
                                         <span> 예매율 0.0% </span>
                                     </div>
                                 </li>
@@ -630,14 +675,15 @@
                                 <li> 
                                     <div class="poster_wrap">
                                         <span class="poster_num"> 12 </span>
-                                        <img src="movie_chart/images/movie_chart/image_slide show/12_The_reason_why_next_year.jpg" alt="[사이다경제] 올해 고생한 만큼 내년 증시가 더 기대되는 이유">
+                                        <img src="img/movie_chart/image_slide show/12_The_reason_why_next_year.jpg" alt="[사이다경제] 올해 고생한 만큼 내년 증시가 더 기대되는 이유">
                                         <div class="poster_modal">
-                                            <a href="" class="poster_btn"> 상세보기 </a>
+                                            <a href="" class="poster_btn" data-lightbox="img/movie_chart/image_slide show/12 [사이다경제] 올해 고생한 만큼 내년 증시가 더 기대되는 이유.jpg"
+                                            data-link="http://www.cgv.co.kr/search/?query=%uC62C%uD574%20%uACE0%uC0DD%uD55C%20%uB9CC%uD07C%20%uB0B4%uB144"> 상세보기 </a>
                                         </div>
                                     </div>
                                     <div class="title_ticketing">
                                         <h3> [사이다경제] 올해 고생한 만큼 내년 증시 ... <!-- 가 더 기대되는 이유 --> </h3>
-                                        <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20031460&MOVIE_CD_GROUP=20031460" class="btn_ticketing"> 예매하기 </a>
+                                        <a href="#" class="btn_ticketing"> 예매하기 </a>
                                         <span> 예매율 0.0% </span>
                                     </div>
                                 </li>
@@ -645,14 +691,15 @@
                                 <li> 
                                     <div class="poster_wrap">
                                         <span class="poster_num"> 13 </span>
-                                        <img src="movie_chart/images/movie_chart/image_slide show/13_hero.jpg" alt="영웅">
+                                        <img src="img/movie_chart/image_slide show/13_hero.jpg" alt="영웅">
                                         <div class="poster_modal">
-                                            <a href="" class="poster_btn"> 상세보기 </a>
+                                            <a href="" class="poster_btn" data-lightbox="img/movie_chart/image_slide show/13 영웅.jpg"
+                                            data-link="http://www.cgv.co.kr/search/?query=%uC601%uC6C5"> 상세보기 </a>
                                         </div>
                                     </div>
                                     <div class="title_ticketing">
                                         <h3> 영웅 </h3>
-                                        <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20031460&MOVIE_CD_GROUP=20031460" class="btn_ticketing"> 예매하기 </a>
+                                        <a href="#" class="btn_ticketing"> 예매하기 </a>
                                         <span> 예매율 0.8% </span>
                                     </div>
                                 </li>
@@ -660,14 +707,15 @@
                                 <li> 
                                     <div class="poster_wrap">
                                         <span class="poster_num"> 14 </span>
-                                        <img src="movie_chart/images/movie_chart/image_slide show/14_Corsage.jpg" alt="코르사주">
+                                        <img src="img/movie_chart/image_slide show/14_Corsage.jpg" alt="코르사주">
                                         <div class="poster_modal">
-                                            <a href="" class="poster_btn"> 상세보기 </a>
+                                            <a href="" class="poster_btn" data-lightbox="img/movie_chart/image_slide show/14 코르사주.jpg"
+                                            data-link="http://www.cgv.co.kr/search/?query=%uCF54%uB974%uC0AC%uC8FC"> 상세보기 </a>
                                         </div>
                                     </div>
                                     <div class="title_ticketing">
                                         <h3> 코르사주 </h3>
-                                        <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20031460&MOVIE_CD_GROUP=20031460" class="btn_ticketing"> 예매하기 </a>
+                                        <a href="#" class="btn_ticketing"> 예매하기 </a>
                                         <span> 예매율 0.1% </span>
                                     </div>
                                 </li>
@@ -675,14 +723,15 @@
                                 <li> 
                                     <div class="poster_wrap">
                                         <span class="poster_num"> 15 </span>
-                                        <img src="movie_chart/images/movie_chart/image_slide show/15_pinkpong_cinema_concert2.jpg" alt="핑크퐁 시네마 콘서트2">
+                                        <img src="img/movie_chart/image_slide show/15_pinkpong_cinema_concert2.jpg" alt="핑크퐁 시네마 콘서트2">
                                         <div class="poster_modal">
-                                            <a href="" class="poster_btn"> 상세보기 </a>
+                                            <a href="" class="poster_btn" data-lightbox="img/movie_chart/image_slide show/15 핑크퐁 시네마 콘서트 2.jpg"
+                                            data-link="http://www.cgv.co.kr/search/?query=%uD551%uD06C%uD401%20%uC2DC%uB124%uB9C8%20%uCF58%uC11C%uD2B8%202"> 상세보기 </a>
                                         </div>
                                     </div>
                                     <div class="title_ticketing">
                                         <h3> 핑크퐁 시네마 콘서트 2 </h3>
-                                        <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20031460&MOVIE_CD_GROUP=20031460" class="btn_ticketing"> 예매하기 </a>
+                                        <a href="#" class="btn_ticketing"> 예매하기 </a>
                                         <span> 예매율 0.0% </span>
                                     </div>
                                 </li>
@@ -690,14 +739,15 @@
                                 <li> 
                                     <div class="poster_wrap">
                                         <span class="poster_num"> 16 </span>
-                                        <img src="movie_chart/images/movie_chart/image_slide show/16_gagarin.jpg" alt="가가린">
+                                        <img src="img/movie_chart/image_slide show/16_gagarin.jpg" alt="가가린">
                                         <div class="poster_modal">
-                                            <a href="" class="poster_btn"> 상세보기 </a>
+                                            <a href="" class="poster_btn" data-lightbox="img/movie_chart/image_slide show/16 가가린.jpg"
+                                            data-link="http://www.cgv.co.kr/search/?query=%uAC00%uAC00%uB9B0"> 상세보기 </a>
                                         </div>
                                     </div>
                                     <div class="title_ticketing">
                                         <h3> 16 가가린 </h3>
-                                        <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20031460&MOVIE_CD_GROUP=20031460" class="btn_ticketing"> 예매하기 </a>
+                                        <a href="#" class="btn_ticketing"> 예매하기 </a>
                                         <span> 예매율 0.0% </span>
                                     </div>
                                 </li>
@@ -705,14 +755,15 @@
                                 <li> 
                                     <div class="poster_wrap">
                                         <span class="poster_num"> 17 </span>
-                                        <img src="movie_chart/images/movie_chart/image_slide show/17_the_snow_queen5.jpg" alt="눈의 여왛5">
+                                        <img src="img/movie_chart/image_slide show/17_the_snow_queen5.jpg" alt="눈의 여왛5">
                                         <div class="poster_modal">
-                                            <a href="" class="poster_btn"> 상세보기 </a>
+                                            <a href="" class="poster_btn" data-lightbox="img/movie_chart/image_slide show/17 눈의 여왕5.jpg"
+                                            data-link="http://www.cgv.co.kr/culture-event/event/detailViewUnited.aspx?seq=36070"> 상세보기 </a>
                                         </div>
                                     </div>
                                     <div class="title_ticketing">
                                         <h3> 눈의 여왕5 </h3>
-                                        <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20031460&MOVIE_CD_GROUP=20031460" class="btn_ticketing"> 예매하기 </a>
+                                        <a href="#" class="btn_ticketing"> 예매하기 </a>
                                         <span> 예매율 0.0% </span>
                                     </div>
                                 </li>
@@ -720,14 +771,15 @@
                                 <li> 
                                     <div class="poster_wrap">
                                         <span class="poster_num"> 18 </span>
-                                        <img src="movie_chart/images/movie_chart/image_slide show/18_How_to_increase.jpg" alt="[인사이터 X CGV] 데이터보다 중요한 일의 감 높이는 법">
+                                        <img src="img/movie_chart/image_slide show/18_How_to_increase.jpg" alt="[인사이터 X CGV] 데이터보다 중요한 일의 감 높이는 법">
                                         <div class="poster_modal">
-                                            <a href="" class="poster_btn"> 상세보기 </a>
+                                            <a href="" class="poster_btn" data-lightbox="[인사이터 X CGV] 데이터보다 중요한 일의 감 높이는 법.jpg"
+                                            data-link="http://www.cgv.co.kr/search/?query=%uB370%uC774%uD130%uBCF4%uB2E4%20%uC911%uC694%uD55C%20%uC77C%uC758"> 상세보기 </a>
                                         </div>
                                     </div>
                                     <div class="title_ticketing">
                                         <h3> [인사이터 X CGV] 데이터보다 중요한 일의 ... <!-- 감 높이는 법 --> </h3>
-                                        <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20031460&MOVIE_CD_GROUP=20031460" class="btn_ticketing"> 예매하기 </a>
+                                        <a href="#" class="btn_ticketing"> 예매하기 </a>
                                         <span> 예매율 0.0% </span>
                                     </div>
                                 </li>
@@ -735,28 +787,30 @@
                                 <li> 
                                     <div class="poster_wrap">
                                         <span class="poster_num"> 19 </span>
-                                        <img src="movie_chart/images/movie_chart/image_slide show/19_Reasons_to_Blog.jpg" alt="[사이다경제] 지금 당장 유튜브가 아닌 블로그를 해야 하는 이유">
+                                        <img src="img/movie_chart/image_slide show/19_Reasons_to_Blog.jpg" alt="[사이다경제] 지금 당장 유튜브가 아닌 블로그를 해야 하는 이유">
                                         <div class="poster_modal">
-                                            <a href="" class="poster_btn"> 상세보기 </a>
+                                            <a href="" class="poster_btn" data-lightbox="img/movie_chart/image_slide show/19 [사이다경제] 지금 당장 유튜브가 아닌 블로그를 해야 하는 이유.jpg"
+                                            data-link="http://www.cgv.co.kr/search/?query=%uC9C0%uAE08%uB2F9%uC7A5"> 상세보기 </a>
                                         </div>
                                     </div>
                                     <div class="title_ticketing">
                                         <h3> [사이다경제] 지금 당장 유튜브가 아닌 ... <!-- 블로그를 해야 하는 이유 --> </h3>
-                                        <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20031460&MOVIE_CD_GROUP=20031460" class="btn_ticketing"> 예매하기 </a>
+                                        <a href="#" class="btn_ticketing"> 예매하기 </a>
                                         <span> 예매율 0.0% </span>
                                     </div>
                                 </li>
                                 <li> 
                                     <div class="poster_wrap">
                                         <span class="poster_num"> 20 </span>
-                                        <img src="movie_chart/images/movie_chart/image_slide show/20_ Monster_Bride_101st_proposal.jpg" alt="몬스터 신부-101번 프로포즈">
+                                        <img src="img/movie_chart/image_slide show/20_ Monster_Bride_101st_proposal.jpg" alt="몬스터 신부-101번 프로포즈">
                                         <div class="poster_modal">
-                                            <a href="" class="poster_btn"> 상세보기 </a>
+                                            <a href="" class="poster_btn" data-lightbox="img/movie_chart/image_slide show/20 몬스터 신부-101번 프로포즈.jpg"
+                                            data-link="http://www.cgv.co.kr/search/?query=%uBAAC%uC2A4%uD130"> 상세보기 </a>
                                         </div>
                                     </div>
                                     <div class="title_ticketing">
                                         <h3> 몬스터 신부-101번 프로포즈 </h3>
-                                        <a href="http://www.cgv.co.kr/ticket/?MOVIE_CD=20031460&MOVIE_CD_GROUP=20031460" class="btn_ticketing"> 예매하기 </a>
+                                        <a href="#" class="btn_ticketing"> 예매하기 </a>
                                         <span> 예매율 0.0% </span>
                                     </div>
                                 </li>
@@ -780,10 +834,14 @@
                             <i class="fa-solid fa-angles-down"> </i>
                         </a>
                     </div>
-                    <!-- CHART SECTION -->
-                    
-
+                    <!-- CHART SECTION -->    
                 </div>
+
+                <!-- 상세보기 모달창  -->
+                <div id="overlay">
+                    <img src="" alt="">
+                </div>
+
             </div>
 
             <!-- scroll 기준 -->
@@ -810,7 +868,7 @@
                                 </li>
                             </ul>
                             <div class="video_txt">
-                                <a href="http://www.cgv.co.kr/ticket" class="btn_movie_ticket">예매하기</a>
+                                <a href="#" class="btn_movie_ticket">예매하기</a>
                                 <button class="btn_movie pause">
                                     <i class="fa-solid fa-pause"></i>
                                     <i class="fa-solid fa-play"></i>
@@ -851,11 +909,11 @@
                     <div class="service_contents">
                         <div>
                             <h2>이벤트</h2>
-                            <a href="http://www.cgv.co.kr/culture-event/event/defaultNew.aspx#1" class="btn_more">전체보기 +</a>
+                            <a href="#" class="btn_more">전체보기 +</a>
                         </div>
                         <ul class="svc_event">
                             <li class="service_event">
-                                <a href="http://www.cgv.co.kr/culture-event/event/detailViewUnited.aspx?seq=35993&menu=001">
+                                <a href="#">
                                     <img src="img/service/event_01.jpg" alt="">
                                     <div class="svc_txt_wrap">
                                         <p>[아바타: 물의 길] 천만 달성 예측 이벤트</p>
@@ -864,7 +922,7 @@
                                 </a>
                             </li>
                             <li class="service_event">
-                                <a href="http://www.cgv.co.kr/culture-event/event/detailViewUnited.aspx?seq=35676&menu=001">
+                                <a href="#">
                                     <img src="img/service/event_02.jpg" alt="">
                                     <div class="svc_txt_wrap">
                                         <p>쉽고 많은 혜택, [CGV VIP 가보자고!]</p>
@@ -877,11 +935,11 @@
                     <div class="service_contents">
                         <div>
                             <h2>할인정보</h2>
-                            <a href="http://www.cgv.co.kr/discount/discountlist.aspx#1" class="btn_more">전체보기 +</a>
+                            <a href="#" class="btn_more">전체보기 +</a>
                         </div>
                         <ul class="svc_discount">
                             <li class="service_discount">
-                                <a href="http://www.cgv.co.kr/culture-event/event/detailViewUnited.aspx?seq=32445&menu=006">
+                                <a href="#">
                                     <img src="img/service/discount_01.jpg" alt="">
                                     <div class="svc_txt_wrap">
                                         <p>TOSS로 결제하고 3천원 캐시백 혜택 받기!</p>
@@ -890,7 +948,7 @@
                                 </a>
                             </li>
                             <li class="service_discount">
-                                <a href="http://www.cgv.co.kr/culture-event/event/detailViewUnited.aspx?seq=33682&menu=006">
+                                <a href="#">
                                     <img src="img/service/discount_02.jpg" alt="">
                                     <div class="svc_txt_wrap">
                                         <p>CGV X 우리카드 PLCC 출시!</p>
@@ -905,31 +963,31 @@
             <div class="personal">
                 <ul class="personal_wrap container">
                     <li>
-                        <a href="https://www.cgv.co.kr/user/login/?returnURL=%2fuser%2fmycgv%2fdefault.aspx">
+                        <a href="#">
                             <i class="fa-solid fa-circle-user"></i>
                             <p>my cgv</p>
                         </a>
                     </li>
                     <li>
-                        <a href="http://www.cgv.co.kr/culture-event/event/defaultNew.aspx?mCode=008#1">
+                        <a href="#">
                             <i class="fa-solid fa-star"></i>
                             <p>membership</p>
                         </a>
                     </li>
                     <li>
-                        <a href="https://play.google.com/store/apps/details?id=com.cgv.android.movieapp&hl=ko&gl=US" target="_blank">
+                        <a href="#" target="_blank">
                             <i class="fa-solid fa-photo-film"></i>
                             <p>photo play</p>
                         </a>
                     </li>
                     <li>
-                        <a href="http://www.cgv.co.kr/discount/discountlist.aspx#1">
+                        <a href="#">
                             <i class="fa-solid fa-piggy-bank"></i>
                             <p>discount</p>
                         </a>
                     </li>
                     <li>
-                        <a href="http://www.cgv.co.kr/culture-event/popcorn-store/">
+                        <a href="#">
                             <i class="fa-solid fa-store"></i>
                             <p>cgv store</p>
                         </a>
@@ -943,140 +1001,150 @@
                 <div class="theater container">
                     <div class="theater_header cf">
                         <h2>특별관</h2>
-                        <a class="btn_more" href="http://www.cgv.co.kr/theaters/special/defaultNew.aspx">전체보기 +</a>
+                        <a class="btn_more" href="#">전체보기 +</a>
                     </div>
                     <ul class="best cf">
                         <li>
-                            <a href="http://www.cgv.co.kr/theaters/special/defaultDetailNew.aspx?idx=7">
+                            <a href="#">
                             <div class="toptheater suite" >
                                 <h3 class="best_title">suite cinema</h3>
                                 <p class="best_desc">호텔컨셉의 프리미엄관</p>
                             </div>                       
                             <div class="dim">
-                                <span>
+                                <div>
                                     <h3>The Moment of Exclusivity</h3>
                                     <p>집보다 더 프라이빗하게</p>
                                     <p>호텔보다 더 프리미엄하게</p>
                                     <p>우리만의 Sweet Time, Suite Cinema</p>
-                                </span>
+                                </div>
                             </div>
                             </a>
                         </li>
                         <li>
-                            <a href="http://www.cgv.co.kr/theaters/special/defaultDetailNew.aspx?idx=14">
+                            <a href="#">
                             <div class="toptheater living">
                                 <h3 class="best_title">cine & livingroom</h3>
                                 <p class="best_desc">신개념 소셜 상영관</p>
                             </div>
                             <div class="dim">
-                                <span>
+                                <div>
                                     <h3>cine & livingroom</h3>
                                     <p>내 집 같이 편안하고 세련된 거실의 무드와 감성을 담은</p> 
                                     <p>신개념 소셜 상영관입니다.</p>
-                            </span>
+                            </div>
                             </div>    
                             </a>
                         </li>    
                         <li>
-                            <a href="http://www.cgv.co.kr/theaters/special/defaultDetailNew.aspx?idx=2">
+                            <a href="#">
                             <div class="toptheater fdx">
                                 <h3 class="best_title">4dx</h3>
                                 <p class="best_desc">모션시트 | 오감체험</p>
                             </div>
                             <div class="dim">
-                                <span>
+                                <div>
                                     <h3>Absolute Cinema Experience</h3>
                                     <p>움직이는 모션시트와 다양한 환경 효과를</p> 
                                     <p> 느낄 수 있는 오감 체험 특별 상영관입니다.</p>
-                            </span>
+                            </div>
                             </div> 
                             </a>
                         </li>
                         <li>
-                            <a href="http://www.cgv.co.kr/theaters/special/defaultDetailNew.aspx?idx=8">
+                            <a href="#">
                             <div class="toptheater chef">
                                 <h3 class="best_title">CINE de CHEF</h3>
                                 <p class="best_desc">쉐프가 있는 영화관</p>
                             </div>
                             <div class="dim">
-                                <span>
+                                <div>
                                     <h3>For Your Very Special Moment</h3>
                                     <p>최고의 쉐프들이 준비하는 만찬과 함께</p>
                                     <p>영화의 즐거움을 나누세요.</p>
-                                </span>
+                                </div>
                             </div>
                             </a>
                         </li>
                     </ul>
-                    <h3>테마로 즐기는 특별관</h3>
-                    <ul class="theme cf">
-                        <li>
-                            <a href="http://www.cgv.co.kr/theaters/special/defaultNew.aspx">
-                                <p>#technology</p>
-                            </a>    
-                        </li>
-                        <li>
-                            <a href="http://www.cgv.co.kr/theaters/special/defaultNew.aspx">
-                                <p>#prestige</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://www.cgv.co.kr/theaters/special/defaultNew.aspx">
-                                <p>#concept</p>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                    <div class="theme_wrapper">
+                        <div class="theme_content">
+                            <ul class="theme_container cf">
+                                <li class="theme_slide"><a href="#"><img src="img/theater/alltheater/16550967980730.png" alt="IMAX"></a></li>
+                                <li class="theme_slide"><a href="#"><img src="img/theater/alltheater/16541653617860.png" alt="4DX"></a></li>
+                                <li class="theme_slide"><a href="#"><img src="img/theater/alltheater/16545797031280.png" alt="4DX SCREEN"></a></li>
+                                <li class="theme_slide"><a href="#"><img src="img/theater/alltheater/16541656631890.png" alt="SCREENX"></a></li>
+                                <li class="theme_slide"><a href="#"><img src="img/theater/alltheater/16541657427290.png" alt="SPHEREX"></a></li>
+                                <li class="theme_slide"><a href="#"><img src="img/theater/alltheater/16545784186950.png" alt="SOUNDX"></a></li>
+                                <li class="theme_slide"><a href="#"><img src="img/theater/alltheater/16541658427390.png" alt="STARIUM"></a></li>
+                                <li class="theme_slide"><a href="#"><img src="img/theater/alltheater/16541659622790.png" alt="PRIVATE BOX"></a></li>
+                                <li class="theme_slide"><a href="#"><img src="img/theater/alltheater/16632934709300.png" alt="DOLBY ATMOS"></a></li>
+                                <li class="theme_slide"><a href="#"><img src="img/theater/alltheater/16541660190380.png" alt="SUITE CINEMA"></a></li>
+                                <li class="theme_slide"><a href="#"><img src="img/theater/alltheater/16541662254790.png" alt="CINE de CHEF"></a></li>
+                                <li class="theme_slide"><a href="#"><img src="img/theater/alltheater/16541662928620.png" alt="TEMPUR CINEMA"></a></li>
+                                <li class="theme_slide"><a href="#"><img src="img/theater/alltheater/16541660912690.png" alt="GOLD CLASS"></a></li>
+                                <li class="theme_slide"><a href="#"><img src="img/theater/alltheater/16541663661230.png" alt="THE PRIVATE CINEMA"></a></li>
+                                <li class="theme_slide"><a href="#"><img src="img/theater/alltheater/16541664739880.png" alt="PREMIUM"></a></li>
+                                <li class="theme_slide"><a href="#"><img src="img/theater/alltheater/16541665264850.png" alt="CINE & FORET"></a></li>
+                                <li class="theme_slide"><a href="#"><img src="img/theater/alltheater/16632934709300.png" alt="CINE & LIVING ROOM"></a></li>
+                                <li class="theme_slide"><a href="#"><img src="img/theater/alltheater/16541666654060.png" alt="CINE KIDS"></a></li>
+                            </ul>
+                        </div>
+                        <div class="theme_controls">
+                            <a href="#" class="theme_prev"><i class="fa-solid fa-angle-left"></i></a>
+                            <a href="#" class="theme_next"><i class="fa-solid fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                    </div>
             </div>
         </main>
         
         <footer>
             <div class="foot_ad_bg"> 
                 <div class="foot_ad container">
-                    <a href="https://www.youtube.com/watch?v=k28qSawg-Nw" class="foot_ad_image" target="_blank">헤이딜러</a>
+                    <a href="#" class="foot_ad_image" target="_blank">헤이딜러</a>
                 </div>
             </div>
         
             <div class="polish container">
-                <ul class="polish_menu">
+                <ul class="polish_menu cf">
                     <li>
-                        <a href="http://corp.cgv.co.kr/" target="_blank">회사소개</a>
+                        <a href="#" target="_blank">회사소개</a>
                         </li>
                     <li>
-                        <a href="http://corp.cgv.co.kr/company/ir/financial/financial_list.aspx" target="_blank">IR</a>
+                        <a href="#" target="_blank">IR</a>
                         </li>
                     <li>
-                        <a href="http://corp.cgv.co.kr/company/recruit/step/default.aspx" target="_blank">채용정보</a>
+                        <a href="#" target="_blank">채용정보</a>
                         </li>
                     <li>
-                        <a href="http://corp.cgv.co.kr/company/advertize/ad_Default.aspx" target="_blank">광고/제휴/출점문의</a>
+                        <a href="#" target="_blank">광고/제휴/출점문의</a>
                         </li>
                     <li>
-                        <a href="http://www.cgv.co.kr/rules/service.aspx">이용약관</a>
+                        <a href="#">이용약관</a>
                         </li>
                     <li>
-                        <a href="http://www.cgv.co.kr/rules/organized.aspx">편성기준</a>
+                        <a href="#">편성기준</a>
                         </li>
                     <li>
-                        <a href="http://www.cgv.co.kr/rules/privacy.aspx">개인정보처리방침</a>
+                        <a href="#">개인정보처리방침</a>
                         </li>
                     <li>
-                        <a href="http://www.cgv.co.kr/rules/disclaimer.aspx">법적고지</a>
+                        <a href="#">법적고지</a>
                         </li>
                     <li>
-                        <a href="http://www.cgv.co.kr/rules/emreject.aspx">이메일주소무단수집거부</a>
+                        <a href="#">이메일주소무단수집거부</a>
                         </li>
                     <li>
-                        <a href="http://corp.cgv.co.kr/company/ethicalManagement/ceoMessage.aspx" target="_blank">윤리경영</a>
+                        <a href="#" target="_blank">윤리경영</a>
                         </li>
                     <li>
-                        <a href="https://www.cgv.co.kr/company/cyberAudit.aspx">사이버감사실</a>
+                        <a href="#">사이버감사실</a>
                         </li>
                 </ul>
             </div>
             <div class="info container cf">
                 <div class="logo_wrap"> 
-                    <h1 class="logo"></h1> 
+                    <h1 class="logo">logo</h1> 
                 </div>
                 <!--------------- E logo  --------------->
                 <div class="info_content cf">
@@ -1095,37 +1163,40 @@
                 </div>  
                 <!--------------- E content  --------------->
                 <div class="form_branch cf">                   
-                        <select id="branch">
-                            <option value>계열사 바로가기</option>
-                            <optgroup label="CJ그룹">CJ그룹</optgroup>
-                                <option value="http://www.cj.net/">CJ주식회사</option>
-                            <optgroup label="식품 & 식품서비스">식품 & 식품서비스</optgroup>
-                                <option value="https://www.cj.co.kr/kr/index">CJ제일제당</option>
-                                <option value="https://www.cjfoodville.co.kr/main.asp">CJ푸드빌</option>
-                                <option value="http://www.cjfreshway.com/index.jsp">CJ프레시웨이</option>
-                            <optgroup label="생명공학">생명공학</optgroup>
-                                <option value="https://www.cj.co.kr/kr/about/business/bio">제일제당 BIO사업부문</option>
-                                <option value="https://www.cj.co.kr/kr/about/business/bio">CJ Feed&Card</option>
-                            <optgroup label="물류 신유통">물류 신유통</optgroup>
-                                <option value="https://www.cjlogistics.com/ko/main">CJ대한통운</option>
-                                <option value="http://www.cjenc.co.kr/kr/Default.asp">CJ대한통운 건설부문</option>
-                                <option value="https://www.oliveyoung.co.kr/store/company/brandStory.do">CJ올리브영</option>
-                                <option value="https://www.cjolivenetworks.co.kr:449/">CJ올리브네트웍스</option>
-                                <option value="https://www.cjoshopping.com:9002/index.asp">CJ ENM 커머스부문</option>
-                            <optgroup label="엔터테인먼트 & 미디어">엔터테인먼트 & 미디어</optgroup>
-                                <option value="https://www.cjenm.com/ko/">CJ ENM 엔터테인먼트 부문</option>
-                                <option value="http://corp.cgv.co.kr/">CJ CGV</option>
-                        </select>
-                        <span class="material-symbols-outlined branch_expand">
-                            expand_less
-                        </span>
-                        <input type="submit" value="GO" id="branch_submit">
+                    <select id="branch">
+                        <option value="#">계열사 바로가기</option>
+                        <optgroup label="CJ그룹">
+                            <option value>CJ주식회사</option>
+                        </optgroup>
+                        <optgroup label="식품 & 식품서비스">
+                            <option value="#">CJ제일제당</option>
+                            <option value="#">CJ푸드빌</option>
+                            <option value="#">CJ프레시웨이</option>
+                        </optgroup>
+                        <optgroup label="생명공학">
+                            <option value="#">제일제당 BIO사업부문</option>
+                            <option value="#">CJ Feed&Card</option>
+                        </optgroup>
+                        <optgroup label="물류 신유통">
+                            <option value="#">CJ대한통운</option>
+                            <option value="#">CJ대한통운 건설부문</option>
+                            <option value="#">CJ올리브영</option>
+                            <option value="#">CJ올리브네트웍스</option>
+                            <option value="#">CJ ENM 커머스부문</option>
+                        </optgroup>
+                        <optgroup label="엔터테인먼트 & 미디어">
+                             <option value="#">CJ ENM 엔터테인먼트 부문</option>
+                            <option value="#">CJ CGV</option>
+                        </optgroup>
+                    </select>
+                    <span class="material-symbols-outlined branch_expand">
+                        expand_less
+                    </span>
+                    <input type="submit" value="GO" id="branch_submit">
                 </div>
             </div>
         </footer>
-
         <!-- js 로드 -->
-        <script src="movie_chart/movie_chart.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>

@@ -4,9 +4,10 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="common.css">
-        <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/common.css">
+
+        <link rel="stylesheet" href="css/footer.css">
         <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
         <!-- fonts.google -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -83,17 +84,37 @@
                     </li>
                 </ul>
                 <h3>테마로 즐기는 특별관</h3>
-                <ul class="theme cf">
-                    <li>
-                        <p>#technology</p>
-                    </li>
-                    <li>
-                        <p>#prestige</p>
-                    </li>
-                    <li>
-                        <p>#concept</p>
-                    </li>
-                </ul>
+                <div class="theme_wrapper">
+                    <div class="theme_content">
+                        <ul class="theme_container cf">
+                            <li class="theme_slide cf">
+                                <a href=""><img src="img/theater/alltheater/16541653617860.png" alt=""></a>
+                                <a href=""><img src="img/theater/alltheater/16541656631890.png" alt=""></a>
+                                <a href=""><img src="img/theater/alltheater/16541657427290.png" alt=""></a>
+                                <a href=""><img src="img/theater/alltheater/16541658427390.png" alt=""></a>
+                                <a href=""><img src="img/theater/alltheater/16541659622790.png" alt=""></a>
+                            </li>
+                            <li class="theme_slide cf">
+                                <a href=""><img src="img/theater/alltheater/16541660190380.png" alt=""></a>
+                                <a href=""><img src="img/theater/alltheater/16541660912690.png" alt=""></a>
+                                <a href=""><img src="img/theater/alltheater/16541662254790.png" alt=""></a>
+                                <a href=""><img src="img/theater/alltheater/16541662928620.png" alt=""></a>
+                                <a href=""><img src="img/theater/alltheater/16541663661230.png" alt=""></a>
+                            </li>
+                            <li class="theme_slide cf">
+                                <a href=""><img src="img/theater/alltheater/16545784186950.png" alt=""></a>
+                                <a href=""><img src="img/theater/alltheater/16545797031280.png" alt=""></a>
+                                <a href=""><img src="img/theater/alltheater/16550967980730.png" alt=""></a>
+                                <a href=""><img src="img/theater/alltheater/16632934709300.png" alt=""></a>
+                                <a href=""><img src="img/theater/alltheater/all.png" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="theme_controls">
+                        <a href="" class="theme_prev"><i class="fa-solid fa-angle-left"></i></a>
+                        <a href="" class="theme_next"><i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -169,6 +190,6 @@
             </div>
         </div>
     </footer>
-<script src="footer.js"></script>
+<script src="js/footer.js"></script>
 </body>
 </html>
