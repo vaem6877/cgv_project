@@ -850,6 +850,12 @@ ul[class^="svc"] li::before{
 /*--------------- S theater 윤상혁 ---------------*/
 .theater_bg{
     background: linear-gradient(to right, #000 10%, rgba(0,0,0,0) 20% 80%, #000 90%),linear-gradient(to bottom, rgba(255,255,255,.1)0%, rgba(255,255,255,.1)100%) ,url("../img/theater/special_BG.png") no-repeat center/cover;
+    
+}
+.best_wrapper{position: relative;}
+.best_wrapper .btn_more{
+    position: absolute;
+    top: -50px; right: 0;
 }
 .theater{
     padding-top: 135px;
@@ -864,9 +870,6 @@ ul[class^="svc"] li::before{
     float: left;
     color:#fff;
 }
-.theater_header a{
-    float: right;
-}
 .theater h3{
     color:#fff;
     line-height: 1.5em;
@@ -876,7 +879,6 @@ ul[class^="svc"] li::before{
     position: relative;
     border-radius: 20px;
     overflow: hidden;
-
 }
 .best{
     margin-bottom: 30px;
@@ -967,19 +969,12 @@ ul[class^="svc"] li::before{
 /*--------------- best - theme ---------------*/
 .theme_wrapper{
     position: relative;
-    
 }
-.theme_content a:hover{
-    background-color: rgba(255,255,255,1);
-    transition: background-color 0.2s ;
-}
-
 .theme_content{
     width: 990px;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-
 }
 .theme_container{
     height: 100px;
@@ -995,9 +990,13 @@ ul[class^="svc"] li::before{
     position: relative;
     width: 150px;
     height: 100px;
-    background: rgba(255,255,255,.1);
+    background: rgba(255,255,255,.3);
     border-radius: 20px;
     margin:0;
+}
+.theme_content a:hover{
+    background-color: rgba(255,255,255,1);
+    transition: background-color 0.2s ;
 }
 
 .theme_container li a img{
@@ -1021,10 +1020,10 @@ ul[class^="svc"] li::before{
     right: 0;
 }
 .theme_controls a i{
-    color: #666;
+    color: #999;
 }
 .theme_controls a:hover i{
-    color: #ccc;
+    color: #fff;
 }
 /*--------------- E theater ---------------*/
 
