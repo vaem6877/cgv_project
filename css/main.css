@@ -755,12 +755,10 @@ video{
 .service_contents:last-of-type{
     right: 0;
 }
-.service_contents > div{
-    width: 100%;
-    position: relative;
+.service_contents h2{
     margin-bottom: 28px;
 }
-.service_contents > div > a{
+.service_contents .btn_more{
     position: absolute;
     top: 0;
     right: 0;
