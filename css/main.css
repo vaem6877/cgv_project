@@ -216,7 +216,8 @@ nav.active li:hover h3{
     right: 50%;
 }
 
-#btn_fixed h3{
+#btn_fixed h3,
+#btn_fixed i{
     position: absolute;
     text-decoration: none;
     text-align: center;
@@ -225,7 +226,8 @@ nav.active li:hover h3{
     left: 33%; top: 25%;
     transform: rotate(23deg);
 }
-.btn_fixed_top > h3{
+.btn_fixed_top > i{
+    font-size: 24px;
     left: 35%; bottom: 35%;
 }
 
@@ -250,7 +252,7 @@ nav.active li:hover h3{
     transform: rotate(30deg);
     color: #E72B20;
 }
-#btn_fixed a:hover h3 i{
+#btn_fixed a:hover i{
     color: #E72B20;
 }
 /*--------------- E fixed-btn 손현진 ---------------*/
