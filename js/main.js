@@ -79,13 +79,14 @@ let chartPosterSlide = document.querySelectorAll(".chart_poster li");
 
 let btnPrev = document.querySelector('.btn_nav_left');
 let btnNext = document.querySelector('.btn_nav_right');
-let chartArrow = document.querySelector('.chart_arrow');
 
 let currentIdxMovie = 0;
 let length = chartPosterSlide.length - 31;
 let lengthShow = chartPosterSlide.length - 21;
 let slideWidth = 294;
 let slideUnit = 2; 
+
+let chartArrow = document.querySelector('.chart_arrow');
 
 let chartForm = document.querySelector('.chart_form')
 let formUnder = document.querySelector('.chart_form input');
@@ -104,18 +105,18 @@ chartForm.addEventListener('focusout', (e) => {
     formUnder.classList.remove("input_active");
 })
 
-/* CHART SECTION image slide  */
+/* 1. 이미지 전체 나열 */
 chartPosterSlide.forEach((item, idx) => {
     item.style.left = idx * slideWidth + "px";
 })
 
-/* imageSlide 함수 */
+/* 2. imageSlide 함수 */
 function imageSlide (slideIdx) {
     chartPoster.style.left = (slideIdx * (-slideWidth*slideUnit)) + "px";
     currentIdxMovie = slideIdx;
 }
 
-/* btnNext */
+/* 3. 다음 버튼 */
 btnNext.addEventListener('click', (e) => {
     e.preventDefault();
 
@@ -157,7 +158,7 @@ btnPrev.addEventListener('click', (e) => {
 /* 무비차트 클릭시 */
 chart.addEventListener('click', (e) => {
     chartPoster.style.transition = "none";
-    chartPoster.style.left = 0 * 294 + "px";
+    chartPoster.style.left = 0 * slideWidth + "px";
     currentIdxMovie = 0;
 
     chart.style.fontWeight = "bold";
@@ -169,7 +170,7 @@ chart.addEventListener('click', (e) => {
 /* 상영예정작 클릭시 */
 chartShowing.addEventListener("click", (e) => {
     chartPoster.style.transition = "none";
-    chartPoster.style.left = 20 * -294 + "px";
+    chartPoster.style.left = 20 * -slideWidth + "px";
     currentIdxMovie = 10;
 
     chart.style.fontWeight = "400";
@@ -183,14 +184,13 @@ let videoOffset = document.querySelector(".chart_bottom_line");
 
 let videoOffsetAMT = videoOffset.offsetTop;
 
-
 chartArrow.addEventListener('click', (e) => {
     e.preventDefault();
     window.scrollTo({top: videoOffsetAMT-120, behavior: 'smooth'});
     console.log(videoOffsetAMT);
 })
 
-// 모달 페이지
+// 모달 창
 let posterDetail = chartPoster.querySelectorAll('.poster_btn');
 let overlay = document.querySelector('#overlay');
 let overlayImg = document.querySelector('#overlay img');

@@ -540,7 +540,7 @@ a[class^="btn_nav_"] {
     background: rgba(0, 0, 0, 0.7);
     opacity: 0;
     visibility: hidden;
-    transition: opacity 3s ease-out;
+    transition: opacity 2s ease-out;
     z-index: 3;
 }
 #overlay img {
