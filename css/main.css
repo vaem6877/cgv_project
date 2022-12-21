@@ -201,7 +201,7 @@ nav.active li:hover h3{
     z-index: 100;
     visibility: hidden;
     opacity: 0;
-    transform: scale(50%) rotate(120deg);
+    transform: scale(0.5) rotate(120deg);
     transition: 0.75s;
 }
 .btn_fixed_box{
@@ -232,7 +232,7 @@ nav.active li:hover h3{
 #btn_fixed.active{
     visibility: visible;
     opacity: 1;
-    transform: scale(100%) rotate(0);
+    transform: scale(1) rotate(0);
 }
 #btn_fixed.active .btn_fixed_top{
     right: 0;
