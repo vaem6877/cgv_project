@@ -1,6 +1,11 @@
 /*--------------- S popup---------------*/
 let popupModal = document.querySelector('.popup_modal'),
     popupContent = popupModal.querySelector('.popup_content');
+    popupClose = popupModal.querySelector('.popup_close');
+
+    popupClose.addEventListener('click',()=>{
+        popupModal.style.display = 'none';
+    });
             
 
 /*--------------- E popup---------------*/
