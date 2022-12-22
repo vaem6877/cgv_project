@@ -1,5 +1,15 @@
 .cf:after{content:''; clear:both; display:block; }
-
+/*--------------- S popup---------------*/
+.popup_modal{
+    position: fixed;
+    top: 100px;
+    left: 100px;
+    width: 600px;
+    height: 600px;
+    background: #ccc;
+    z-index: 999;
+}
+/*--------------- E popup---------------*/
 /*--------------- S head Ad 손현진---------------*/
 .head_ad{
     width: 100%;
