@@ -9,6 +9,10 @@
     background: #ccc;
     z-index: 999;
 }
+.popup_modal strong {
+    color: #E72B20;
+    font-weight: 700;
+}
 /*--------------- E popup---------------*/
 /*--------------- S head Ad 손현진---------------*/
 .head_ad{
