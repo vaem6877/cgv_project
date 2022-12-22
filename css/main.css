@@ -7,7 +7,7 @@
     width: 500px;
     height: 600px;
     z-index: 20;
-    border: 5px solid #FFA443;
+    border: 5px solid #E72B20;
     border-radius: 20px;
     background: #fff;
 }
@@ -33,7 +33,7 @@
     display: block;
     height: 1px;
     width: 100%;
-    background: #ffa443;
+    background: #E72B20;
     margin: 20px auto;
 }
 .popup_content .popup_proposal {
@@ -47,13 +47,14 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: #ffa443;
+    background: #E72B20;
     text-align: center;
     padding: 10px 0;
 }
 .popup_close p {
     font-weight: 700;
     color: #fff;
+    cursor: pointer;
 }
 /*--------------- E popup---------------*/
 /*--------------- S head Ad 손현진---------------*/
