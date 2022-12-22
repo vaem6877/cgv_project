@@ -595,8 +595,8 @@ a[class^="btn_nav_"] {
     position: absolute;
     top: 0;
     background: rgba(0, 0, 0, 0.7);
-    opacity: 0;
     visibility: hidden;
+    opacity: 0;
     transition: opacity 2s ease-out;
     z-index: 3;
 }
@@ -609,8 +609,8 @@ a[class^="btn_nav_"] {
 }
 
 #overlay.overlay_visible {
-    visibility: visible;
     opacity: 1;
+    visibility: visible;
 }
 /*---------------  홍효헌 ---------------*/
 
