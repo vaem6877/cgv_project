@@ -4,21 +4,56 @@
     position: fixed;
     top: 100px;
     left: 100px;
-    width: 600px;
+    width: 500px;
     height: 600px;
     z-index: 20;
-    background: #ffa443;  
-}
-.popup_content{
-    width: 500px;
-    height: 500px;
+    border: 5px solid #FFA443;
+    border-radius: 20px;
     background: #fff;
-    z-index: 21;
-    
 }
 .popup_modal strong {
-    color: #E72B20;
     font-weight: 700;
+}
+.popup_content{
+    margin: 30px;
+}
+.popup_content h2{
+    line-height: 2;
+}
+.popup_content p {
+    font-size: 14px;
+    line-height: 24px;
+}
+.popup_content form {
+    margin-top: 10px;
+    text-align: right;
+}
+.popup_content p:nth-of-type(3)::after{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: #ffa443;
+    margin: 20px auto;
+}
+.popup_content .popup_proposal {
+    color: #EF642F;
+    font-weight: 700;
+}
+
+
+.popup_close {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #ffa443;
+    text-align: center;
+    padding: 10px 0;
+}
+.popup_close p {
+    font-weight: 700;
+    color: #fff;
 }
 /*--------------- E popup---------------*/
 /*--------------- S head Ad 손현진---------------*/
