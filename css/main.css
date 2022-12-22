@@ -6,8 +6,15 @@
     left: 100px;
     width: 600px;
     height: 600px;
-    background: #ccc;
-    z-index: 999;
+    z-index: 20;
+    background: #ffa443;  
+}
+.popup_content{
+    width: 500px;
+    height: 500px;
+    background: #fff;
+    z-index: 21;
+    
 }
 .popup_modal strong {
     color: #E72B20;
