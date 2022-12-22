@@ -1,3 +1,11 @@
+/*--------------- S popup---------------*/
+let popupModal = document.querySelector('.popup_modal'),
+    popupContent = popupModal.querySelector('.popup_content');
+            
+
+/*--------------- E popup---------------*/
+
+
 /* --------------- S 손현진 ----------------*/
 
 //서브메뉴 (메인메뉴에 마우스를 올리면 서브메뉴 열리기)
