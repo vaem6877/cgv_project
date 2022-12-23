@@ -1,6 +1,6 @@
 .cf:after{content:''; clear:both; display:block; }
 /*--------------- S popup---------------*/
-.popup_modal{
+dialog{
     position: fixed;
     top: 100px;
     left: 100px;
@@ -10,8 +10,9 @@
     border: 5px solid #E72B20;
     border-radius: 20px;
     background: #fff;
+    margin: 0;
 }
-.popup_modal strong {
+dialog strong {
     font-weight: 700;
 }
 .popup_content{

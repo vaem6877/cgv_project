@@ -1,10 +1,10 @@
 /*--------------- S popup---------------*/
-let popupModal = document.querySelector('.popup_modal'),
+let popupModal = document.querySelector('dialog'),
     popupContent = popupModal.querySelector('.popup_content');
     popupClose = popupModal.querySelector('.popup_close');
 
     popupClose.addEventListener('click',()=>{
-        popupModal.style.display = 'none';
+        popupModal.removeAttribute('open');
     });
             
 
