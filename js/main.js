@@ -20,10 +20,6 @@ let popupModal = document.querySelector('dialog'),
                 break;
             }
         }
-        console.log(visited);
-        if(visited == true){
-            popupDialog.removeAttribute('open');
-        }
         if(visited == false){
             popupModal.setAttribute('open','');
         }
@@ -39,7 +35,6 @@ let popupModal = document.querySelector('dialog'),
         }
         popupModal.removeAttribute('open');
     });
-    console.log(dayCheck.checked);
 
 /*--------------- E popup---------------*/
 
