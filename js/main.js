@@ -21,6 +21,9 @@ let popupModal = document.querySelector('dialog'),
             }
         }
         console.log(visited);
+        if(visited == true){
+            popupDialog.removeAttribute('open');
+        }
         if(visited == false){
             popupModal.setAttribute('open','');
         }
