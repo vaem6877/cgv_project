@@ -24,6 +24,7 @@ let popupModal = document.querySelector('dialog'),
                 break;
             }
         }
+	console.log(visited);
         if(visited == false){
             popupModal.setAttribute('open','');
         }
@@ -33,7 +34,7 @@ let popupModal = document.querySelector('dialog'),
 
     popupClose.addEventListener('click',()=>{
         if(dayCheck.checked){
-            setCookie('cgvpf','home',1)
+            setCookie('cgvpf','home',1);
         }else{
             setCookie('cgvpf','home',-1);
         }
