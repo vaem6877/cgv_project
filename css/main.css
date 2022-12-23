@@ -25,7 +25,7 @@ dialog strong {
     font-size: 14px;
     line-height: 24px;
 }
-.popup_content label {
+.popup_content form {
     font-size: 14px;
     margin-top: 10px;
     text-align: right;
