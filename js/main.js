@@ -3,6 +3,10 @@ let popupModal = document.querySelector('dialog'),
     popupClose = popupModal.querySelector('.popup_close'),
     dayCheck = document.querySelector('#daycheck');
 
+    /* if(document.cookie.search('cgvpf') > -1) {
+        popupModal.setAttribute('open','');
+    } */
+
     function setCookie(name,value,day){
         let date = new Date();
         date.setDate(date.getDate()+day);
@@ -35,7 +39,6 @@ let popupModal = document.querySelector('dialog'),
         }
         popupModal.removeAttribute('open');
     });
-
 /*--------------- E popup---------------*/
 
 
