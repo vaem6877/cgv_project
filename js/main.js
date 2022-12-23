@@ -1,6 +1,5 @@
 /*--------------- S popup---------------*/
 let popupModal = document.querySelector('dialog'),
-    popupContent = popupModal.querySelector('.popup_content'),
     popupClose = popupModal.querySelector('.popup_close'),
     dayCheck = document.querySelector('#daycheck');
 
