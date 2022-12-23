@@ -29,7 +29,7 @@ let popupModal = document.querySelector('dialog'),
 
     popupClose.addEventListener('click',()=>{
         if(dayCheck.checked){
-            setCookie('cgvpf','home',1)
+            setCookie('cgvpf','home',1);
         }else{
             setCookie('cgvpf','home',-1);
         }
