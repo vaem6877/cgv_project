@@ -1,12 +1,42 @@
 /*--------------- S popup---------------*/
 let popupModal = document.querySelector('dialog'),
-    popupContent = popupModal.querySelector('.popup_content');
-    popupClose = popupModal.querySelector('.popup_close');
+    popupContent = popupModal.querySelector('.popup_content'),
+    popupClose = popupModal.querySelector('.popup_close'),
+    dayCheck = document.querySelector('#daycheck');
+
+    function setCookie(name,value,day){
+        let date = new Date();
+        date.setDate(date.getDate()+day);
+        document.cookie = `${name}=${value};expires=${date.toUTCString()}`;
+    }
+
+    function checkCookie(name){
+        let cookieArr = document.cookie.split(';');
+
+        let visited = false;
+
+        for(let cookie of cookieArr){
+            if(cookie.search(name) > -1){
+                visited = true;
+                break;
+            }
+        }
+        if(visited == false){
+            popupModal.setAttribute('open','');
+        }
+    }
+
+    checkCookie('cgv_pf');
 
     popupClose.addEventListener('click',()=>{
+        if(dayCheck.checked){
+            setCookie('cgv_pf','home',1)
+        }else{
+            setCookie('cgv_pf','home',-1);
+        }
         popupModal.removeAttribute('open');
     });
-            
+    console.log(dayCheck.checked);
 
 /*--------------- E popup---------------*/
 
