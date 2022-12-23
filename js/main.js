@@ -25,13 +25,13 @@ let popupModal = document.querySelector('dialog'),
         }
     }
 
-    checkCookie('cgv_pf');
+    checkCookie('cgvpf');
 
     popupClose.addEventListener('click',()=>{
         if(dayCheck.checked){
-            setCookie('cgv_pf','home',1)
+            setCookie('cgvpf','home',1)
         }else{
-            setCookie('cgv_pf','home',-1);
+            setCookie('cgvpf','home',-1);
         }
         popupModal.removeAttribute('open');
     });
