@@ -20,6 +20,7 @@ let popupModal = document.querySelector('dialog'),
                 break;
             }
         }
+        console.log(visited);
         if(visited == false){
             popupModal.setAttribute('open','');
         }
