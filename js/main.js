@@ -117,25 +117,25 @@ clsBtn.addEventListener('click',(e)=>{
 
 
 /* --------------- S 홍효헌 ----------------*/
-let chart = document.querySelector('.chart_header .chart');
-let chartShowing = document.querySelector('.chart_header .showing');
-let chartPoster = document.querySelector(".chart_poster");
-let chartPosterSlide = document.querySelectorAll(".chart_poster li");
+let chart = document.querySelector('.chart_header .chart'),
+    chartShowing = document.querySelector('.chart_header .showing'),
+    chartPoster = document.querySelector(".chart_poster"),
+    chartPosterSlide = document.querySelectorAll(".chart_poster li");
 
-let btnPrev = document.querySelector('.btn_nav_left');
-let btnNext = document.querySelector('.btn_nav_right');
+let btnPrev = document.querySelector('.btn_nav_left'),
+    btnNext = document.querySelector('.btn_nav_right');
 
-let currentIdxMovie = 0;
-let length = chartPosterSlide.length - 31;
-let lengthShow = chartPosterSlide.length - 21;
-let slideWidth = 294;
-let slideUnit = 2; 
+let currentIdxMovie = 0,
+    length = chartPosterSlide.length - 31,
+    lengthShow = chartPosterSlide.length - 21,
+    slideWidth = 294,
+    slideUnit = 2;
 
 let chartArrow = document.querySelector('.chart_arrow');
 
-let chartForm = document.querySelector('.chart_form')
-let formUnder = document.querySelector('.chart_form input');
-let formBtn = document.querySelector('.chart_form i');
+let chartForm = document.querySelector('.chart_form'),
+    formUnder = document.querySelector('.chart_form input'),
+    formBtn = document.querySelector('.chart_form i');
 
 /* MOVIE CHART form */
 chartForm.addEventListener('focusin', (e) => {
@@ -226,7 +226,6 @@ chartShowing.addEventListener("click", (e) => {
 
 /* 화살표 클릭시 */
 let videoOffset = document.querySelector(".chart_bottom_line");
-
 let videoOffsetAMT = videoOffset.offsetTop;
 
 chartArrow.addEventListener('click', (e) => {
@@ -236,9 +235,9 @@ chartArrow.addEventListener('click', (e) => {
 })
 
 // 모달 창
-let posterDetail = chartPoster.querySelectorAll('.poster_btn');
-let overlay = document.querySelector('#overlay');
-let overlayImg = document.querySelector('#overlay img');
+let posterDetail = chartPoster.querySelectorAll('.poster_btn'),
+    overlay = document.querySelector('#overlay'),
+    overlayImg = document.querySelector('#overlay img');
 
 posterDetail.forEach((item, idx) => {
     item.addEventListener('click', (e) => {
@@ -252,9 +251,9 @@ posterDetail.forEach((item, idx) => {
         overlay.classList.add('overlay_visible');
 
         /* 해당 상세보기 페이지로 넘어가게 */
-        setTimeout(() => {
+        /* setTimeout(() => {
             location.href = "https://vaem6877.github.io/cgv_project/";
-        }, 1500);
+        }, 1500); */
     })
 })
 

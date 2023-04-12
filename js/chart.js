@@ -1,20 +1,20 @@
 /*--------------- 변수 선언과 할당 ---------------*/
-let chart = document.querySelector('.chart_header .chart');
-let chartShowing = document.querySelector('.chart_header .showing');
-let chartPoster = document.querySelector(".chart_poster");
-let chartPosterSlide = document.querySelectorAll(".chart_poster li");
+let chart = document.querySelector('.chart_header .chart'),
+    chartShowing = document.querySelector('.chart_header .showing'),
+    chartPoster = document.querySelector(".chart_poster"),
+    chartPosterSlide = document.querySelectorAll(".chart_poster li");
 
-let btnPrev = document.querySelector('.btn_nav_left');
-let btnNext = document.querySelector('.btn_nav_right');
-let chartArrow = document.querySelector('.chart_arrow');
+let btnPrev = document.querySelector('.btn_nav_left'),
+    btnNext = document.querySelector('.btn_nav_right'),
+    chartArrow = document.querySelector('.chart_arrow');
 
-let chartForm = document.querySelector('.chart_form')
-let formUnder = document.querySelector('.chart_form input');
-let formBtn = document.querySelector('.chart_form i');
+let chartForm = document.querySelector('.chart_form'),
+    formUnder = document.querySelector('.chart_form input'),
+    formBtn = document.querySelector('.chart_form i');
 
-let currentIdxMovie = 0;
-let length = chartPosterSlide.length - 31; /* 슬라이드 넘기는 개수에 따라 빼주는 숫자 조절하기 */
-let lengthShow = chartPosterSlide.length - 21;
+let currentIdxMovie = 0,
+    length = chartPosterSlide.length - 31, /* 슬라이드 넘기는 개수에 따라 빼주는 숫자 조절하기 */
+    lengthShow = chartPosterSlide.length - 21;
 
 /*--------------- MOVIE CHART form ---------------*/
 chartForm.addEventListener('focusin', (e) => {
@@ -115,25 +115,32 @@ chartShowing.addEventListener("click", (e) => {
 })
 
 /* 화살표 클릭시 */
-let videoOffset = document.querySelector(".chart_bottom_line");
+/* let videoOffset = document.querySelector(".chart_bottom_line");
 
 let videoOffsetAMT = videoOffset.offsetTop;
+ */
+let videoOffset = document.querySelector(".video");
+
+let videoOffsetAMT = videoOffset.offsetTop;
+
+console.log(videoOffsetAMT);
 
 
 chartArrow.addEventListener('click', (e) => {
     e.preventDefault();
     window.scrollTo({top: videoOffsetAMT, behavior: 'smooth'});
     console.log(videoOffsetAMT);
-
 })
 
-let posterDetail = chartPoster.querySelectorAll('.poster_btn');
-let overlay = document.querySelector('#overlay');
-let overlayImg = document.querySelector('#overlay img');
+let posterDetail = chartPoster.querySelectorAll('.poster_btn'),
+    overlay = document.querySelector('#overlay'),
+    overlayImg = document.querySelector('#overlay img');
 
 posterDetail.forEach((item, idx) => {
     item.addEventListener('click', (e) => {
         e.preventDefault();
+
+        console.log('출력');
 
         imgSrc = e.target.getAttribute('data-lightbox');
         detailAddress = e.target.getAttribute('data-link');
@@ -142,8 +149,8 @@ posterDetail.forEach((item, idx) => {
 
         overlay.classList.add('overlay_visible');
 
-        setTimeout(() => {
+        /* setTimeout(() => {
             location.href = detailAddress;
-        }, 800);
+        }, 800); */
     })
 })
